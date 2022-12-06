@@ -32,3 +32,17 @@ if (choice.toLowerCase() === "tofurkey" || choice.toLowerCase() === "fruit salad
     console.log("Vegans beware!")
 }
 
+//Section 5
+if (confirm("Does it move? OK if yes; Cancel if no")) {
+    if (confirm("Should it? OK if yes; Cancel if no")) {
+        console.log("No problem")
+    } else {
+        console.log("Apply Duct Tape")
+    }
+} else {
+    if (confirm("Should it? OK if yes; Cancel if no")) {
+        console.log("Apply WD-40")
+    } else {
+        console.log("No problem")
+    }
+}
