@@ -23,3 +23,12 @@ if (b <= 25) {
 } else {
     console.log("top quartile")
 }
+
+// Section 4
+let choice = prompt("On the menu tonight: Steak, fruit salad, tofurkey, and pork chops. What would you like to have?", "Steak/fruit salad/tofurkey/pork chops")
+if (choice.toLowerCase() === "tofurkey" || choice.toLowerCase() === "fruit salad") {
+    console.log("This cuisine is vegan friendly.")
+} else {
+    console.log("Vegans beware!")
+}
+
