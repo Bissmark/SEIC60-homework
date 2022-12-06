@@ -11,3 +11,15 @@ if (a%2 === 0) {
 } else {
     console.log("After running our calculations, the result is odd")
 }
+
+//Section 3
+let b = 76
+if (b <= 25) {
+    console.log("bottom quartile")
+} else if (b <= 50) {
+    console.log("lower quartile")
+} else if (b <= 75) {
+    console.log("upper quartile")
+} else {
+    console.log("top quartile")
+}
