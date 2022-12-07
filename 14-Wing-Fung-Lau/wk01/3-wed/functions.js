@@ -26,14 +26,24 @@
 
 //helloIn
 
-const helloIn = function(lang) {
-    const recognisedLang = {"english":"Hello","german":"Hallo","portuguese":"Olá",
-"french":"Bonjour"}
-    if (recognisedLang[lang] == undefined) {
-        return "Sorry, I don't speak."
-    } else {
-        return recognisedLang[lang]
+// const helloIn = function(lang) {
+//     const recognisedLang = {"english":"Hello","german":"Hallo","portuguese":"Olá",
+// "french":"Bonjour"}
+//     if (recognisedLang[lang] == undefined) {
+//         return "Sorry, I don't speak."
+//     } else {
+//         return recognisedLang[lang]
+//     }
+// }
+
+// console.log(helloIn(prompt().toLowerCase()))
+
+//leapYears
+for (let i = 1922; i <= 2022; i++){
+    if (i % 4 ===0){
+        if (i % 100 === 0 && i % 400 != 0){
+        } else {
+            console.log(i)
+        }
     }
 }
-
-console.log(helloIn(prompt().toLowerCase()))
