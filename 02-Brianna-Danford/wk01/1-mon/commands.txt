@@ -1,0 +1,17 @@
+brian@MacBook-Air-2 1-mon % history
+  784  ls
+  785  ls
+  786  cd ..
+  787  cd ..
+  788  cd ..
+  789  ls
+  790  cd death_star
+  791  ls
+  792  mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+  793  ls
+  794  cd ..
+  795  cd ..
+  796  cd 1-mon
+  797  git add .
+  798  git commit -m "Episode X: A new terminal"
+  799  git push

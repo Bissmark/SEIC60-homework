@@ -1,0 +1,57 @@
+➜  ~ cd Desktop/general-assembly/Homework/SEIC60-homework/11-Tanakorn-Treechorvitaya/wk01/1-mon
+➜  1-mon git:(main) ✗ touch command.txt
+➜  1-mon git:(main) ✗ mkdir galaxy_far_far_away
+➜  1-mon git:(main) ✗ mkdir death_star
+➜  1-mon git:(main) ✗ cd death_star/
+➜  death_star git:(main) ✗ touch darth_vader.txt princess_leia.txt storm_trooper.txt
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ mkdir tatooine
+➜  galaxy_far_far_away git:(main) ✗ cd tatooine
+➜  tatooine git:(main) ✗ touch luke.txt ben_kenobi.txt
+➜  tatooine git:(main) ✗ mkdir millenium_falcon
+➜  tatooine git:(main) ✗ cd millenium_falcon
+➜  millenium_falcon git:(main) ✗ touch han_solo.txt chewbaca.txt
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  tatooine git:(main) ✗ mv ben_kenobi.txt obi_wan.txt
+➜  tatooine git:(main) ✗ cd ../..
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ cp storm_trooper.txt ../galaxy_far_far_away/tatooine
+➜  death_star git:(main) ✗ cd ../galaxy_far_far_away/tatooine
+➜  tatooine git:(main) ✗ mv luke.txt obi_wan.txt millenium_falcon
+➜  tatooine git:(main) ✗ mv millenium_falcon ../../galaxy_far_far_away
+➜  tatooine git:(main) ✗ cd ../..
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ mv millenium_falcon ../death_star
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ mv princess_leia.txt millenium_falcon
+➜  death_star git:(main) ✗ cd millenium_falcon/
+➜  millenium_falcon git:(main) ✗ rm obi_wan.txt
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ mkdir yavin_4
+➜  galaxy_far_far_away git:(main) ✗ cd ../death_star
+➜  death_star git:(main) ✗ mv millenium_falcon ../galaxy_far_far_away/yavin_4
+➜  death_star git:(main) ✗ cd ../galaxy_far_far_away/yavin_4
+➜  yavin_4 git:(main) ✗ mkdir x_wing
+➜  yavin_4 git:(main) ✗ cd millenium_falcon
+➜  millenium_falcon git:(main) ✗ mv princess_leia.txt ..
+➜  millenium_falcon git:(main) ✗ mv luke.txt ../x_wing
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  yavin_4 git:(main) ✗ mv millenium_falcon x_wing ..
+➜  yavin_4 git:(main) ✗ cd ../..
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+➜  death_star git:(main) ✗ mv darth_vader.txt tie_fighter_1
+➜  death_star git:(main) ✗ cp storm_trooper.txt tie_fighter_2
+➜  death_star git:(main) ✗ cp storm_trooper.txt tie_fighter_3
+➜  death_star git:(main) ✗ mv tie_fighter_1 tie_fighter_2  tie_fighter_3 ../galaxy_far_far_away
+➜  death_star git:(main) ✗ cd ../galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ rm -rf tie_fighter_2
+➜  galaxy_far_far_away git:(main) ✗ rm - rf tie_fighter_3
+➜  galaxy_far_far_away git:(main) ✗ cd x_wing
+➜  x_wing git:(main) ✗ touch the_force.txt
+➜  x_wing git:(main) ✗ cd ../..
+➜  1-mon git:(main) ✗ rm -rf death_star
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ mv x_wing millenium_falcon yavin_4

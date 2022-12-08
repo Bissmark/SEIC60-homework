@@ -1,0 +1,4 @@
+➜  1-mon git:(main) ✗ mkdir 'Episode X: A New Terminal'
+➜  1-mon git:(main) ✗ touch commands.txt 
+➜  1-mon git:(main) ✗ mkdir galaxy_far_far_away && galaxy_far_far_away
+➜  death_star git:(main) ✗ mkdir death_star && touch darth_vader.txt princess_leia.txt storm_trooper.txt

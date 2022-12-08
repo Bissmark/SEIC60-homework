@@ -1,0 +1,46 @@
+mkdir galaxy_far_far_away
+cd galaxy_far_far_away
+mkdir death_star
+touch darth_vader.txt princess_leia.txt storm_trooper.txt
+mkdir tatooine  
+cd tatooine
+touch luke.txt ben_kenobi.txt
+mkdir millenium_falcon
+cd millenium_falcon
+touch han_solo.txt chewbaca.txt
+
+mv ben_kenobi.txt obi_wan.txt
+
+cp storm_trooper.txt ../tatooine
+
+mv luke.txt obi_wan.txt millenium_falcon 
+mv millenium_falcon ../../galaxy_far_far_away
+mv millenium_falcon death_star 
+mv death_star/princess_leia.txt death_star/millenium_falcon 
+
+cd death_star/millenium_falcon
+rm obi_wan.txt
+
+cd ../.. 
+mkdir yavin_4
+mv death_star/millenium_falcon yavin_4 
+mkdir yavin_4/x_wing
+mv yavin_4/millenium_falcon/princess_leia.txt yavin_4/ 
+mv yavin_4/millenium_falcon death_star/luke.txt yavin_4/x_wing
+mv millenium_falcon ../../galaxy_far_far_away 
+mv x_wing ../../galaxy_far_far_away
+cd ..
+cd death_star
+mkdir tie_fighter_1 tie_fighter_2  tie_fighter_3
+mv darth_vader.txt tie_fighter_1
+cp storm_trooper.txt tie_fighter_2
+cp storm_trooper.txt tie_fighter_3
+mv tie_fighter_* ../
+
+rm -r tie_fighter_2 tie_fighter_3
+
+
+touch x_wing/the_fource.txt
+rm -r death_star 
+mv x_wing yavin_4 
+mv millenium_falcon yavin_4 

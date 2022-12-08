@@ -54,3 +54,4 @@ node_modules/
 
 # Ignore master key for decrypting credentials and more.
 **/config/master.key
+06-Jeffrey-Fazal/06-Jeffrey-Fazal.code-workspace

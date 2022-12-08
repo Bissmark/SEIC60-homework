@@ -1,0 +1,119 @@
+Create a new directory called galaxy_far_far_away and enter it via terminal:
+1-mon git:(main) ✗ mkdir galaxy_far_far_away
+
+Create a directory called death_star, and make the following files inside of it:
+➜  galaxy_far_far_away git:(main) ✗ mkdir death_star
+
+darth_vader.txt
+princess_leia.txt
+storm_trooper.txt
+➜  death_star git:(main) ✗ touch darth_vader.txt princess_leia.txt storm_trooper.txt
+
+In galaxy_far_far_away, make a directory named tatooine and create the following files in it:
+
+luke.txt
+ben_kenobi.txt
+
+➜  galaxy_far_far_away git:(main) ✗ mkdir tatooine
+➜  galaxy_far_far_away git:(main) ✗ ls
+death_star tatooine
+➜  galaxy_far_far_away git:(main) ✗ cd tatooine
+➜  tatooine git:(main) ✗ touch luke.txt ben_kenobi.txt
+
+Inside of tatooine make a directory called millenium_falcon, and in it create:
+
+han_solo.txt
+chewbaca.txt
+
+➜  tatooine git:(main) ✗ mkdir millenium_falcon
+➜  tatooine git:(main) ✗ cd millenium_falcon
+➜  millenium_falcon git:(main) ✗ touch han_solo.txt chewbaca.txt
+
+Rename ben_kenobi.txt to obi_wan.txt.
+➜  tatooine git:(main) ✗ mv ben_kenobi.txt obi_wan.txt
+
+Copy storm_trooper.txt from death_star to tatooine
+➜  death_star git:(main) ✗ cp storm_trooper.txt ../tatooine
+
+Move luke.txt and obi_wan.txt to the millenium_falcon
+➜  tatooine git:(main) ✗ mv luke.txt obi_wan.txt millenium_falcon
+
+Move millenium_falcon out of tatooine and into galaxy_far_far_away
+➜  tatooine git:(main) ✗ mv millenium_falcon/ ..
+
+Move millenium_falcon into death_star
+➜  galaxy_far_far_away git:(main) ✗ mv millenium_falcon death_star
+
+Move princess_leia.txt into the millenium_falcon
+➜  death_star git:(main) ✗ mv princess_leia.txt millenium_falcon
+
+Delete obi_wan.txt
+➜  millenium_falcon git:(main) ✗ rm obi_wan.txt
+
+In galaxy_far_far_away, make a directory called yavin_4
+➜  galaxy_far_far_away git:(main) ✗ mkdir yavin_4
+
+Move the millenium_falcon out of the death_star and into yavin_4
+➜  death_star git:(main) ✗ mv millenium_falcon ../yavin_4
+
+Make a directory in yavin_4 called x_wing
+➜  yavin_4 git:(main) ✗ mkdir x_wing
+
+Move princess_leia.txt to yavin_4 and luke.txt to x_wing
+➜  millenium_falcon git:(main) ✗ mv princess_leia.txt ..
+➜  millenium_falcon git:(main) ✗ mv luke.txt ../x_wing
+
+Move the millenium_falcon and x_wing out of yavin_4 and into galaxy_far_far_away
+➜  yavin_4 git:(main) ✗ mv millenium_falcon ..
+➜  yavin_4 git:(main) ✗ mv x_wing ..
+➜  yavin_4 git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ ls
+death_star       tatooine         yavin_4
+millenium_falcon x_wing
+
+In death_star, create directories for tie_fighter_1, tie_fighter_2 and tie_fighter_3
+➜  death_star git:(main) ✗ mkdir tie-fighter_1 tie_fighter_2 tie_fighter_3
+
+Move darth_vader.txt into tie_fighter_1
+➜  death_star git:(main) ✗ mv darth_vader.txt tie_fighter_1
+
+Make a copy of storm_trooper.txt in both tie_fighter_2 and tie_fighter_3
+➜  death_star git:(main) ✗ cp storm_trooper.txt tie_fighter_2
+➜  death_star git:(main) ✗ cp storm_trooper.txt tie_fighter_3
+
+Move all of the tie_fighters out of the death_star and into galaxy_far_far_away (made a mess of this one)
+➜  death_star git:(main) ✗ mv tie_fighter_1 ..
+mv: rename tie_fighter_1 to ../tie_fighter_1: Not a directory
+➜  death_star git:(main) ✗ mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ../..
+➜  death_star git:(main) ✗ ls
+storm_trooper.txt
+➜  death_star git:(main) ✗ cd ../..
+➜  1-mon git:(main) ✗ ls
+commands.txt        tie_fighter_1       tie_fighter_3
+galaxy_far_far_away tie_fighter_2
+➜  1-mon git:(main) ✗ mv tie_fighter_1 galaxy_far_far_away
+mv: rename tie_fighter_1 to galaxy_far_far_away/tie_fighter_1: Not a directory
+➜  1-mon git:(main) ✗ mv tie_fighter_1 ../galaxy_far_far_away
+➜  1-mon git:(main) ✗ ls
+commands.txt        galaxy_far_far_away tie_fighter_2       tie_fighter_3
+➜  1-mon git:(main) ✗ mv tie_fighter_2 tie_fighter_3 ../galaxy_far_far_away
+
+Remove tie_fighters 2 and 3.
+➜  galaxy_far_far_away git:(main) ✗ rm -r tie_fighter_2 tie_fighter_3
+
+Touch a file in x_wing called the_force.txt
+➜  x_wing git:(main) ✗ touch the_force.txt
+➜  x_wing git:(main) ✗ ls
+luke.txt      the_force.txt
+
+Destroy the death_star and anyone inside of it.
+➜  galaxy_far_far_away git:(main) ✗ rm -r death_star
+➜  galaxy_far_far_away git:(main) ✗ ls
+millenium_falcon tie_fighter_1    yavin_4
+tatooine         x_wing
+
+Return x_wing and the millenium_falcon to yavin_4
+➜  galaxy_far_far_away git:(main) ✗ mv x_wing yavin_4
+➜  galaxy_far_far_away git:(main) ✗ mv millenium_falcon yavin_4
+
+

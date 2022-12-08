@@ -1,0 +1,79 @@
+**Episode X commands**
+
+mkdir galaxy_far_far_away
+mkdir death_star
+cd death_star
+touch darth_vader.txt princess_leia.txt storm_troo
+per.txt
+cd ../galaxy_far_far_away
+cd tatooine
+touch luke.txt ben_kenobi.txt
+mkdir millenium_falcon
+cd millenium_falcon
+touch han_solo.txt chewbaca.txt
+mv ben_kenobi.txt obi_wan.txt
+cp storm_trooper.txt ../galaxy_far_far_away/t
+atooine
+cd ../galaxy_far_far_away/tatooine
+mv luke.txt obi_wan.txt millenium_falcon
+mv millenium_falcon ..
+mv millenium_falcon ../death_star
+d ../death_star
+mv princess_leia.txt millenium_falcon
+cd death_star/millenium_falcon
+rm obi_wan.txt
+ls
+  464  ..
+  465  cd galaxy_far_far_away
+  466  mkdir yavin_4
+  467  cd ../death_star
+  468  mv millenium_falcon ../galaxy_far_far_away/yavin_4
+  469  cd ../galaxy_far_far_away/yavin_4
+  470  mkdir x_wing
+  471  ..
+  472  ls
+  473  cd yavin_4
+  474  ls
+  475  mil
+  476  cd millenium_falcon
+  477  ls
+  478  mv princess_leia.txt ..
+  479  mv luke.txt ../x_wing
+  480  ..
+  481  mv millenium_falcon ../..
+  482  mv x_wing ../..
+  483  ..
+  484  ls
+  485  mv millenium_falcon galaxy_far_far_away
+  486  mv x_wing galaxy_far_far_away
+  487  tree
+  488  death_star
+  489  mkdir tie_fighter1 tie_fighter2 tie_fighter3
+  490  ls
+  491  mv darth_vader.txt tie_fighter1
+  492  cp storm_trooper.txt tie_fighter2 tie_fighter3
+  493  tree
+  494  cp storm_trooper.txt tie_fighter2
+  495  tree
+  496  mvdir tie_fighter1 tie_fighter2 tie_fighter3 ..
+  497  mv tie_fighter1 tie_fighter2 tie_fighter3 ..
+  498  ls
+  499  ..
+  500  ls
+  501  mv tie_fighter1 tie_fighter2 tie_fighter3 galaxy_far_far_away
+  502  tre
+  503  tree
+  504  cd galaxy_far_far_away
+  505  cd tie_fighter2
+  506  ..
+  507  rm -rf tie_fighter2
+  508  ls
+  509  rm -rf tie_fighter3
+  510  ls
+  511  cd x_wing
+  512  touch force.txt
+  513  rm -rf death_star
+  514  ls
+  515  ..
+  516  ls
+  517  mv millenium_falcon x_wing yavin_4

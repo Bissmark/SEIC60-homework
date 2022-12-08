@@ -1,0 +1,176 @@
+➜  1-mon git:(main) ✗ code .
+➜  1-mon git:(main) ✗ mkdir galaxy_far_far_away
+➜  1-mon git:(main) ✗ mkdir death_star
+➜  1-mon git:(main) ✗ touch "darth_vader.txt" "princess_leia.txt" "storm_trooper.txt"
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ mkdir tatooine
+➜  galaxy_far_far_away git:(main) ✗ cd tatooine
+➜  tatooine git:(main) ✗ touch luke.txt "ben_kenobi.txt"
+➜  tatooine git:(main) ✗ mkdir millenium_falcon
+➜  tatooine git:(main) ✗ cd millenium_falcon
+➜  millenium_falcon git:(main) ✗
+➜  millenium_falcon git:(main) ✗ touch han_solo.txt chewbaca.txt
+➜  millenium_falcon git:(main) ✗ ls
+chewbaca.txt han_solo.txt
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  tatooine git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ mv ben_kenobi.txt obi_wan.txt
+mv: rename ben_kenobi.txt to obi_wan.txt: No such file or directory
+➜  galaxy_far_far_away git:(main) ✗ cd tatooine
+➜  tatooine git:(main) ✗ mv ben_kenobi.txt obi_wan.txt
+➜  tatooine git:(main) ✗ ls
+luke.txt         millenium_falcon obi_wan.txt
+➜  tatooine git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ cp storm_trooper.txt tatooine
+cp: storm_trooper.txt: No such file or directory
+➜  death_star git:(main) ✗ ls
+➜  death_star git:(main) ✗ ls
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ ls
+commands.txt        darth_vader.txt     death_star          galaxy_far_far_away princess_leia.txt   storm_trooper.txt
+➜  1-mon git:(main) ✗ mv princess_leia.txt storm_trooper.txt darth_vader.txt death_star
+➜  1-mon git:(main) ✗ CD death_star
+➜  1-mon git:(main) ✗ ls
+commands.txt        death_star          galaxy_far_far_away
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   princess_leia.txt storm_trooper.txt
+➜  death_star git:(main) ✗ cp storm_trooper.txt tatooine
+➜  death_star git:(main) ✗ cd...
+zsh: command not found: cd...
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away/tatooine/
+➜  tatooine git:(main) ✗ ls
+luke.txt         millenium_falcon obi_wan.txt
+➜  tatooine git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ ls
+tatooine
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   princess_leia.txt storm_trooper.txt tatooine
+➜  death_star git:(main) ✗ rm tatooine
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   princess_leia.txt storm_trooper.txt
+➜  death_star git:(main) ✗ cp storm_trooper.txt tatooine
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   princess_leia.txt storm_trooper.txt tatooine
+➜  death_star git:(main) ✗ rm tatooine
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   princess_leia.txt storm_trooper.txt
+➜  death_star git:(main) ✗ cp storm_trooper.txt /Users/Andrew/Desktop/General\ Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away/tatooine
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away/tatooine
+➜  tatooine git:(main) ✗ ls
+luke.txt          millenium_falcon  obi_wan.txt       storm_trooper.txt
+➜  tatooine git:(main) ✗ mv luke.txt obi_wan.txt /Users/Andrew/Desktop/General\ Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away/tatooine/millenium_falcon
+➜  tatooine git:(main) ✗ move millenium_falcon /Users/Andrew/Desktop/General\ Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away
+zsh: command not found: move
+➜  tatooine git:(main) ✗ mv millenium_falcom /Users/Andrew/Desktop/General\ Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away
+mv: rename millenium_falcom to /Users/Andrew/Desktop/General Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away/millenium_falcom: No such file or directory
+➜  tatooine git:(main) ✗ cd
+➜  ~ cd Desktop/General\ Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away/tatooine/millenium_falcon
+➜  millenium_falcon git:(main) ✗ mv millenium_falcon /Users/Andrew/Desktop/General\ Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away
+mv: rename millenium_falcon to /Users/Andrew/Desktop/General Assembly/GASEIC60/Homework/SEIC60-homework/01-Andrew-Young/wk01/1-mon/galaxy_far_far_away/millenium_falcon: No such file or directory
+➜  millenium_falcon git:(main) ✗ mv millenium_falcon
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  millenium_falcon git:(main) ✗ mv millenium_falcon ../galaxy_far_far_away
+mv: rename millenium_falcon to ../galaxy_far_far_away: No such file or directory
+➜  millenium_falcon git:(main) ✗ mv millenium_falcon ..
+mv: millenium_falcon: No such file or directory
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  tatooine git:(main) ✗ mv millenium_falcon ..
+➜  tatooine git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ mv millenium_falcon ..
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ mv millenium_falcon death_star
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   millenium_falcon  princess_leia.txt storm_trooper.txt
+➜  death_star git:(main) ✗ mv princess_leia.txt millenium_falcon
+➜  death_star git:(main) ✗ cd millenium_falcon
+➜  millenium_falcon git:(main) ✗ rm obi_wan.txt
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ mkdir yavin_4
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd death_star/
+➜  death_star git:(main) ✗ mv millenium_falcon ..
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ mv millenium_falcon yavin_4
+➜  1-mon git:(main) ✗ mv yavin_4 galaxy_far_fat_away
+➜  1-mon git:(main) ✗ mv galaxy_far_fat_away yavin_4
+➜  1-mon git:(main) ✗ mv yavin_4 galaxy_far_far_away
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away/yavin_4
+➜  yavin_4 git:(main) ✗ mkdir x_wing
+➜  yavin_4 git:(main) ✗ ls
+chewbaca.txt      han_solo.txt      luke.txt          princess_leia.txt x_wing
+➜  yavin_4 git:(main) ✗ move princess_leia.txt yavin_4
+zsh: command not found: move
+➜  yavin_4 git:(main) ✗ mv luke.txt x_wing
+➜  yavin_4 git:(main) ✗ ls
+chewbaca.txt      han_solo.txt      princess_leia.txt x_wing
+➜  yavin_4 git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ ls
+tatooine yavin_4
+➜  galaxy_far_far_away git:(main) ✗ mkdir millenium_falcon
+➜  galaxy_far_far_away git:(main) ✗ cd yavin_4
+➜  yavin_4 git:(main) ✗ mv x_wing ..
+➜  yavin_4 git:(main) ✗ mv chewbaca.txt han_solo.txt ..
+➜  yavin_4 git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗ mv han_solo.txt chewbaca.txt millenium_falcon
+➜  galaxy_far_far_away git:(main) ✗ cd.
+zsh: command not found: cd.
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd death_star/
+➜  death_star git:(main) ✗ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+➜  death_star git:(main) ✗ mv darth_vader.txt tie_fighter_1
+➜  death_star git:(main) ✗ copy storm_trooper.txt tie_fighter_2 tie_fighter_3
+zsh: command not found: copy
+➜  death_star git:(main) ✗ cp storm_trooper.txt tie_fighter_2 tie_fighter_3
+cp: tie_fighter_2 is a directory (not copied).
+➜  death_star git:(main) ✗ cp storm_tropper.txt ../tie_fighter_2 ../tie_figther_3
+cp: ../tie_figther_3 is not a directory
+➜  death_star git:(main) ✗ cp torm_tropper.txt ../tie_fighter_2 ../tie_fighther_3
+cp: ../tie_fighther_3 is not a directory
+➜  death_star git:(main) ✗ torm_tropper.txt ../tie_fighter_2 ../tie_fighter_3
+zsh: command not found: torm_tropper.txt
+➜  death_star git:(main) ✗ cp storm_tropper.txt ../tie_fighter_2 ../tie_fighter_3
+cp: ../tie_fighter_3 is not a directory
+➜  death_star git:(main) ✗ cp storm_trooper.txt ../tie_fighter_2
+➜  death_star git:(main) ✗ cp storm_trooper.txt ../tie_fighter_3
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ..
+mv: rename tie_fighter_2 to ../tie_fighter_2: Not a directory
+mv: rename tie_fighter_3 to ../tie_fighter_3: Not a directory
+➜  death_star git:(main) ✗ mv tie_fighter_2 ..
+mv: rename tie_fighter_2 to ../tie_fighter_2: Not a directory
+➜  death_star git:(main) ✗ mv tie_fighter_2 ..
+mv: rename tie_fighter_2 to ../tie_fighter_2: Not a directory
+➜  death_star git:(main) ✗ mv tie_fighter_2 ..
+➜  death_star git:(main) ✗ mv tie_fighter_3 ..
+➜  death_star git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ mv tie_fighter_1 tie_fighter_2 tie_fighter_3 galaxy_far_far_away
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ ls
+millenium_falcon tatooine         tie_fighter_1    tie_fighter_2    tie_fighter_3    x_wing           yavin_4
+➜  galaxy_far_far_away git:(main) ✗ rm -r tie_fighter_2
+➜  galaxy_far_far_away git:(main) ✗ rm -r tie_fighter_3
+➜  galaxy_far_far_away git:(main) ✗ cd x_wing
+➜  x_wing git:(main) ✗ touch the_force.txt
+➜  x_wing git:(main) ✗ cd.
+zsh: command not found: cd.
+➜  x_wing git:(main) ✗
+➜  x_wing git:(main) ✗ cd ..
+➜  galaxy_far_far_away git:(main) ✗
+➜  galaxy_far_far_away git:(main) ✗ cd ..
+➜  1-mon git:(main) ✗ rm -r death_star
+➜  1-mon git:(main) ✗ cd galaxy_far_far_away
+➜  galaxy_far_far_away git:(main) ✗ mv x_wing yavin_4
+➜  galaxy_far_far_away git:(main) ✗ mv millenium_falcon yavin_4
+➜  galaxy_far_far_away git:(main) ✗
