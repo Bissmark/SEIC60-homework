@@ -22,7 +22,10 @@ menu.shift()
 menu.splice(1,1)
 console.log(menu)
 
-const choice = prompt("what would you like to eat?").toLowerCase()
+let choice = prompt("what would you like to eat?").toLowerCase()
+while (choice === null || choice === ""){
+    choice = prompt("No empty answer please.")
+}
 const checking = menu.filter(function(any){
     return any === choice
 })
