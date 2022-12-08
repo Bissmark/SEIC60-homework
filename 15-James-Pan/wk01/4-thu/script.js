@@ -237,10 +237,10 @@
 //     system.Neptune.satellites
 // );
 
-// if (typeof system.Mercury.radiusp == "String") {
+// if (typeof system.Mercury.radiusp == "string") {
 //   system.Mercury.radiusp = 2439;
 // }
-
+// console.log(system.Mercury.radiusp);
 // console.log(system.Mercury);
 
 // console.log(
