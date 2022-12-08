@@ -240,16 +240,22 @@
 // if (typeof system.Mercury.radiusp == "String") {
 //   system.Mercury.radiusp = 2439;
 // }
-// console.log(system.Mercury.radiusp);
-// console.log(system.Mercury.radiuse);
+
+// console.log(system.Mercury);
 
 // console.log(
 //   system.Jupiter.velocity * system.Jupiter.mass -
 //     system.Pluto.velocity * system.Pluto.mass
 // );
 
-//Planet X
-// const PlanetX = {
+//
+//
+//
+//
+//
+//
+// // Planet X
+// system.PlanetX = {
 //   radiusp: 123,
 //   name: "PlanetX",
 //   density: 6.03,
@@ -265,9 +271,17 @@
 //   mass: 220.002,
 //   inclination: 33317.15,
 // };
-// Object.assign(system, PlanetX);
 // console.log(system);
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // //The Reading List
 // const niceBooks = [
 //   { title: "Moon", author: "MJ", alreadyRead: true },
@@ -277,12 +291,19 @@
 //   { title: "Day", author: "WW", alreadyRead: true },
 // ];
 
-// for (index in niceBooks) {
-//   console.log(index, niceBooks[index]);
+// for (book in niceBooks) {
+//   console.log(book, niceBooks[book]);
 // }
 
-// if (niceBooks[index].alreadyRead === true) {
-//   console.log(`You already read ${niceBooks[index].title}`);
-// } else {
-//   console.log(`You still need to read ${niceBooks[index].title}`);
-// }
+// for (book in niceBooks)
+//   if (niceBooks[book].alreadyRead === true) {
+//     console.log(
+//       `You already read ${niceBooks[book].title} by ${niceBooks[book].author}`
+//     );
+//   } else {
+//     console.log(
+//       `You still need to read ${niceBooks[book].title} by ${niceBooks[book].author}`
+//     );
+//   }
+//
+//
