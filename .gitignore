@@ -55,3 +55,6 @@ node_modules/
 # Ignore master key for decrypting credentials and more.
 **/config/master.key
 06-Jeffrey-Fazal/06-Jeffrey-Fazal.code-workspace
+06-Jeffrey-Fazal/wk01/3-wed/.vscode/settings.json
+06-Jeffrey-Fazal/wk01/4-thu/.vscode/settings.json
+.gitignore

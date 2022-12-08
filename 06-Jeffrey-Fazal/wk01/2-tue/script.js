@@ -51,7 +51,7 @@ if (b <= 25) {
 veganFoods = ['Fruit salad', 'Tofurkey']
 nonVeganFoods = ['Steak', 'Pork Chops']
 
-let foodChoice = prompt(`What would you choose from ${veganFoods} & ${nonVeganFoods}? (type options exactly as shown)`);
+c;let foodChoice = prompt(`What would you choose from ${veganFoods} & ${nonVeganFoods}? (type options exactly as shown)`);
 
 if (foodChoice === 'Fruit salad' || foodChoice === 'Tofurkey') { // maybe a for loop to use the array?
     console.log("This cuisine is vegan friendly")
