@@ -182,7 +182,7 @@ const planTrip = function() {
 
 
     //Get on and off at Union Square but from different lines
-    if (journ1 != journ2 & onStop === 'Union Square' && offStop === 'Union Square'){
+    if (journ1 != journ2 && onStop === 'Union Square' && offStop === 'Union Square'){
         alert("All 3 subway lines intersect at Union Square,so you don't need to take the subway!")
         return
     }
