@@ -5,6 +5,8 @@ const line6 = ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor P
 
 
 const planTrip = function() {
+    trip1 = []
+    trip2 = []
     onLine = ""; onStop = ""; offLine = ""; offStop = ""
     onLine = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nWhich line would you like to get on? \n\nEnter N for N line, L for L line and 6 for 6 line.')
     while (onLine != 'n' && onLine != 'l'  && onLine != '6' && onLine != null){
@@ -315,6 +317,9 @@ colorN = []; for (let i = 0; i < lineN.length; i++){ colorN.push('black')}
 colorL = []; for (let i = 0; i < lineL.length; i++) {colorL.push('black')}
 color6 = []; for (let i = 0; i < line6.length; i++) {color6.push('black')}
 
+
+if (offStop != null){
+
 //Red as the stop getting on
 if (onLine === 'n') {colorN[lineN.indexOf(onStop)] = 'red'}
 if (onLine === 'l') {colorL[lineL.indexOf(onStop)] = 'red'}
@@ -356,7 +361,7 @@ if (onLine === '6' && onStop != 'Union Square') {
 
 
 
-//Union Square is yellow as it is an interchange station
+//Union Square is orange as it is an interchange station
 if (onLine === 'n' && (offLine === 'l' || offLine === '6') && onStop != 'Union Square') {
     colorN[lineN.indexOf('Union Square')] = 'orange'}
 if (onLine === 'l' && (offLine === 'n' || offLine === '6') && onStop != 'Union Square') {
@@ -364,18 +369,18 @@ if (onLine === 'l' && (offLine === 'n' || offLine === '6') && onStop != 'Union S
 if (onLine === '6' && (offLine === 'n' || offLine === 'l') && onStop != 'Union Square') {
     color6[line6.indexOf('Union Square')] = 'orange'}
 
-if (offLine === 'n') {
+if (offLine === 'n' && onStop != 'Union Square') {
+    colorN[lineN.indexOf('Union Square')] = 'orange'
     for (let i = 0; i < trip2.length - 1; i++){
-        colorN[lineN.indexOf(trip2[i])] = 'yellow'
-        colorN[lineN.indexOf('Union Square')] = 'orange'}}
-if (offLine === 'l') {
+        colorN[lineN.indexOf(trip2[i])] = 'yellow'}}
+if (offLine === 'l' && onStop != 'Union Square') {
+    colorL[lineL.indexOf('Union Square')] = 'orange'
     for (let i = 0; i < trip2.length - 1; i++){
-        colorL[lineL.indexOf(trip2[i])] = 'yellow'
-        colorL[lineL.indexOf('Union Square')] = 'orange'}}
-if (offLine === '6') {
+        colorL[lineL.indexOf(trip2[i])] = 'yellow'}}
+if (offLine === '6' && onStop != 'Union Square') {
+    color6[line6.indexOf('Union Square')] = 'orange'
     for (let i = 0; i < trip2.length - 1; i++){
-        color6[line6.indexOf(trip2[i])] = 'yellow'
-        color6[line6.indexOf('Union Square')] = 'orange'}}
+        color6[line6.indexOf(trip2[i])] = 'yellow'}}
    
 //Green as the stop getting off
 if (offLine === 'n') {colorN[lineN.indexOf(offStop)] = 'green'}
@@ -388,6 +393,9 @@ if (onLine === 'l' && offStop === 'Union Square') {colorL[lineL.indexOf('Union S
 if (onLine === '6' && offStop === 'Union Square') {color6[line6.indexOf('Union Square')] = 'green'}
 
     
+
+}
+
 
 
 
@@ -415,10 +423,13 @@ text6 = `6 Line: [${spanColor('Grand Central', color6[0])},
 
 
 textTot = ""
+
 if (trip1.length + trip2.length > 0){
     textTot = `From ${onStop} on the ${onLine.toUpperCase()} Line to ${offStop} on the ${offLine.toUpperCase()} Line:  
     <font size= "7px">${trip1.length + trip2.length} stops</font> in total.`
-}
+    }
+
+
 
 
 
