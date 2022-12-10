@@ -461,15 +461,13 @@ if (trip1.length + trip2.length > 0){
 
 
 
-
-document.getElementById("lineN").innerHTML = textN
-document.getElementById("lineL").innerHTML = textL
-document.getElementById("line6").innerHTML = text6
-document.getElementById("journey").innerHTML = textJourn
-document.getElementById("total").innerHTML = textTot
-
-
-
-
-
-
+try{
+    document.getElementById("lineN").innerHTML = textN
+    document.getElementById("lineL").innerHTML = textL
+    document.getElementById("line6").innerHTML = text6
+    document.getElementById("journey").innerHTML = textJourn
+    document.getElementById("total").innerHTML = textTot
+}
+catch{
+    alert('The script should be used together with the html I made!')
+}
