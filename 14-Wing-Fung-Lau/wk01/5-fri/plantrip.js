@@ -322,10 +322,6 @@ if (onLine === '6') {color6[line6.indexOf(onStop)] = 'red'}
 
 
 
-
-
-
-console.log(trip1)
 //Union Square as the stop getting on
 if (onStop === 'Union Square' && offLine === 'n' && onLine != offLine) {
     colorN[lineN.indexOf('Union Square')] = 'red'
@@ -394,13 +390,6 @@ if (onLine === '6' && offStop === 'Union Square') {color6[line6.indexOf('Union S
     
 
 
-console.log(`online ${onLine}`)
-console.log(`offline ${offLine}`)
-console.log(`trip1 ${trip1}`)
-console.log(`trip2 ${trip2}`)
-console.log(colorN)
-console.log(colorL)
-console.log(color6)
 
 
 const spanColor = function(stop, index) {
