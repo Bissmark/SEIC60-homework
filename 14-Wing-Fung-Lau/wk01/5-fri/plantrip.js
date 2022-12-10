@@ -3,7 +3,9 @@ const lineL = ['8th', '6th', 'Union Square', '3rd', '1st']
 const line6 = ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']
 
 
+
 const planTrip = function() {
+    onLine = ""; onStop = ""; offLine = ""; offStop = ""
     onLine = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nWhich line would you like to get on? \n\nEnter N for N line, L for L line and 6 for 6 line.')
     while (onLine != 'n' && onLine != 'l'  && onLine != '6' && onLine != null){
         onStop = ""
@@ -284,6 +286,134 @@ const planTrip = function() {
 
 
 planTrip()
+
+
+
+//////Some visual information!
+
+
+//Color arrays
+
+//Default colors
+colorN = []; for (let i = 0; i < lineN.length; i++){ colorN.push('black')}
+colorL = []; for (let i = 0; i < lineL.length; i++) {colorL.push('black')}
+color6 = []; for (let i = 0; i < line6.length; i++) {color6.push('black')}
+
+//Red as the stop getting on
+if (onLine === 'n') {colorN[lineN.indexOf(onStop)] = 'red'}
+if (onLine === 'l') {colorL[lineL.indexOf(onStop)] = 'red'}
+if (onLine === '6') {color6[line6.indexOf(onStop)] = 'red'}
+
+
+
+
+//Yellow as the stops travelling through
+if (onLine === 'n' && onStop != 'Union Square') {
+    for (let i = 0; i < trip1.length - 1; i++){
+        colorN[lineN.indexOf(trip1[i])] = 'yellow'}}
+if (onLine === 'l' && onStop != 'Union Square') {
+    for (let i = 0; i < trip1.length - 1; i++){
+        colorL[lineL.indexOf(trip1[i])] = 'yellow' }}
+if (onLine === '6' && onStop != 'Union Square') {
+    for (let i = 0; i < trip1.length - 1; i++){
+        color6[line6.indexOf(trip1[i])] = 'yellow'}}
+
+
+//Union Square as the stop getting on
+if (onStop === 'Union Square' && offLine === 'n') {
+    for (let i = 0; i < trip1.length - 1; i++){
+    colorN[lineN.indexOf(trip1[i])] = 'yellow'}
+}
+if (onStop === 'Union Square' && offLine === 'l') {
+    for (let i = 0; i < trip1.length - 1; i++){
+    colorL[lineL.indexOf(trip1[i])] = 'yellow'}
+}
+if (onStop === 'Union Square' && offLine === '6') {
+    for (let i = 0; i < trip1.length - 1; i++){
+    color6[line6.indexOf(trip1[i])] = 'yellow'}
+}
+
+
+
+
+
+
+
+
+//Union Square is yellow as it is an interchange station
+if (onLine === 'n' && (offLine === 'l' || offLine === '6') && onStop != 'Union Square') {
+    colorN[lineN.indexOf('Union Square')] = 'yellow'}
+if (onLine === 'l' && (offLine === 'n' || offLine === '6') && onStop != 'Union Square') {
+    colorL[lineL.indexOf('Union Square')] = 'yellow'}
+if (onLine === '6' && (offLine === 'n' || offLine === 'l') && onStop != 'Union Square') {
+    color6[line6.indexOf('Union Square')] = 'yellow'}
+
+if (offLine === 'n') {
+    for (let i = 0; i < trip2.length - 1; i++){
+        colorN[lineN.indexOf(trip2[i])] = 'yellow'
+        colorN[lineN.indexOf('Union Square')] = 'yellow'}}
+if (offLine === 'l') {
+    for (let i = 0; i < trip2.length - 1; i++){
+        colorL[lineL.indexOf(trip2[i])] = 'yellow'
+        colorL[lineL.indexOf('Union Square')] = 'yellow'}}
+if (offLine === '6') {
+    for (let i = 0; i < trip2.length - 1; i++){
+        color6[line6.indexOf(trip2[i])] = 'yellow'
+        color6[line6.indexOf('Union Square')] = 'yellow'}}
+   
+//Green as the stop getting off
+if (offLine === 'n') {colorN[lineN.indexOf(offStop)] = 'green'}
+if (offLine === 'l') {colorL[lineL.indexOf(offStop)] = 'green'}
+if (offLine === '6') {color6[line6.indexOf(offStop)] = 'green'}
+
+    
+
+    
+
+
+console.log(`online ${onLine}`)
+console.log(`offline ${offLine}`)
+console.log(`trip1 ${trip1}`)
+console.log(`trip2 ${trip2}`)
+console.log(colorN)
+console.log(colorL)
+console.log(color6)
+
+
+const spanColor = function(stop, index) {
+    return `<span style='color:${index}'>'${stop}'</span>`
+}
+
+
+textN = `N Line: [${spanColor('Times Square', colorN[0])}, 
+        ${spanColor('34th', colorN[1])}, ${spanColor('28th', colorN[2])}, 
+        ${spanColor('23rd', colorN[3])}, ${spanColor('Union Square', colorN[4])}, 
+        ${spanColor('8th', colorN[5])}]`
+
+
+textL = `L Line: [${spanColor('8th', colorL[0])}, 
+        ${spanColor('6th', colorL[1])}, ${spanColor('Union Square', colorL[2])}, 
+        ${spanColor('3rd', colorL[3])}, ${spanColor('1st', colorL[4])}]`
+
+
+text6 = `6 Line: [${spanColor('Grand Central', color6[0])}, 
+        ${spanColor('33rd', color6[1])}, ${spanColor('28th', color6[2])}, 
+        ${spanColor('23rd', color6[3])}, ${spanColor('Union Square', color6[4])}, 
+        ${spanColor('Astor Place', color6[5])}]`
+
+
+textTot = ""
+if (trip1.length + trip2.length > 0){
+    textTot = `From ${onStop} on the ${onLine.toUpperCase()} Line to ${offStop} on the ${offLine.toUpperCase()} Line:  
+    <font size= "7px">${trip1.length + trip2.length} stops</font> in total.`
+}
+
+
+
+document.getElementById("lineN").innerHTML = textN
+document.getElementById("lineL").innerHTML = textL
+document.getElementById("line6").innerHTML = text6
+document.getElementById("total").innerHTML = textTot
 
 
 
