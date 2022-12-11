@@ -27,13 +27,13 @@ const getDirection = function (startLine, startStop, endLine, endStop) {
     const interStopIndices = subwaySystem.map((line) => {
         return line.stops.indexOf(interStop);
     })
-    console.log(interStopIndices)
+    //console.log(interStopIndices)
 
     //get all lines (line name only) in the system 
     const lines = subwaySystem.map((line) => {
         return line.lineName;
     })
-    console.log(lines);
+    //console.log(lines);
 
     //the index of the start line in the subwaySystem array.
     const startLineIndex = lines.indexOf(startLine);
@@ -43,7 +43,7 @@ const getDirection = function (startLine, startStop, endLine, endStop) {
     const startStopIndex = allStopsOfStartLine.indexOf(startStop);
     //the position (index) of the intersection stop in the start line
     const interIndexInStartLine = interStopIndices[startLineIndex];
-    console.log(`The start line index is ${startLineIndex} where the intersection point index at ${interIndexInStartLine} and start stop index is ${startStopIndex}`);
+    //console.log(`The start line index is ${startLineIndex} where the intersection point index at ${interIndexInStartLine} and start stop index is ${startStopIndex}`);
 
 
     //the index of the end line in the subwaySystem array.
@@ -54,7 +54,7 @@ const getDirection = function (startLine, startStop, endLine, endStop) {
     const endStopIndex = allStopsOfEndLine.indexOf(endStop);
     // the index of the instersection stop in the end line
     const interIndexInEndLine = interStopIndices[endLineIndex]
-    console.log(`The end line index is ${endLineIndex} where the intersection point index at ${interIndexInEndLine} and end stop index is ${endStopIndex}`);
+    //console.log(`The end line index is ${endLineIndex} where the intersection point index at ${interIndexInEndLine} and end stop index is ${endStopIndex}`);
 
     // the array of all stops in the start line that a rider will go through.
     let startLineStopPasses = [];
@@ -95,13 +95,13 @@ const getDirection = function (startLine, startStop, endLine, endStop) {
     
     // total number of stops that a rider goes through
     const totalStops = startLineStopPasses.length + endLineStopPasses.length;
-    console.log(totalStops)
+    //console.log(totalStops)
 
     // combine all instruction together
     instruction = `${firstInstruction} \n${secondInstruction} \nTotal stops: ${totalStops}.`;
 
-    console.log(startLineStopPasses);
-    console.log(endLineStopPasses);
+    // console.log(startLineStopPasses);
+    // console.log(endLineStopPasses);
     console.log(instruction)
 
     return instruction;
