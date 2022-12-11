@@ -1,3 +1,5 @@
+//MTA Lab - Subway System
+
 const subwayLines = {
 
     Nline: ['Times Square', '34th', '28th_N', '23rd', 'Union Square_N', '8th'],
@@ -10,14 +12,23 @@ const subwayLines = {
 
 const subwaySystem = function (lineStart, start, lineEnd, end) {
 
-    const lineStops = subwayLines.Nline.join(', ')
+    const stop1 = subwayLines.Nline.indexOf(start)
+    const stop2 = subwayLines.Nline.indexOf(end)
+    let lineStops = []
 
-    for (i=0; i<lineStart.length;i++){
+    console.log(`You are getting on the train at ${start} on the ${lineStart} Line.`);
 
-        return console.log(`You must travel through the following stops on the ${lineStart} Line: ${lineStops}.`);
-        }
+    for (i=stop1+1; i<stop2;i++){
+
+        lineStops.push(subwayLines.Nline[i])
+
+}
+    console.log(`You must travel through the following stops on the ${lineStart} Line: ${lineStops.join(', ')}.`);
+    console.log(`${stop2 - stop1} stops in total.`);
+    console.log(`Have a good day!`);
+
 }
 
-subwaySystem ('N', 'Times Square', '6', '33rd')
+subwaySystem ('N', 'Times Square', 'N', '8th')
 
 
