@@ -27,6 +27,13 @@
 //
 //
 //Memo: still fix spaces and commas.
+//
+//
+//
+//
+//
+//
+
 const stationNetwork = [
   {
     lineName: "N Line",
@@ -63,7 +70,7 @@ const destinationLine = prompt(
 );
 const destinationStation = prompt(`please enter your destination station`);
 
-const test1 = function (
+const ticketMachine = function (
   startingLine,
   startingStation,
   destinationLine,
@@ -364,10 +371,10 @@ const test1 = function (
         const copyArr1 = stationNetwork[2].stationNames.slice();
         const reverseArr1 = copyArr1.reverse();
         const destinationLineStops = reverseArr1.slice(
-          reverseArr1.indexOf(intersectionLline) + 1,
+          reverseArr1.indexOf(intersection6line) + 1,
           reverseArr1.indexOf(destinationStation)
         );
-        return `Your must travel through the following stops on the ${startingLine}:${intersectionNline}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationLineStops},${destinationStation}.\n${
+        return `Your must travel through the following stops on the ${startingLine}:${intersectionNline}.\nChange at ${intersectionNline}.\nYour journey continues through the following stops:${destinationLineStops},${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
@@ -409,7 +416,7 @@ const test1 = function (
           stationNetwork[0].stationNames.indexOf(intersectionNline) + 1,
           stationNetwork[0].stationNames.indexOf(destinationStation)
         );
-        return `Your must travel through the following stops on the ${startingLine}:${intersectionLline}.\nChange at ${intersectionLline}.\nYour journey continues through the following stops:${destinationStation}.\n${
+        return `Your must travel through the following stops on the ${startingLine}:${startingLineStops},${intersectionLline}.\nChange at ${intersectionLline}.\nYour journey continues through the following stops:${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
@@ -453,7 +460,7 @@ const test1 = function (
           stationNetwork[0].stationNames.indexOf(intersectionNline) + 1,
           stationNetwork[0].stationNames.indexOf(destinationStation)
         );
-        return `Your must travel through the following stops on the ${startingLine}:${intersectionLline}.\nChange at ${intersectionLline}.\nYour journey continues through the following stops:${destinationStation}.\n${
+        return `Your must travel through the following stops on the ${startingLine}:${startingLineStops},${intersectionLline}.\nChange at ${intersectionLline}.\nYour journey continues through the following stops:${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
@@ -495,7 +502,7 @@ const test1 = function (
           stationNetwork[2].stationNames.indexOf(intersection6line) + 1,
           stationNetwork[2].stationNames.indexOf(destinationStation)
         );
-        return `Your must travel through the following stops on the ${startingLine}:${intersectionLline}.\nChange at ${intersectionLline}.\nYour journey continues through the following stops:${destinationStation}.\n${
+        return `Your must travel through the following stops on the ${startingLine}:${startingLineStops},${intersectionLline}.\nChange at ${intersectionLline}.\nYour journey continues through the following stops:${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
@@ -581,6 +588,27 @@ const test1 = function (
           stationNetwork[0].stationNames.indexOf(intersectionNline) + 1,
           stationNetwork[0].stationNames.indexOf(destinationStation)
         );
+        return `Your must travel through the following stops on the ${startingLine}:${startingLineStops},${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationStation}.\n${
+          startingLineStops.length + destinationLineStops.length + 2
+        } stops in total.`;
+      }
+      if (
+        stationNetwork[2].stationNames.indexOf(startingStation) >
+          stationNetwork[2].stationNames.indexOf(intersection6line) &&
+        stationNetwork[0].stationNames.indexOf(intersectionNline) <
+          stationNetwork[0].stationNames.indexOf(destinationStation) &&
+        stationNetwork[0].stationNames.indexOf(destinationStation) > 4
+      ) {
+        const copyArr = stationNetwork[2].stationNames.slice();
+        const reverseArr = copyArr.reverse();
+        const startingLineStops = reverseArr.slice(
+          reverseArr.indexOf(startingStation) + 1,
+          reverseArr.indexOf(intersection6line)
+        );
+        const destinationLineStops = stationNetwork[0].stationNames.slice(
+          stationNetwork[0].stationNames.indexOf(intersectionNline) + 1,
+          stationNetwork[0].stationNames.indexOf(destinationStation)
+        );
         return `Your must travel through the following stops on the ${startingLine}:${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
@@ -595,33 +623,16 @@ const test1 = function (
         const copyArr = stationNetwork[2].stationNames.slice();
         const reverseArr = copyArr.reverse();
         const startingLineStops = reverseArr.slice(
-          reverseArr.indexOf(intersection6line) + 1,
-          reverseArr.indexOf(destinationStation)
+          reverseArr.indexOf(startingStation) + 1,
+          reverseArr.indexOf(intersection6line)
         );
-        const destinationLineStops = stationNetwork[0].stationNames.slice(
-          stationNetwork[0].stationNames.indexOf(intersectionNline) + 1,
-          stationNetwork[0].stationNames.indexOf(destinationStation)
+        const copyArr1 = stationNetwork[0].stationNames.slice();
+        const reverseArr1 = copyArr1.reverse();
+        const destinationLineStops = reverseArr1.slice(
+          reverseArr1.indexOf(intersectionNline) + 1,
+          reverseArr1.indexOf(destinationStation)
         );
-        return `Your must travel through the following stops on the ${startingLine}:${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationStation}.\n${
-          startingLineStops.length + destinationLineStops.length + 2
-        } stops in total.`;
-      }
-      if (
-        stationNetwork[2].stationNames.indexOf(startingStation) >
-          stationNetwork[2].stationNames.indexOf(intersection6line) &&
-        stationNetwork[0].stationNames.indexOf(intersectionNline) <
-          stationNetwork[0].stationNames.indexOf(destinationStation) &&
-        stationNetwork[0].stationNames.indexOf(destinationStation) > 4
-      ) {
-        const startingLineStops = stationNetwork[2].stationNames.slice(
-          stationNetwork[2].stationNames.indexOf(startingStation) + 1,
-          stationNetwork[2].stationNames.indexOf(intersection6line)
-        );
-        const destinationLineStops = stationNetwork[0].stationNames.slice(
-          stationNetwork[0].stationNames.indexOf(intersectionNline) + 1,
-          stationNetwork[0].stationNames.indexOf(destinationStation)
-        );
-        return `Your must travel through the following stops on the ${startingLine}:${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationStation}.\n${
+        return `Your must travel through the following stops on the ${startingLine}:${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationLineStops},${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
@@ -649,6 +660,31 @@ const test1 = function (
         } stops in total.`;
       }
       if (
+        stationNetwork[2].stationNames.indexOf(startingStation) >
+          stationNetwork[2].stationNames.indexOf(intersection6line) &&
+        stationNetwork[1].stationNames.indexOf(intersectionLline) >
+          stationNetwork[1].stationNames.indexOf(destinationStation) &&
+        stationNetwork[1].stationNames.indexOf(destinationStation) < 2
+      ) {
+        const copyArr = stationNetwork[2].stationNames.slice();
+        const reverseArr = copyArr.reverse();
+        const startingLineStops = reverseArr.slice(
+          reverseArr.indexOf(startingStation) + 1,
+          reverseArr.indexOf(intersection6line)
+        );
+
+        const copyArr1 = stationNetwork[1].stationNames.slice();
+        const reverseArr1 = copyArr1.reverse();
+        const destinationLineStops = reverseArr1.slice(
+          reverseArr1.indexOf(intersectionLline) + 1,
+          reverseArr1.indexOf(destinationStation)
+        );
+
+        return `Your must travel through the following stops on the ${startingLine}:${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationLineStops},${destinationStation}.\n${
+          startingLineStops.length + destinationLineStops.length + 2
+        } stops in total.`;
+      }
+      if (
         stationNetwork[2].stationNames.indexOf(startingStation) <
           stationNetwork[2].stationNames.indexOf(intersection6line) &&
         stationNetwork[1].stationNames.indexOf(intersectionLline) <
@@ -664,29 +700,6 @@ const test1 = function (
           stationNetwork[1].stationNames.indexOf(destinationStation)
         );
         return `Your must travel through the following stops on the ${startingLine}:${startingLineStops},${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationLineStops},${destinationStation}.\n${
-          startingLineStops.length + destinationLineStops.length + 2
-        } stops in total.`;
-      }
-      if (
-        stationNetwork[2].stationNames.indexOf(startingStation) >
-          stationNetwork[2].stationNames.indexOf(intersection6line) &&
-        stationNetwork[1].stationNames.indexOf(intersectionLline) >
-          stationNetwork[1].stationNames.indexOf(destinationStation) &&
-        stationNetwork[1].stationNames.indexOf(destinationStation) < 2
-      ) {
-        const copyArr = stationNetwork[2].stationNames.slice();
-        const reverseArr = copyArr.reverse();
-        const startingLineStops = reverseArr.slice(
-          reverseArr.indexOf(startingStation) + 1,
-          reverseArr.indexOf(intersection6line)
-        );
-        const copyArr1 = stationNetwork[1].stationNames.slice();
-        const reverseArr1 = copyArr1.reverse();
-        const destinationLineStops = reverseArr1.slice(
-          reverseArr1.indexOf(intersectionLline) + 1,
-          reverseArr1.indexOf(destinationStation)
-        );
-        return `Your must travel through the following stops on the ${startingLine}:${intersection6line}.\nChange at ${intersection6line}.\nYour journey continues through the following stops:${destinationLineStops},${destinationStation}.\n${
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
@@ -716,7 +729,12 @@ const test1 = function (
 };
 
 console.log(
-  test1(startingLine, startingStation, destinationLine, destinationStation)
+  ticketMachine(
+    startingLine,
+    startingStation,
+    destinationLine,
+    destinationStation
+  )
 );
 
 //
