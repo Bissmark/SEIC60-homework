@@ -1,205 +1,144 @@
-const lineN = ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th']
-const lineL = ['8th', '6th', 'Union Square', '3rd', '1st']
-const line6 = ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']
+const subwaySystem = [
+    {line: 'N', stops: ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th']},
+    {line: 'L', stops: ['8th', '6th', 'Union Square', '3rd', '1st']},
+    {line: '6', stops: ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']}
+]
 
-
+const lineVal = subwaySystem.map(function(l) {return l.line})
 
 const planTrip = function() {
-    trip1 = []
-    trip2 = []
+    trip1 = []; trip2 = []
     onLine = ""; onStop = ""; offLine = ""; offStop = ""
-    onLine = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nWhich line would you like to get on? \n\nEnter N for N line, L for L line and 6 for 6 line.')
-    while (onLine != 'n' && onLine != 'l'  && onLine != '6' && onLine != null){
-        onStop = ""
-        alert('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThere are 3 subway lines only: N line, L line and 6 line. Please choose the correct line!')
-        onLine = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nWhich line would you like to get on? \n\nEnter N for N line, L for L line and 6 for 6 line.')
-        if (onLine != null) {onLine = onLine.toLowerCase()}  
+    let lineInfo1 = ""
+    for (let i = -1; i< lineVal.length; i++) {
+        if (i === -1) {lineInfo1 = `Enter `}
+        if (i === 0 && lineVal.length === 1) {lineInfo1 + `${lineVal[i]} for ${lineVal[i]} line.`}
+        if (i >= 0 && i != lineVal.length - 1) {
+            lineInfo1 = lineInfo1 + `${lineVal[i]} for ${lineVal[i]} line, `}
+        if (i === lineVal.length - 1) {
+            lineInfo1 = lineInfo1 + `and ${lineVal[i]} for ${lineVal[i]} line.`}
     }
-    if (onLine === null){
-        alert('Come again when you\'ve made up your mind to travel somewhere!'); return
+    let lineInfo2 = ""
+    for (let i = 0; i< lineVal.length; i++) {
+        if (i === 0 && lineVal.length === 1) {`${lineVal[i]} line.`}
+        if (i >= 0 && i != lineVal.length - 1) {
+            lineInfo2 = lineInfo2 + `${lineVal[i]} line, `}
+        if (i === lineVal.length - 1) {
+            lineInfo2 = lineInfo2 + `and ${lineVal[i]} line.`
+        }
     }
-    if (onLine != null) {onLine = onLine.toLowerCase()}
-    if (onLine === 'n') {
-        onStop = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThe N line has the following stops: Times Square, 34th, 28th, 23rd, Union Square, and 8th.\n\nPlease enter the stop you would like to get on.')
-        if (onStop != null) {onStop = onStop.toLowerCase()}
-    }
-    if (onLine === 'l') {
-        onStop = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThe L line has the following stops: 8th, 6th, Union Square, 3rd, and 1st.\n\nPlease enter the stop you would like to get on.')
-        if (onStop != null) {onStop = onStop.toLowerCase()}
-    }
-    if (onLine === '6') {
-        onStop = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThe 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.\n\nPlease enter the stop you would like to get on.')
-        if (onStop != null) {onStop = onStop.toLowerCase()}
-    }
+
+    let tobeVerb = ""; if (lineVal.length === 1) {tobeVerb = 'is'} else {tobeVerb = 'are'}
+    let lineOrlines = ""; if (lineVal.length === 1) {lineOrlines = 'line'} else {lineOrlines = 'lines'}
+
+    const GetOnSignal = 'GET ON GET ON GET ON GET ON GET ON GET ON'
+    const onlineQuestion =`${GetOnSignal} \n\nWhich line would you like to get on? \n\n${lineInfo1}`
+
+    onLine = prompt(onlineQuestion)
     
-
- 
-    while (true){
-        if (onStop === null) {alert('Come again when you\'ve made up your mind to travel somewhere!'); return}
-
-        if (onLine === 'n' && onStop != 'times square' && onStop != '34th' && onStop != '28th' &&
-            onStop != '23rd' && onStop != 'union square' && onStop != '8th' && onStop != 'ts' && onStop != 'us') {
-            alert('GET ON GET ON GET ON GET ON GET ON GET ON \n\nIncorrect stop!')
-            onStop = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThe N line has the following stops: Times Square, 34th, 28th, 23rd, Union Square, and 8th.\n\nPlease enter the stop you would like to get on.')
-            if (onStop != null) {onStop = onStop.toLowerCase()}
-        }
-        if (onLine === 'n' && (onStop === 'times square' || onStop === '34th' || onStop === '28th' ||
-        onStop === '23rd' || onStop === 'union square' || onStop === '8th' || onStop === 'ts' || 
-        onStop === 'us')){
-            break
-        }
-
-        if (onLine === 'l' && onStop != '8th' && onStop != '6th' && onStop != 'union square' &&
-            onStop != '3rd' && onStop != '1st' && onStop != 'us') {
-            alert('GET ON GET ON GET ON GET ON GET ON GET ON \n\nIncorrect stop!')
-            onStop = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThe L line has the following stops: 8th, 6th, Union Square, 3rd, and 1st.\n\nPlease enter the stop you would like to get on.')
-            if (onStop != null) {onStop = onStop.toLowerCase()}
-        }
-        if (onLine === 'l' && (onStop === '8th' || onStop === '6th' || onStop === 'union square' ||
-        onStop === '3rd' || onStop === '1st' || onStop === 'us')){
-            break
-        }  
-
-        if (onLine === '6' && onStop != 'grand central' && onStop != '33rd' && onStop != '28th' &&
-            onStop != '23rd' && onStop != 'union square' && onStop != 'astor place' && onStop != 'gc' && 
-            onStop != 'us' && onStop != 'ap') {
-            alert('GET ON GET ON GET ON GET ON GET ON GET ON \n\nIncorrect stop!')
-            onStop = prompt('GET ON GET ON GET ON GET ON GET ON GET ON \n\nThe 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.\n\nPlease enter the stop you would like to get on.')
-            if (onStop != null) {onStop = onStop.toLowerCase()}
-        }
-        if (onLine === '6' && (onStop === 'grand central' || onStop === '33rd' || onStop === '28th' ||
-        onStop === '23rd' || onStop === 'union square' || onStop === 'astor place' || onStop === 'gc' || 
-        onStop === 'us' || onStop === 'ap')){
-            break
-        }  
+    if (onLine != null) {onLine = onLine.toUpperCase()}
+    while (lineVal.indexOf(onLine) < 0 && onLine != null){
+        alert(`${GetOnSignal} \n\nThere ${tobeVerb} ${lineVal.length} subway ${lineOrlines} only: ${lineInfo2} Please choose the correct line!`)
+        onLine = prompt(onlineQuestion)
+        if (onLine != null) {onLine = onLine.toUpperCase()}  
     }
-
-
-
-
+    if (onLine === null) {alert('Come again when you\'ve made up your mind to travel somewhere!'); return}
     
+    const onStopsInfo = `The ${onLine} line has the following ${subwaySystem[lineVal.indexOf(onLine)].stops.length} stops: \n` + 
+    `${subwaySystem[lineVal.indexOf(onLine)].stops.join(', ')}\n\n` + 
+    `Please enter the stop you would like to get on.`
+
+    onStop = prompt(`${GetOnSignal} \n\n` + onStopsInfo)
+        
+    if (onStop != null) {onStop = onStop.toLowerCase()}
+    
+    const onStopsAbbre = subwaySystem[lineVal.indexOf(onLine)].stops.map(function(stop) {
+        if (stop.indexOf(' ') > 0) {
+            return stop.split(' ').map(word => word[0].toLowerCase()).join("") }})
 
 
-
-
-
-
-
-    offLine = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nWhich line would you like to get off? \n\nEnter N for N line, L for L line and 6 for 6 line.')
-    while (offLine != 'n' && offLine != 'l'  && offLine != '6' && offLine != null){
-        offStop = ""
-        alert('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThere are 3 subway lines only: N line, L line and 6 line. Please choose the correct line!')
-        offLine = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nWhich line would you like to get off? \n\nEnter N for N line, L for L line and 6 for 6 line.')
-        if (offLine != null) {offLine = offLine.toLowerCase()}  
-    }
-    if (offLine === null){
-        alert('Come again when you\'ve made up your mind to travel somewhere!'); return
-    }
-    if (offLine != null) {offLine = offLine.toLowerCase()}
-    if (offLine === 'n') {
-        offStop = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThe N line has the following stops: Times Square, 34th, 28th, 23rd, Union Square, and 8th.\n\nPlease enter the stop you would like to get on.')
-        if (offStop != null) {offStop = offStop.toLowerCase()}
-    }
-    if (offLine === 'l') {
-        offStop = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThe L line has the following stops: 8th, 6th, Union Square, 3rd, and 1st.\n\nPlease enter the stop you would like to get on.')
-        if (offStop != null) {offStop = offStop.toLowerCase()}
-    }
-    if (offLine === '6') {
-        offStop = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThe 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.\n\nPlease enter the stop you would like to get on.')
-        if (offStop != null) {offStop = offStop.toLowerCase()}
-    }
-
- 
     while (true){
-        if (offLine === null && offStop === "") {break}
-        if (offStop === null) {alert('Come again when you\'ve made up your mind to travel somewhere!'); return}
+        if (onStop === null) {alert('Come again when you\'ve made up your mind to travel somewhere!'); 
+            return
+        }
+        if (subwaySystem[lineVal.indexOf(onLine)].stops.map(stop => stop.toLowerCase()).indexOf(onStop) < 0 && 
+        onStopsAbbre.indexOf(onStop) < 0) {
+            alert(`${GetOnSignal} \n\nIncorrect stop!`)
+            onStop = prompt(`${GetOnSignal} \n\n` + onStopsInfo)
+            if (onStop != null) {onStop = onStop.toLowerCase()}
+        }
+        if (subwaySystem[lineVal.indexOf(onLine)].stops.map(stop => stop.toLowerCase()).indexOf(onStop) >= 0 || 
+        onStopsAbbre.indexOf(onStop) >= 0) {
+            break
+        }
+    }
 
-        if (offLine === 'n' && offStop != 'times square' && offStop != '34th' && offStop != '28th' &&
-            offStop != '23rd' && offStop != 'union square' && offStop != '8th' && offStop != 'ts' && 
-            offStop != 'us') {
-            alert('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nIncorrect stop!')
-            offStop = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThe N line has the following stops: Times Square, 34th, 28th, 23rd, Union Square, and 8th.\n\nPlease enter the stop you would like to get on.')
+    const GetOffSignal = 'GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF'
+    const offlineQuestion =`${GetOffSignal} \n\nWhich line would you like to get off? \n\n${lineInfo1}`
+
+    offLine = prompt(offlineQuestion)
+
+    if (offLine != null) {offLine = offLine.toUpperCase()}
+
+    while (lineVal.indexOf(offLine) < 0 && offLine != null){
+        alert(`${GetOnSignal} \n\nThere ${tobeVerb} ${lineVal.length} subway ${lineOrlines} only: ${lineInfo2} Please choose the correct line!`)
+        offLine = prompt(offlineQuestion)
+        if (offLine != null) {offLine = offLine.toUpperCase()}  
+    }
+
+    if (offLine === null) {alert('Come again when you\'ve made up your mind to travel somewhere!'); return}
+    
+    const offStopsInfo = `The ${offLine} line has the following ${subwaySystem[lineVal.indexOf(offLine)].stops.length} stops: \n` + 
+    `${subwaySystem[lineVal.indexOf(offLine)].stops.join(', ')}\n\n` + 
+    `Please enter the stop you would like to get off.`
+
+    offStop = prompt(`${GetOffSignal} \n\n` + offStopsInfo)
+        
+    if (offStop != null) {offStop = offStop.toLowerCase()}
+    
+    const offStopsAbbre = subwaySystem[lineVal.indexOf(offLine)].stops.map(function(stop) {
+        if (stop.indexOf(' ') > 0) {
+            return stop.split(' ').map(word => word[0].toLowerCase()).join("") }})
+
+    while (true){
+        if (offStop === null) {alert('Come again when you\'ve made up your mind to travel somewhere!'); 
+            return
+        }
+        if (subwaySystem[lineVal.indexOf(offLine)].stops.map(stop => stop.toLowerCase()).indexOf(offStop) < 0 && 
+        offStopsAbbre.indexOf(offStop) < 0) {
+            alert(`${GetOffSignal} \n\nIncorrect stop! testing`)
+            offStop = prompt(`${GetOffSignal} \n\n` + offStopsInfo)
             if (offStop != null) {offStop = offStop.toLowerCase()}
         }
-        if (offLine === 'n' && (offStop === 'times square' || offStop === '34th' || offStop === '28th' ||
-        offStop === '23rd' || offStop === 'union square' || offStop === '8th' || offStop === 'ts' || 
-        offStop === 'us')){
+        if (subwaySystem[lineVal.indexOf(offLine)].stops.map(stop => stop.toLowerCase()).indexOf(offStop) >= 0 || 
+        offStopsAbbre.indexOf(offStop) >= 0) {
             break
         }
-
-        if (offLine === 'l' && offStop != '8th' && offStop != '6th' && offStop != 'union square' &&
-            offStop != '3rd' && offStop != '1st' && offStop != 'us') {
-            alert('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nIncorrect stop!')
-            offStop = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThe L line has the following stops: 8th, 6th, Union Square, 3rd, and 1st.\n\nPlease enter the stop you would like to get on.')
-            if (offStop != null) {offStop = offStop.toLowerCase()}
-        }
-        if (offLine === 'l' && (offStop === '8th' || offStop === '6th' || offStop === 'union square' ||
-        offStop === '3rd' || offStop === '1st' || offStop === 'us')){
-            break
-        }  
-
-        if (offLine === '6' && offStop != 'grand central' && offStop != '33rd' && offStop != '28th' &&
-            offStop != '23rd' && offStop != 'union square' && offStop != 'astor place' && 
-            offStop != 'gc' && offStop != 'us' && offStop != 'ap') {
-            alert('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nIncorrect stop!')
-            offStop = prompt('GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF \n\nThe 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.\n\nPlease enter the stop you would like to get on.')
-            if (onStop != null) {onStop = onStop.toLowerCase()}
-        }
-        if (offLine === '6' && (offStop === 'grand central' || offStop === '33rd' || offStop === '28th' ||
-        offStop === '23rd' || offStop === 'union square' || offStop === 'astor place' || 
-        offStop === 'gc' || offStop === 'us' || offStop === 'ap')){
-            break
-        }  
     }
 
-    //Abbreviations
-    if (onStop === 'ap') {onStop = 'astor place'}
-    if (offStop === 'ap') {offStop = 'astor place'}
-    if (onStop === 'gc') {onStop = 'grand central'}
-    if (offStop === 'gc') {offStop = 'grand central'}
-    if (onStop === 'ts') {onStop = 'times square'}
-    if (offStop === 'ts') {offStop = 'times square'}
-    if (onStop === 'us') {onStop = 'union square'}
-    if (offStop === 'us') {offStop = 'union square'}
-
-    
-    //Return the station names into proper noun
-    const stopName1 = onStop.split(' ')
-    if (stopName1.length > 1){
-        for (let i = 0; i < stopName1.length; i++) {
-            stopName1[i] = stopName1[i][0].toUpperCase() + stopName1[i].substr(1);
-        }
-        onStop = stopName1.join(' ');
+    //Turning Abbreviations to Proper Noun
+    const stopsFullFormList = []
+    for (let i in subwaySystem){    
+        for (let j of subwaySystem[i].stops){
+                if (j.includes(' ') && stopsFullFormList.indexOf(j) < 0) {stopsFullFormList.push(j)}
+            }   
     }
-    const stopName2 = offStop.split(' ')
-    if (stopName2.length > 1){
-        for (let i = 0; i < stopName2.length; i++) {
-            stopName2[i] = stopName2[i][0].toUpperCase() + stopName2[i].substr(1);
-        }
-        offStop = stopName2.join(' ');
-    }
+    stopsFullFormList.sort()
 
+    const stopsAbbreList = stopsFullFormList.map(stop => stop.split(' ').map(word => word[0].toLowerCase()).join(""))
 
+    if (stopsAbbreList.indexOf(onStop) >= 0) {onStop = stopsFullFormList[stopsAbbreList.indexOf(onStop)]}
+    if (stopsAbbreList.indexOf(offStop) >= 0) {offStop = stopsFullFormList[stopsAbbreList.indexOf(offStop)]}
 
     //Logging where you get on and off
-    console.log(`Get on at ${onStop} on the ${onLine.toUpperCase()} line`)
-    console.log(`Get off at ${offStop} on the ${offLine.toUpperCase()} line`)
+    console.log(`Get on at ${onStop} on the ${onLine} line`)
+    console.log(`Get off at ${offStop} on the ${offLine} line`)
        
-
-
-
     //journ1 = first half of the journey
     //journ2 = second half of the journey
     journ1 = []; journ2 = []
-
-    if (onLine === 'n') {journ1 = lineN}
-    if (onLine === 'l') {journ1 = lineL}
-    if (onLine === '6') {journ1 = line6}
-    if (offLine === 'n') {journ2 = lineN}
-    if (offLine === 'l') {journ2 = lineL}
-    if (offLine === '6') {journ2 = line6}
-
-
+    journ1 = subwaySystem[lineVal.indexOf(onLine)].stops
+    journ2 = subwaySystem[lineVal.indexOf(offLine)].stops
 
     //Get on and off at Union Square but from different lines
     if (journ1 != journ2 && onStop === 'Union Square' && offStop === 'Union Square'){
@@ -207,11 +146,9 @@ const planTrip = function() {
         return
     }
 
-
     //Record the stations that will travel through
     trip1 = []
     trip2 = []
-
     
     //Same lines
     if (journ1 === journ2){
@@ -222,7 +159,7 @@ const planTrip = function() {
         //Different stops
         if (journ2.indexOf(offStop) > journ1.indexOf(onStop)){
             trip1 = journ1.slice(journ1.indexOf(onStop) + 1, journ2.indexOf(offStop) + 1)
-            console.log(`Your must travel through the following stops on the ${offLine.toUpperCase()} line: ${trip1.join(", ")}`)
+            console.log(`Your must travel through the following stops on the ${offLine} line: ${trip1.join(", ")}`)
              console.log(`${trip1.length} stops in total.`)
         }
 
@@ -230,11 +167,10 @@ const planTrip = function() {
             for (let i = journ1.indexOf(onStop) - 1 ; i > journ2.indexOf(offStop) - 1; i--){
                 trip1.push(journ1[i])
             }
-            console.log(`Your must travel through the following stops on the ${offLine.toUpperCase()} line: ${trip1.join(", ")}`)
+            console.log(`Your must travel through the following stops on the ${offLine} line: ${trip1.join(", ")}`)
             console.log(`${trip1.length} stops in total.`)
         }    
     }
-
 
     //Get on at Union Square
     if (journ1 != journ2 && onStop === 'Union Square'){
@@ -249,10 +185,9 @@ const planTrip = function() {
         }
 
         console.log(`You are at Union Square, which is a interchange station.`)
-        console.log(`Your must travel through the following stops on the ${offLine.toUpperCase()} line: ${trip1.join(", ")}`)
+        console.log(`Your must travel through the following stops on the ${offLine} line: ${trip1.join(", ")}`)
         console.log(`${trip1.length} stops in total.`)
     }
-
 
     //Get off at Union Square
     if (journ1 != journ2 && offStop === 'Union Square'){
@@ -265,12 +200,11 @@ const planTrip = function() {
             }
         }
 
-        console.log(`Your must travel through the following stops on the ${onLine.toUpperCase()} line: ${trip1.join(", ")}`)
+        console.log(`Your must travel through the following stops on the ${onLine} line: ${trip1.join(", ")}`)
         console.log(`You are at Union Square, which is a interchange station.`)
         console.log(`${trip1.length} stops in total.`)
     }
 
-        
     //Different lines and different stops
     if (journ1 != journ2 && onStop != 'Union Square' && offStop != 'Union Square'){
         if (journ1.indexOf('Union Square') > journ1.indexOf(onStop)){
@@ -283,7 +217,7 @@ const planTrip = function() {
             }
         }
 
-        console.log(`Your must travel through the following stops on the ${onLine.toUpperCase()} line: ${trip1.join(", ")}`)
+        console.log(`Your must travel through the following stops on the ${onLine} line: ${trip1.join(", ")}`)
         console.log(`Change at Union Square.`)
 
         if (journ2.indexOf(offStop) > journ2.indexOf('Union Square')){
@@ -296,7 +230,7 @@ const planTrip = function() {
             }
         }
 
-        console.log(`Your journey continues through the following stops on the ${offLine.toUpperCase()} line: ${trip2.join(", ")}.`)
+        console.log(`Your journey continues through the following stops on the ${offLine} line: ${trip2.join(", ")}.`)
         console.log(`${trip1.length + trip2.length} stops in total.`)
     }     
 }
@@ -305,121 +239,77 @@ const planTrip = function() {
 planTrip()
 
 
-
-
 //////Some visual information!
-
 
 //Color arrays
 
 //Default colors
-colorN = []; for (let i = 0; i < lineN.length; i++){ colorN.push('black')}
-colorL = []; for (let i = 0; i < lineL.length; i++) {colorL.push('black')}
-color6 = []; for (let i = 0; i < line6.length; i++) {color6.push('black')}
-
+let stopsColor = subwaySystem.map(item => ({line: item.line, color: item.stops}))
+for (let i in stopsColor) {
+    stopsColor[i].color = stopsColor[i].color.map(item => item = "black")
+}
 
 if (offStop != null){
 
     //Red as the stop getting on
-    if (onLine === 'n') {colorN[lineN.indexOf(onStop)] = 'red'}
-    if (onLine === 'l') {colorL[lineL.indexOf(onStop)] = 'red'}
-    if (onLine === '6') {color6[line6.indexOf(onStop)] = 'red'}
-
-
+    stopsColor[lineVal.indexOf(onLine)].color[subwaySystem[lineVal.indexOf(onLine)].stops.indexOf(onStop)] = 'red'
 
     //Union Square as the stop getting on
-    if (onStop === 'Union Square' && offLine === 'n' && onLine != offLine) {
-        colorN[lineN.indexOf('Union Square')] = 'red'
+    if (onStop === 'Union Square') {
+        stopsColor[lineVal.indexOf(offLine)].color[subwaySystem[lineVal.indexOf(offLine)].stops.indexOf(onStop)] = 'red'
         for (let i = 0; i < trip1.length - 1; i++){
-        colorN[lineN.indexOf(trip1[i])] = 'yellow'}
+            stopsColor[lineVal.indexOf(offLine)].color[subwaySystem[lineVal.indexOf(offLine)].stops.indexOf(trip1[i])] = 'yellow'
+        }
     }
-    if (onStop === 'Union Square' && offLine === 'l' && onLine != offLine) {
-        colorL[lineL.indexOf('Union Square')] = 'red'
-        for (let i = 0; i < trip1.length - 1; i++){
-        colorL[lineL.indexOf(trip1[i])] = 'yellow'}
-    }
-    if (onStop === 'Union Square' && offLine === '6' && onLine != offLine) {
-        color6[line6.indexOf('Union Square')] = 'red'
-        for (let i = 0; i < trip1.length - 1; i++){
-        color6[line6.indexOf(trip1[i])] = 'yellow'}
-    }
-
-
 
     //Yellow as the stops travelling through
-    if (onLine === 'n' && onStop != 'Union Square') {
+    if (onStop != 'Union Square') {
         for (let i = 0; i < trip1.length - 1; i++){
-            colorN[lineN.indexOf(trip1[i])] = 'yellow'}}
-    if (onLine === 'l' && onStop != 'Union Square') {
-        for (let i = 0; i < trip1.length - 1; i++){
-            colorL[lineL.indexOf(trip1[i])] = 'yellow' }}
-    if (onLine === '6' && onStop != 'Union Square') {
-        for (let i = 0; i < trip1.length - 1; i++){
-            color6[line6.indexOf(trip1[i])] = 'yellow'}}
-
-
-
-
+            stopsColor[lineVal.indexOf(onLine)].color[subwaySystem[lineVal.indexOf(onLine)].stops.indexOf(trip1[i])] = 'yellow'
+        }}
 
     //Union Square is orange as it is an interchange station
-    if (onLine === 'n' && (offLine === 'l' || offLine === '6') && onStop != 'Union Square') {
-        colorN[lineN.indexOf('Union Square')] = 'orange'}
-    if (onLine === 'l' && (offLine === 'n' || offLine === '6') && onStop != 'Union Square') {
-        colorL[lineL.indexOf('Union Square')] = 'orange'}
-    if (onLine === '6' && (offLine === 'n' || offLine === 'l') && onStop != 'Union Square') {
-        color6[line6.indexOf('Union Square')] = 'orange'}
+    if (onLine != offLine && onStop != 'Union Square') {
+        stopsColor[lineVal.indexOf(onLine)].color[subwaySystem[lineVal.indexOf(onLine)].stops.indexOf('Union Square')] = 'orange'
+        stopsColor[lineVal.indexOf(offLine)].color[subwaySystem[lineVal.indexOf(offLine)].stops.indexOf('Union Square')] = 'orange'
+    }
+    for (let i = 0; i < trip2.length - 1; i++){
+        stopsColor[lineVal.indexOf(offLine)].color[subwaySystem[lineVal.indexOf(offLine)].stops.indexOf(trip2[i])] = 'yellow'
+    }
 
-    if (onLine != 'n' && offLine === 'n' && onStop != 'Union Square') {
-        colorN[lineN.indexOf('Union Square')] = 'orange'
-        for (let i = 0; i < trip2.length - 1; i++){
-            colorN[lineN.indexOf(trip2[i])] = 'yellow'}}
-    if (onLine != 'l' && offLine === 'l' && onStop != 'Union Square') {
-        colorL[lineL.indexOf('Union Square')] = 'orange'
-        for (let i = 0; i < trip2.length - 1; i++){
-            colorL[lineL.indexOf(trip2[i])] = 'yellow'}}
-    if (onLine != '6' && offLine === '6' && onStop != 'Union Square') {
-        color6[line6.indexOf('Union Square')] = 'orange'
-        for (let i = 0; i < trip2.length - 1; i++){
-            color6[line6.indexOf(trip2[i])] = 'yellow'}}
-    
     //Green as the stop getting off
-    if (offLine === 'n') {colorN[lineN.indexOf(offStop)] = 'green'}
-    if (offLine === 'l') {colorL[lineL.indexOf(offStop)] = 'green'}
-    if (offLine === '6') {color6[line6.indexOf(offStop)] = 'green'}
-
+    stopsColor[lineVal.indexOf(offLine)].color[subwaySystem[lineVal.indexOf(offLine)].stops.indexOf(offStop)] = 'green'
+  
     //Union Square as the stop getting off
-    if (onLine === 'n' && offStop === 'Union Square') {colorN[lineN.indexOf('Union Square')] = 'green'}
-    if (onLine === 'l' && offStop === 'Union Square') {colorL[lineL.indexOf('Union Square')] = 'green'}
-    if (onLine === '6' && offStop === 'Union Square') {color6[line6.indexOf('Union Square')] = 'green'}
-
-    
-
+    if (offStop === 'Union Square'){
+        stopsColor[lineVal.indexOf(onLine)].color[subwaySystem[lineVal.indexOf(onLine)].stops.indexOf('Union Square')] = 'green'
+    }
 }
-
-
-
-
 
 const spanColor = function(stop, index) {
     return `<span style='color:${index}'>'${stop}'</span>`
 }
 
-
-textN = `N Line: [${spanColor('Times Square', colorN[0])}, 
-        ${spanColor('34th', colorN[1])}, ${spanColor('28th', colorN[2])}, 
-        ${spanColor('23rd', colorN[3])}, ${spanColor('Union Square', colorN[4])}, 
-        ${spanColor('8th', colorN[5])}]`
+const colorFn = function(lineIndex, colorIndex) {
+    return stopsColor[lineIndex].color[colorIndex]
+}
 
 
-textL = `L Line: [${spanColor('8th', colorL[0])}, 
-        ${spanColor('6th', colorL[1])}, ${spanColor('Union Square', colorL[2])}, 
-        ${spanColor('3rd', colorL[3])}, ${spanColor('1st', colorL[4])}]`
+textN = `${lineVal[0]} Line: [${spanColor('Times Square', colorFn(0,0))}, 
+        ${spanColor('34th', colorFn(0,1))}, ${spanColor('28th', colorFn(0,2))}, 
+        ${spanColor('23rd', colorFn(0,3))}, ${spanColor('Union Square', colorFn(0,4))}, 
+        ${spanColor('8th', colorFn(0,5))}]`
 
 
-text6 = `6 Line: [${spanColor('Grand Central', color6[0])}, 
-        ${spanColor('33rd', color6[1])}, ${spanColor('28th', color6[2])}, 
-        ${spanColor('23rd', color6[3])}, ${spanColor('Union Square', color6[4])}, 
-        ${spanColor('Astor Place', color6[5])}]`
+textL = `${lineVal[1]}  Line: [${spanColor('8th', colorFn(1,0))}, 
+        ${spanColor('6th', colorFn(1,1))}, ${spanColor('Union Square', colorFn(1,2))}, 
+        ${spanColor('3rd', colorFn(1,3))}, ${spanColor('1st', colorFn(1,4))}]`
+
+
+text6 = `${lineVal[2]}  Line: [${spanColor('Grand Central', colorFn(2,0))}, 
+        ${spanColor('33rd', colorFn(2,1))}, ${spanColor('28th', colorFn(2,2))}, 
+        ${spanColor('23rd', colorFn(2,3))}, ${spanColor('Union Square', colorFn(2,4))}, 
+        ${spanColor('Astor Place', colorFn(2,5))}]`
 
 
 textJourn = ""
@@ -451,13 +341,11 @@ if (trip1.length + trip2.length > 0){
     }     
 }
 
-
 textTot = ""
 if (trip1.length + trip2.length > 0){
     textTot = `From ${onStop} on the ${onLine.toUpperCase()} Line to ${offStop} on the ${offLine.toUpperCase()} Line:  
     <font size= "7px">${trip1.length + trip2.length} stops</font> in total.`
     }
-
 
 
 
