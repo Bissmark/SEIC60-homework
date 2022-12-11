@@ -26,7 +26,7 @@
 //
 //
 //
-//Memo: still fix spaces and commas.
+//Memo: still need to fix spaces and commas.
 //
 //
 //
