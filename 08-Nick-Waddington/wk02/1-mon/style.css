@@ -1,0 +1,42 @@
+body {
+    background-image: url("pictures/red-lines-white-streaks-stripes-2560x1700-c2-ffffff-b22222-l2-60-60-a-225-f-1\ copy.png");
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+h1 {
+    color:limegreen;
+    text-align: center;
+    border: 10px solid red;
+    padding: 4%;
+    font-size: 72px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dc1a1a;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+
