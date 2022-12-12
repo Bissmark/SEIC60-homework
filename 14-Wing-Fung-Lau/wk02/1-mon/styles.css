@@ -1,0 +1,138 @@
+body, html {
+    color: red;
+    background: linear-gradient(rgba(16, 39, 51, 0.3), #021120f2);
+    padding: 0;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .deer {
+	
+	position: absolute;
+	animation: infinite;
+	animation-name: run;
+	animation-duration: 5s;
+	font-size: 125px
+  }
+  @keyframes run {
+	0% {
+	  right: 0;
+	}
+	50% {
+	  right: 100%;
+	}
+	100% {
+	  right: 0;    
+	}
+  }
+ 
+h1 {
+    color: rgb(187, 215, 249);
+    text-align: center;
+}
+h3 {
+	font-size: 60px;
+	text-align: center;
+}
+
+
+div.snowflake {
+	height: 150px;
+	font-size: 30px
+}
+img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	height: 150px;
+    width: auto;
+}
+
+#heading {
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+	font-size: 150px;
+}
+
+#Santa {
+	height: 400px;
+	width: auto;
+}
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+	
+    animation: fly 18s linear infinite;
+    pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+#fast > * {
+	animation: fly 15s linear infinite;
+	height: 300px;
+}
+#slow > * {
+	animation: fly 18s linear infinite;
+	height: 300px;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+/* customizable snowflake styling */
+.snowflake {
+	color: #fff;
+	font-size: 3em;
+	font-family: Arial, sans-serif;
+	text-shadow: 0 0 5px #000;
+  }
+  
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:5s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}

@@ -1,8 +1,11 @@
 const subwaySystem = [
     {line: 'N', stops: ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th']},
     {line: 'L', stops: ['8th', '6th', 'Union Square', '3rd', '1st']},
-    {line: '6', stops: ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']}
+    {line: '6', stops: ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']},
+    {line: 'A', stops: ['190th', '181th', '175th', '168th', '145th']}
 ]
+
+
 
 const lineVal = subwaySystem.map(function(l) {return l.line})
 
@@ -74,9 +77,34 @@ const planTrip = function() {
     }
 
     const GetOffSignal = 'GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF'
-    const offlineQuestion =`${GetOffSignal} \n\nWhich line would you like to get off? \n\n${lineInfo1}`
+    let offlineQuestion =`${GetOffSignal} \n\nWhich line would you like to get off? \n\n${lineInfo1}`
 
-    offLine = prompt(offlineQuestion)
+    for (let i in subwaySystem) {
+        if (subwaySystem[i].stops.indexOf('Union Square') < 0) {
+            offlineQuestion = offlineQuestion.replace(`${lineVal[i]} for ${lineVal[i]} line`,"")
+        }
+    }
+
+///////////
+    console.log(offlineQuestion.substring(offlineQuestion.length-7))
+    if (offlineQuestion.substring(offlineQuestion.length-7) === ', and .') {
+        offLineQuestion = offLineQuestion.replace(', and .',".")
+    }
+////////////
+
+    //Whether the line taken on has any interchange station
+    if (subwaySystem[lineVal.indexOf(onLine)].stops.indexOf('Union Square') < 0) {
+        alert(`The ${subwaySystem[lineVal.indexOf(onLine)].line} Line has no interchange station, so the stops you will take off are also on the ${subwaySystem[lineVal.indexOf(onLine)].line} Line.`)
+        offLine = onLine
+    } else{
+        offLine = prompt(offlineQuestion)
+    }
+
+    
+
+    
+
+
 
     if (offLine != null) {offLine = offLine.toUpperCase()}
 
@@ -294,22 +322,20 @@ const colorFn = function(lineIndex, colorIndex) {
     return stopsColor[lineIndex].color[colorIndex]
 }
 
-
-textN = `${lineVal[0]} Line: [${spanColor('Times Square', colorFn(0,0))}, 
-        ${spanColor('34th', colorFn(0,1))}, ${spanColor('28th', colorFn(0,2))}, 
-        ${spanColor('23rd', colorFn(0,3))}, ${spanColor('Union Square', colorFn(0,4))}, 
-        ${spanColor('8th', colorFn(0,5))}]`
-
-
-textL = `${lineVal[1]}  Line: [${spanColor('8th', colorFn(1,0))}, 
-        ${spanColor('6th', colorFn(1,1))}, ${spanColor('Union Square', colorFn(1,2))}, 
-        ${spanColor('3rd', colorFn(1,3))}, ${spanColor('1st', colorFn(1,4))}]`
-
-
-text6 = `${lineVal[2]}  Line: [${spanColor('Grand Central', colorFn(2,0))}, 
-        ${spanColor('33rd', colorFn(2,1))}, ${spanColor('28th', colorFn(2,2))}, 
-        ${spanColor('23rd', colorFn(2,3))}, ${spanColor('Union Square', colorFn(2,4))}, 
-        ${spanColor('Astor Place', colorFn(2,5))}]`
+textS = ""
+for (let i in subwaySystem) {
+    for (let j in subwaySystem[i].stops) {
+        if (+j === 0) {
+            textS = textS + `${lineVal[i]} Line: [${spanColor(subwaySystem[i].stops[j], colorFn(i,j))}, `
+        }
+        else if (+j > 0 && j != subwaySystem[i].stops.length - 1 ){
+            textS = textS + `${spanColor(subwaySystem[i].stops[j], colorFn(i,j))}, `
+        }
+        else if (+j === subwaySystem[i].stops.length - 1){
+            textS = textS + `${spanColor(subwaySystem[i].stops[j], colorFn(i,j))}]<br><br>`
+        }
+    }
+}
 
 
 textJourn = ""
@@ -350,9 +376,7 @@ if (trip1.length + trip2.length > 0){
 
 
 try{
-    document.getElementById("lineN").innerHTML = textN
-    document.getElementById("lineL").innerHTML = textL
-    document.getElementById("line6").innerHTML = text6
+    document.getElementById("lineS").innerHTML = textS
     document.getElementById("journey").innerHTML = textJourn
     document.getElementById("total").innerHTML = textTot
 }
