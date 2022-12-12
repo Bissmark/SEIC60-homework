@@ -1,0 +1,99 @@
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    background: #232323;
+  }
+  section p {
+    position: relative;
+    display: block;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+    text-align: center;
+  }
+  section a {
+    position: relative;
+  }
+  div {
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    margin: 0 0 40px 0;
+    border-radius: 12px;
+  }
+  h1 {
+    font-family: 'Londrina Shadow', cursive;
+    text-align: center;
+    font-size: 75px;
+    color: white;
+    margin: 60px 0 0 0;
+  }
+  h2 {
+    text-align: center;
+    color: #bbbbbb;
+    margin: 0px 0 70px 0;
+  }
+  p {
+    color: rgba(255,255,255,1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 30px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+  }
+  
+  small {
+    opacity: 0;
+  }
+  
+  .show-description p {
+    height: 150px;
+  }
+  
+  .show-description small {
+    opacity: 1;
+  }
+  
+  .kitten {
+    background-image: url("https://i.imgur.com/MKFPH9g.jpg");
+  }
+  .adult {
+    background-image: url("https://i.imgur.com/IAlP5A5.jpg");
+  }
+  .video {
+    background-image: url("https://i.imgur.com/D9WO68y.jpg");
+  }
+  .age {
+    float: right;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 30px 0;
+    }
+    div {
+      margin: 20px 12px 0 12px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    small {
+      font-size: 16px;
+    }
+  }
+  
