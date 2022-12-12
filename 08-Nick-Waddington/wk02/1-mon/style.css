@@ -1,19 +1,26 @@
 body {
-    background-image: url("pictures/red-lines-white-streaks-stripes-2560x1700-c2-ffffff-b22222-l2-60-60-a-225-f-1\ copy.png");
+    background-image: url("pictures\\wallhaven-01rv2w.jpg");
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 header {
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 30px;
+    background-color: azure;
+    background-size: contain;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-h1 {
-    color:limegreen;
+header h1 {
+    color:rgb(144, 55, 185);
     text-align: center;
-    border: 10px solid red;
-    padding: 4%;
-    font-size: 72px;
+    border: 10px solid rgb(20, 161, 20);
+    padding: 3%;
+    font-size: 82px;
+    margin-bottom: 0px;
 }
 
 ul {
@@ -24,19 +31,106 @@ ul {
     background-color: #dc1a1a;
   }
   
-  li {
+li {
     float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111111;
-  }
+    margin-left: 4%;
+    margin-right: 5%;
 
+  }
+  
+li a {
+    display: block;
+    color: azure;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+
+  }
+  
+li a:hover {
+    background-color: #39853d;
+  }
+  
+ul li a {
+    text-decoration: none;
+    padding: 0.2em 1.1em;
+    margin: 0 0 0 -6px;
+}
+
+main {
+  background-color: whitesmoke;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px solid rgb(64, 196, 64);
+}
+
+
+main h1, h2, p {
+  color:rgb(228, 12, 12);
+	font-size: 40px;
+	text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+				        1px -1px 0 #000,
+                -1px -1px 0 #000;
+  text-align: center;
+}
+
+/*Image gallery HTML & CSS source = https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+footer {
+  background-color: azure;
+  font-style: italic;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer h2, p {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  color: darkslateblue;
+  text-shadow: none;
+  font-size: 32px;
+  margin: 0;
+  padding: 2%;
+  border: 10px dotted rgb(0, 128, 32);
+}
+
+a {
+  color: darkslateblue;
+}
