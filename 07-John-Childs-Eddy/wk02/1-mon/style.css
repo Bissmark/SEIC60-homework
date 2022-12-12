@@ -1,0 +1,62 @@
+body {
+    background-image: url("https://www.telegraph.co.uk/content/dam/Travel/ski/Resorts/restaurants-val-disere-fruitiere.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+    padding:  20px 0 70px 0 ;
+  }
+nav {
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+  div.white-box {
+    font-family: 'Dancing Script', cursive;
+    opacity: 0.8;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    color: black;
+    width: 60%;
+    height: 800px;
+    padding: 50px 50px;
+}
+div.white-box.h1{
+    font-size: 70px;
+    right: 10px;
+}
+div .inside-white-box {
+    opacity: 1;
+    background-color: #FFFFFF;
+    color: black;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+div .smaller-headings{
+    font-weight: bold;
+    font-size: 20px;
+}
+div.gallery {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    flex: left;
+    width: 180px;
+    align-self: center;
+  }
+  div.gallery:hover {
+    border: 1px solid #777;
+    opacity: 0.5;
+  }
+  div.gallery img {
+    width: 180px;
+    height: 200px;
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
