@@ -197,6 +197,9 @@ const ticketMachine = function (
         } stop in total.`;
       }
     }
+    if (startingStation === destinationStation) {
+      return `You are already here.`;
+    }
   }
   if (startingLine !== destinationLine) {
     const intersectionNline = stationNetwork[0].stationNames[4];
@@ -724,6 +727,12 @@ const ticketMachine = function (
           startingLineStops.length + destinationLineStops.length + 2
         } stops in total.`;
       }
+    }
+    if (destinationStation === "Union Square") {
+      return `${startingStation} and ${destinationStation} are on the same line. It's a same line trip. Plese try again.`;
+    }
+    if (startingStation === "Union Square") {
+      return `Please check and try again.`;
     }
   }
 };
