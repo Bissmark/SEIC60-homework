@@ -1,0 +1,175 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    min-width: 400px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+}
+
+h1 {
+    font-family: 'Ewert', cursive;
+    font-size: 7rem;
+    display: inline-block;
+    margin: auto 1rem;
+}
+
+nav {
+    width: 50%;
+    position: relative;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.promo {
+    background-image: url(public/jed-owen-O4wSmNb6w18-unsplash.jpg);
+    height: 600px;
+    background-color: #cccc;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.promo h3 {
+    font-family: 'Tangerine', cursive;
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+button {
+    font-family: 'Slabo 27px', serif;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    padding: 1.5rem;
+}
+
+button:first-of-type {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+.christmas-menu {
+    margin-top: 4rem;
+}
+
+h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 6rem;
+}
+
+.sub-menu {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 0.4rem;
+}
+
+.sub-menu>img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 1.5rem 0;
+    font-size: 3rem;
+    background-color: bisque;
+}
+
+.reservation {
+    margin: 4rem auto;
+}
+
+span {
+    font-style: italic;
+}
+
+.reservation-form {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+form span {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    height: 4rem;
+}
+
+input:not(input[type=radio]) {
+    border: 1px solid gray;
+    height: 100%;
+    width: 55%;
+    margin-left: 1.5rem;
+    position: absolute;
+    right: 0;
+}
+
+footer {
+    height: 200px;
+    background-color: bisque;
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+.info {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+.info-details h3 {
+    margin-bottom: 2rem;
+}
