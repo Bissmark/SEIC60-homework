@@ -1,0 +1,60 @@
+h1 {
+    font-family: "millenia";
+    font-size: 70px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(214, 40, 40);
+}
+
+h2 {
+    font-family: "millenia";
+    font-size: 50px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(214, 40, 40);
+}
+
+h3 {
+    font-family: "millenia";
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(214, 40, 40);
+}
+
+.disclaimer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: rgb(98, 207, 98);
+}
+
+p, li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 0 20%;
+    color: rgb(98, 207, 98);
+}
+
+.specials {
+    margin: 10px auto 10px auto;
+    display: flex; 
+    flex: auto;
+}
+
+img {
+    width: 25%;
+    height: auto;
+    max-width: 800px;
+}
+
+.og {
+    margin: 10px auto 10px auto;
+    display: flex; 
+    flex: auto;
+}
+
+footer {
+    font-family: "millenia";
+    font-size: 10px;
+}
