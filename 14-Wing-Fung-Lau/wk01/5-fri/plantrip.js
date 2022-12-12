@@ -1,7 +1,8 @@
 const subwaySystem = [
     {line: 'N', stops: ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th']},
     {line: 'L', stops: ['8th', '6th', 'Union Square', '3rd', '1st']},
-    {line: '6', stops: ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']}
+    {line: '6', stops: ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place']},
+    {line: 'A', stops: ['190th', '181th', '175th', '168th', '145th']}
 ]
 
 
@@ -76,9 +77,34 @@ const planTrip = function() {
     }
 
     const GetOffSignal = 'GET OFF GET OFF GET OFF GET OFF GET OFF GET OFF'
-    const offlineQuestion =`${GetOffSignal} \n\nWhich line would you like to get off? \n\n${lineInfo1}`
+    let offlineQuestion =`${GetOffSignal} \n\nWhich line would you like to get off? \n\n${lineInfo1}`
 
-    offLine = prompt(offlineQuestion)
+    for (let i in subwaySystem) {
+        if (subwaySystem[i].stops.indexOf('Union Square') < 0) {
+            offlineQuestion = offlineQuestion.replace(`${lineVal[i]} for ${lineVal[i]} line`,"")
+        }
+    }
+
+///////////
+    console.log(offlineQuestion.substring(offlineQuestion.length-7))
+    if (offlineQuestion.substring(offlineQuestion.length-7) === ', and .') {
+        offLineQuestion = offLineQuestion.replace(', and .',".")
+    }
+////////////
+
+    //Whether the line taken on has any interchange station
+    if (subwaySystem[lineVal.indexOf(onLine)].stops.indexOf('Union Square') < 0) {
+        alert(`The ${subwaySystem[lineVal.indexOf(onLine)].line} Line has no interchange station, so the stops you will take off are also on the ${subwaySystem[lineVal.indexOf(onLine)].line} Line.`)
+        offLine = onLine
+    } else{
+        offLine = prompt(offlineQuestion)
+    }
+
+    
+
+    
+
+
 
     if (offLine != null) {offLine = offLine.toUpperCase()}
 
