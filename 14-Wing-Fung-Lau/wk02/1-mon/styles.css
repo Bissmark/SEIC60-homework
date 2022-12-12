@@ -14,7 +14,7 @@ body, html {
 	animation: infinite;
 	animation-name: run;
 	animation-duration: 5s;
-	font-size: 130px
+	font-size: 125px
   }
   @keyframes run {
 	0% {
