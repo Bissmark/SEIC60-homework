@@ -1,74 +1,74 @@
 //Where's Waldo
 
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                      ["Lucinda", "Jacc", "Neff", "Snoop"],
-                      ["Petunia", ["Baked Goods", "Waldo"]]]
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                       ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                       ["Petunia", ["Baked Goods", "Waldo"]]]
 
-// console.log(whereIsWaldo)
-whereIsWaldo.splice(1, 1)
-// console.log(whereIsWaldo)
-whereIsWaldo[1][2] = "No One"
-// console.log(whereIsWaldo)
-console.log(whereIsWaldo[2][1][1]);
+// // console.log(whereIsWaldo)
+// whereIsWaldo.splice(1, 1)
+// // console.log(whereIsWaldo)
+// whereIsWaldo[1][2] = "No One"
+// // console.log(whereIsWaldo)
+// console.log(whereIsWaldo[2][1][1]);
 
 //Array Restaurant
 
-const restaurant = [
-    'chicken',
-    'apple pie',
-    'soup',
-    'steak',
-    'salad',
-    'turkey sandwich',
-    'potato bake'
-]
-restaurant.sort();
-restaurant.splice(0, 1)
-restaurant.splice(2, 1)
-const userInput = prompt ("What would you like to each from the menu?")
+// const restaurant = [
+//     'chicken',
+//     'apple pie',
+//     'soup',
+//     'steak',
+//     'salad',
+//     'turkey sandwich',
+//     'potato bake'
+// ]
+// restaurant.sort();
+// restaurant.splice(0, 1)
+// restaurant.splice(2, 1)
+// const userInput = prompt ("What would you like to each from the menu?")
     
-for (let i = 0; i<restaurant.length; i++) {
-    if (userInput === restaurant[i]){
-        console.log(`Sure, the ${restaurant[i]} will be served in 15 minutes`)
-        break
-    } else if (restaurant.length - 1 === i){
-    console.log('Sorry, we don\'t have that.')
-}
-}
-console.log(restaurant);
+// for (let i = 0; i<restaurant.length; i++) {
+//     if (userInput === restaurant[i]){
+//         console.log(`Sure, the ${restaurant[i]} will be served in 15 minutes`)
+//         break
+//     } else if (restaurant.length - 1 === i){
+//     console.log('Sorry, we don\'t have that.')
+// }
+// }
+// console.log(restaurant);
 
 //The Solar System, Part 1
 
-const solarSystem = [
-    { name: 'Mercury', ringSystem: false, moons: [] },
-    { name: 'Venus', ringSystem: false, moons: [] },
-    { name: 'Earth', ringSystem: false, moons: ['The Moon'] },
-    { name: 'Mars', ringSystem: false, moons: ['Phobos', 'Deimos'] },
-    { name: 'Jupiter', ringSystem: true, moons: ['Europa', 'Ganymede', 'Io', 'Callisto'] },
-    { name: 'Saturn', ringSystem: true, moons: ['Titan', 'Enceladus', 'Rhea', 'Mimas'] },
-    { name: 'Uranus', ringSystem: true, moons: ['Miranda', 'Titania', 'Ariel', 'Umbriel'] },
-    { name: 'Neptune', ringSystem: true, moons: ['Triton', 'Nereid'] }
-]
+// const solarSystem = [
+//     { name: 'Mercury', ringSystem: false, moons: [] },
+//     { name: 'Venus', ringSystem: false, moons: [] },
+//     { name: 'Earth', ringSystem: false, moons: ['The Moon'] },
+//     { name: 'Mars', ringSystem: false, moons: ['Phobos', 'Deimos'] },
+//     { name: 'Jupiter', ringSystem: true, moons: ['Europa', 'Ganymede', 'Io', 'Callisto'] },
+//     { name: 'Saturn', ringSystem: true, moons: ['Titan', 'Enceladus', 'Rhea', 'Mimas'] },
+//     { name: 'Uranus', ringSystem: true, moons: ['Miranda', 'Titania', 'Ariel', 'Umbriel'] },
+//     { name: 'Neptune', ringSystem: true, moons: ['Triton', 'Nereid'] }
+// ]
 
-console.log(solarSystem[4].moons)
-console.log(solarSystem[7].moons[1])
-solarSystem[1].moons.push('Endor')
-solarSystem.push({
-    name: 'Pluto',
-    ringSystem: true,
-    moons: ['Charon']
-})
-solarSystem[2]['diameter'] = '7,917.5 mi'
-solarSystem[0].ringSystem = true
-solarSystem[6].moons[3] = 'Omberon'
-for (let i = 0; i<solarSystem.length; i++){
-    if (solarSystem[i].ringSystem === true){
-    console.log(solarSystem[i]);
-}
-}
-console.log(solarSystem);
+// console.log(solarSystem[4].moons)
+// console.log(solarSystem[7].moons[1])
+// solarSystem[1].moons.push('Endor')
+// solarSystem.push({
+//     name: 'Pluto',
+//     ringSystem: true,
+//     moons: ['Charon']
+// })
+// solarSystem[2]['diameter'] = '7,917.5 mi'
+// solarSystem[0].ringSystem = true
+// solarSystem[6].moons[3] = 'Omberon'
+// for (let i = 0; i<solarSystem.length; i++){
+//     if (solarSystem[i].ringSystem === true){
+//     console.log(solarSystem[i]);
+// }
+// }
+// console.log(solarSystem);
 
-//The Solar System, Part 2
+// //The Solar System, Part 2
 
 const system = { 
     Mercury: 
@@ -213,7 +213,7 @@ console.log(system.Venus.eccentricity);
 const satellitesSum = (system.Jupiter.satellites + system.Saturn.satellites + system.Uranus.satellites + system.Neptune.satellites)
 console.log(satellitesSum);
 console.log(typeof system.Mercury.radiuse)
-if (typeof system.Mercury.radiusp === 'string' ) {
+if (typeof system.Mercury.radiusp === 'string') {
     console.log('This is a string.');
 }
 system.Mercury.radiusp = 2439
@@ -226,9 +226,8 @@ console.log(`Jupiter's momentum is ${jupiterMomentum}. Pluto's momentum is ${plu
 
 //Planet X
 
-const planetX = {
-    Xyno:
-    {radiusp: 1234,
+system.planetX = {
+    radiusp: 1234,
     name: 'Xyno',
     density: 11.11,
     tilt: 56.32,
@@ -241,47 +240,46 @@ const planetX = {
     eccentricity: 4.32,
     velocity: 6.66,
     mass: 1.1,
-    inclination: 21.21 }
+    inclination: 21.21 
 }
 
 //function copied from: https://stackoverflow.com/questions/9843884/add-javascript-object-into-another-javascript-object
 //I don't really understand what hasOwnProperty is doing
-function mix(source, target){
-    for(var key in source) {
-        if (source.hasOwnProperty(key)) {
-            target[key] = source[key];
-        }
-    }
-}
-mix (planetX, system)
+// function mix(source, target){
+//     for(var key in source) {
+//         if (source.hasOwnProperty(key)) {
+//             target[key] = source[key];
+//         }
+//     }
+// }
+// mix (planetX, system)
 
-// console.log(planetX);
 console.log(system);
 
 //The Reading List
 
-const books = [
-{title: 'The Habit',
- author: 'C J Falcon',
- alreadyRead: true},
-{title: 'Bride & Bread & Juice',
- author: 'Sam Samson',
- alreadyRead: true},
-{title: 'Lord of the Chicken King',
- author: 'Isaac Tesla',
- alreadyRead: false},
-{title: 'Game of Polite Combat',
- author: 'Lord Gaben',
- alreadyRead: true},
-{title: 'Romeo & Bill',
- author: 'Christopher Nolan',
- alreadyRead: false}
-]
+// const books = [
+// {title: 'The Habit',
+//  author: 'C J Falcon',
+//  alreadyRead: true},
+// {title: 'Bride & Bread & Juice',
+//  author: 'Sam Samson',
+//  alreadyRead: true},
+// {title: 'Lord of the Chicken King',
+//  author: 'Isaac Tesla',
+//  alreadyRead: false},
+// {title: 'Game of Polite Combat',
+//  author: 'Lord Gaben',
+//  alreadyRead: true},
+// {title: 'Romeo & Bill',
+//  author: 'Christopher Nolan',
+//  alreadyRead: false}
+// ]
 
-for (let i=0;i<books.length;i++){
+// for (let i=0;i<books.length;i++){
     if (books[i].alreadyRead === true){
         console.log(`You have aready read ${books[i].title} by ${books[i].author}.`);
     } else {
         console.log(`You still need to read ${books[i].title} by ${books[i].author}.`);
     }
-}
+// }
