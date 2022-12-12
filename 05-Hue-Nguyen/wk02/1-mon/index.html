@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Slabo+27px&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="restaurant-name">Mecca</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li>Menu</li>
+                <li>Reservation</li>
+                <li>Our Story</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="promo">
+            <h3>Authentic Middle Eastern and Mediterraneandishes for Christmas</h3>
+            <div class="buttons">
+                <button>Make Reservation</button>
+                <button>Check Specials for Chirstmas</button>
+            </div>
+        </div>
+
+        <div class="christmas-menu">
+            <h2>Special Menu For Christmas</h2>
+            <figure class="sub-menu"><img src="public/jed-owen-q6Y8Xr3SoQA-unsplash.jpg" alt="main-menu">
+                <figcaption>Main Dishes</figcaption>
+            </figure>
+            <figure class="sub-menu"><img src="public/brandi-alexandra-M-Br3v3-gao-unsplash.jpg" alt="appetiser-menu">
+                <figcaption>Appetisers</figcaption>
+            </figure>
+            <figure class="sub-menu"><img src="public/engin-akyurt-FcEOlb5QJWQ-unsplash.jpg" alt="dessert-menu">
+                <figcaption>Desserts</figcaption>
+            </figure>
+            <figure class="sub-menu"><img src="public/kate-laine-dCFQ_KyHdTs-unsplash.jpg" alt="drink-menu">
+                <figcaption>Drinks</figcaption>
+            </figure>
+        </div>
+
+        <div class="reservation">
+            <h2>Make your reservation</h2>
+            <p class="note"><span>Please contact us for bookings larger than 10 people</span></p>
+            <p>Call now: 048 323 3232</p>
+            <form class="reservation-form">
+                <span>
+                    <label for="">Choose a date</label>
+                    <input type="date" name="booking-date" max="01-12-2024">
+                </span>
+                <span>
+                    <input type="radio" name="booking-time">
+                    <label for="">Lunch (from 12pm - 3pm)</label>
+                </span>
+                <span>
+                    <input type="radio" name="booking-time">
+                    <label for="">Dinner (from 5pm - 9pm)</label>
+                </span>
+                <span>
+                    <label for="">Number of guests</label>
+                    <input type="number" min="0" max="20" name="number-guests">
+                </span>
+                <span>
+                    <label for="">Your contact email</label>
+                    <input type="email" name="customer-email">
+                </span>
+                <span>
+                    <label for="">Confirm your email</label>
+                    <input type="email" name="customer-email">
+                </span>
+                <span>
+                    <label for="">Your contact phone number</label>
+                    <input type="phone">
+                </span>
+                <span>
+                    <label for="">Your message for us</label>
+                    <input type="textarea" name="customer-message">
+                </span>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="info">
+            <div class="info-details">
+                <h3>Address</h3>
+                <p>566 Sussex Street</br>
+                    NSW, 2345</p>
+            </div>
+            <div class="info-details">
+                <h3>Opening hours</h3>
+                <p>Tue - Fri: 11am - 9pm</p>
+                <p>Sat - Sun: 11am - 10pm</p>
+            </div>
+            <div class="info-details">
+                <h3>Contact</h3>
+                <p>Email: contact@mecca-restaurant.com</p>
+                <p>Phone: 0423 232 4432</p>
+            </div>
+            <div class="info-details">
+                <h3>
+                    Follow Us
+                </h3>
+            </div>
+        </div>
+    <div class="copy-right">Copy right 2000 - 2022 by Mecca. All Rights reserved.</div>
+    </footer>
+
+</body>
+
+</html>
