@@ -1,0 +1,18 @@
+# Quick Slicer
+* An awesome way to create a flex layout from scratch:  
+With easy to read documentation on https://github.com/lenik/quickslicer
+
+
+
+## Other resources
+
+https://themewagon.com/themes/free-bootstrap-4-html5-pizza-website-template-pizza/
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction
+
+https://www.w3schools.com/css/css_float.asp (Avoid floats)
+https://www.w3schools.com/css/css_grid.asp
+
+https://www.freecodecamp.org/news/how-to-use-css-position-to-layout-a-website-with-example-code-38592bb9e276/ (using position)
+
+Easy to use Google Map embededer https://www.embedgooglemap.net/ (note generates some affilate link thing)

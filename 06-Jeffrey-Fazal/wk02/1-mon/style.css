@@ -1,0 +1,77 @@
+*:not(body) { border: solid 1px gray; }
+.block { position: relative; display: flex; }
+.root { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+.dir-column { flex-direction: column; }
+.dir-row { flex-direction: row; }
+
+#logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    text-align: center;
+}
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+ /* The alert message box */
+#xmas-special {
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+
+header {
+    background: lightcoral;
+}
+
+nav {
+    background: black;
+}
+
+main {
+    background: lightgreen;
+}
+
+footer {
+    background: lightsteelblue;
+}
+
+.footer-box {
+    display: flex;
+  }
+
+  .footer-one {
+    flex: 1 1 auto;
+  }
+
+  .footer-two {
+    flex: 1 1 auto;
+  }
+
+  .footer-three {
+    flex: 1 1 auto;
+  }

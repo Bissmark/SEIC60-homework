@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" id="brand-link" href="#">Bootstrap Template</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Examples</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h3>Resources</h3>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JS reference - MDN</a></p>
+      <p><a href="https://www.w3schools.com/jsref/default.asp">W3C Schools Diagram</a></p>
+      <p><a href="https://quickref.me/javascript">Cheatsheets <br> (JS & > 20 others)</a></p>
+      <p><a href="https://playcode.io/my-projects">Webdev Sandbox</a></p>
+    </div>
+    <div class="col-sm-8 text-center"> 
+      <h1 id="h1 tag">Welcome</h1>
+      <p id="intro">Welcome to the world of web development! Building a website can be a daunting task, but with the help of this template you will be able to work confidently and safely in the realms of HTML, JavaScript and CSS. This template provides you with a safe playground to practise your coding skills, with all the necessary elements included for you to get started on building a website. A script tag has also been added so that you can instantly begin experimenting with code.</p>
+      <div class="start-button">
+        <button type="button" class="btn btn-dark" onclick="startbtn()" id="startbtn">Start</button>
+      </div>
+      <hr>
+      <h2>Output for text</h2>
+      <p>
+        The well Bootstrap well style provides a nice way to output text 
+      </p>
+      <div class="well well-lg"><p id="wellOne">Change Text Here with the wellOne id <br>(the id is for the paragraph elemented nested in a div.)</p></div>
+      <hr>
+      <h3>Selecting elements with ID's</h3>
+      <p>Here is a list of ID's that can be used to manipulate elements of the page. </p>
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Element #</th>
+      <th scope="col">ID</th>
+      <th scope="col">HTML Tag</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>brand-link</td>
+      <td><pre><code>&lt;a></code></pre></td>
+      <td>Top left of page <br>(placeholder text: Bootstrap Template)</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>startbtn</td>
+      <td><pre><code>&lt;button></code></pre></td>
+      <td>Grey button with the text start</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>wellOne</td>
+      <td><pre><code>&lt;p></code></pre></td>
+      <td>Underneath the H2 'output for text'</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <h3>Quick References</h3>
+      <div class="well">
+        <h4>Playing around with JS</h4>
+        <p>Go to the <a href="script.js">script.js</a> file to customise your Javascript</p>
+      </div>
+      <div class="well">
+        <h4>Opening the DevTools console (chrome)</h4>
+        <p>Control+Shift+J</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>A template for beginer programs by <a href="https://github.com/Jeffrey-Fazal">Jeffrey-Fazal </a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg></p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
