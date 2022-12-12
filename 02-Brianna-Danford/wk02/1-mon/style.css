@@ -1,0 +1,96 @@
+
+
+
+h1 {
+    --color1: #1528ec;
+    --color2: #ff0a0a;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 46px;
+    background: repeating-linear-gradient(
+      45deg,
+      var(--color1),
+      var(--color1) 30px,
+      var(--color2) 30px,
+      var(--color2) 60px
+    );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: 40s linear 0s infinite move;
+  }
+  
+  @keyframes move {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 1000px;
+    }
+  }
+
+h2 {
+    text-align: center;
+    --color1: #1528ec;
+    --color2: #ff0a0a;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 46px;
+    background: repeating-linear-gradient(
+      45deg,
+      var(--color1),
+      var(--color1) 30px,
+      var(--color2) 30px,
+      var(--color2) 60px
+    );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: 40s linear 0s infinite move;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px 0px 0px 0px;
+    color: yellow;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+body {
+    background: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sizzling-chicken-wings-social-food-christmas-design-template-14b02e7759d3ff5ab2410c912a7ffe8f_screen.jpg?ts=1669190124");
+    background-size: cover;
+
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+div {
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+
+
+img {
+    margin: 40px 0px 40px 0px;
+    border: 7px solid white;
+    border-radius: 500px
+
+}
+
+
+
