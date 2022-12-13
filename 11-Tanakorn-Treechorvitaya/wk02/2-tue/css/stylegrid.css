@@ -1,0 +1,12 @@
+/* copy reset, style and index from the homework */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr ; /* make it contain two column */
+    grid-row: auto 1fr 1fr auto;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
