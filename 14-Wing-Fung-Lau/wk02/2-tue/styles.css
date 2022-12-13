@@ -1,8 +1,5 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr; 
-    grid-gap: 20px; 
+    display: grid; 
     margin: auto;
     width: 50%;
     justify-content: center;
@@ -12,8 +9,7 @@
 .main-content {
     display: grid;
     justify-items: center;
-    /* grid-column: 2/3; */
-    grid-template-columns: 28fr 10fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 20fr 14fr;
     grid-gap: 15px;
 }
@@ -29,7 +25,6 @@
     padding: 15px 15px 0px 15px;
     background-color: white;
     font-weight:bold;
-    width: 220px;
 }
 
 body {
@@ -41,17 +36,12 @@ body {
 header {
     background-image: url("./images/background.jpg");
     background-repeat: repeat-x;
-    height: 260px;
+    padding: 0 0 20px 0;
 }
 
 header, footer {
     text-align: center;
 }
-
-header > img {
-    padding: 20px 0 0 0;
-}
-
 
 h2 {
     padding: 15px 15px 0 15px;
