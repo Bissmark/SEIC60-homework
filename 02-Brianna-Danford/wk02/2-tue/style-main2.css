@@ -1,0 +1,64 @@
+/* * {
+    margin:0;
+    padding:0;
+  } */
+  
+  body {
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    width: 1024px;
+    margin: 20px auto;
+    background-color: #d6d6d6;
+    background: url("file:///Users/brian/Downloads/images/background.jpg") repeat-x;
+  }
+  
+
+  header,
+  footer {
+    padding: 1em;
+    color: white;
+    margin: auto;
+  }
+
+
+  .center {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container {
+    height:100%;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .section1 {
+    background-color: #ffffff;
+  }
+  
+  .section2 {
+    background-color: #ffffff;
+  }
+  
+  .section3{
+    background-color: #ffffff;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: black;
+  }
+  
