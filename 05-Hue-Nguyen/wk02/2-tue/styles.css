@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: url(public/images/background.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #d6d6d6;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.logo {
+    display: block;
+    margin: 2rem auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 900px;
+    min-width: 300px;
+    margin: 5rem auto 2rem;
+    gap: 1.5rem;
+}
+
+.center {
+    grid-column: 1/2;
+    padding: 0 1.5rem;
+    background-color: white;
+}
+
+.post {
+    margin: 3.2rem 0;
+}
+
+.post h2 {
+    font-size: 1.8rem;
+}
+
+.post img {
+    margin: 1.8rem 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.post span a {
+    color: #ff3300;
+    font-weight: 800;
+}
+.posted-by {
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 0.3rem dotted #d6d6d6;
+    border-bottom: 0.3rem solid #d6d6d6;
+}
+
+aside {
+    background-color: white;
+    height: fit-content;
+    padding: 3.2rem 1.5rem;
+}
+
+.blogroll {
+    margin-top: 1.6rem;
+}
+
+li {
+    list-style: none;
+    font-weight: bolder;
+}
+
+.ads img {
+    width: 100%;
+    margin-top: 1.6rem;
+}
+
+.social {
+    display: block;
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
