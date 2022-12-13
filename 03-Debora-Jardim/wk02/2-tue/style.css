@@ -1,0 +1,25 @@
+/* .background {
+    color:#d6d6d6;
+    background-repeat: repeat-x; */
+
+body {
+    background: repeat-x;
+    background-color: #d6d6d6;
+    color: #000;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    line-height: 1.7em;
+  }
+.main-content {
+margin-left: auto;
+  margin-right: auto;
+}  
+.ecard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+}
