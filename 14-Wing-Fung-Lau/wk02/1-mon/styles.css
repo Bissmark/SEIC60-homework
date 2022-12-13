@@ -8,13 +8,11 @@ body, html {
     width: 100%;
   }
   
-  .deer {
-	
+  div.deer {
 	position: absolute;
-	animation: infinite;
+	animation: 3s linear 0.1s infinite alternate slidein;
 	animation-name: run;
-	animation-duration: 5s;
-	font-size: 125px
+	font-size: 100px
   }
   @keyframes run {
 	0% {
@@ -128,9 +126,9 @@ img {
 }
 
 /* customizable snowflake styling */
-.snowflake {
+div.snowflake {
 	color: #fff;
-	font-size: 3em;
+	font-size: 5em;
 	font-family: Arial, sans-serif;
 	text-shadow: 0 0 5px #000;
   }
