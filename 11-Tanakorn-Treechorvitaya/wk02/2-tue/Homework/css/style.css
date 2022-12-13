@@ -1,0 +1,186 @@
+/*// eCardly CSS - Matt Rundo (@runtropolis) //*/
+
+/* Tag Styles */
+
+body {
+    background: url('images/background.jpg') repeat-x;
+    background-color: #d6d6d6;
+    color: #000;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Class Styles */
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 740px;
+  }
+  
+    /* Header */
+  
+    .header {
+      margin: 15px 0 30px;
+    }
+  
+      .header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      /* Column */
+  
+      .col {
+        background: rgba(255,255,255,0.85);
+        float: left;
+        padding: 30px 15px;
+      }
+  
+        /* Column Left */
+  
+        .col_left {
+          margin-right: 13px;
+          width: 60%;
+        }
+  
+          /* Post */
+  
+          .post {
+            margin-bottom: 50px;
+          }
+  
+            .post h1 {
+              font-size: 18px;
+              font-weight: 700;
+            }
+  
+            .post h1 a {
+              color: #000;
+              text-decoration: none;
+            }
+  
+            .post p a {
+              color: #cc6633;
+              font-weight: 600;
+              text-decoration: none;
+            }
+  
+              .post p a:hover {
+                text-decoration: underline;
+              }
+  
+            .post img {
+              margin: 15px 0;
+            }
+  
+            .post p {
+              font-size: 12px;
+              line-height: 1.5em;
+            }
+  
+            .post .article a {
+              text-transform: uppercase;
+            }
+  
+            .post .details {
+              border-bottom: 3px solid #aaa;
+              border-top: 2px dotted #ccc;
+              margin: 13px 0;
+              padding: 5px;
+            }
+  
+        /* Column Right */
+  
+        .col_right {
+          width: 30%;
+        }
+  
+          /* Sidebar Elements */
+  
+          .col_right div {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+          }
+  
+            .col_right a {
+              color: #000;
+              text-decoration: none;
+            }
+  
+              .col_right a:hover {
+                text-decoration: underline;
+              }
+  
+            div.col_right ul {
+              list-style: none;
+            }
+  
+            div.col_right p {
+              text-transform: uppercase;
+            }
+  
+      /* Footer */
+  
+      .footer {
+        float: left;
+        margin: 40px 0;
+        text-align: center;
+        width: 100%;
+      }
+  
+        div.footer img {
+          display: inline-block;
+        }
+  
+  /* Media Queries */
+  
+  @media (max-width: 740px) {
+  
+    .container {
+      width: 80%;
+    }
+  
+    .header {
+      position: relative;
+      height: 20px;
+      float: left;
+      margin: 0;
+    }
+  
+      .header img {
+        margin-left: -12px;
+        width: 30%;
+      }
+  
+    .col {
+      display: inline-block;
+      padding: 10px 15px;
+      text-align: center;
+      width: 90%;
+    }
+  
+      .col_left p {
+        text-align: left;
+      }
+  
+      div.col_right {
+        text-align: center;
+      }
+  
+      .col_right div {
+        margin-bottom: 30px;
+      }
+  
+      .col_right li {
+        line-height: 2.4em;
+      }
+  
+  }

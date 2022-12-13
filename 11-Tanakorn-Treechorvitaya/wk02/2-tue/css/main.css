@@ -1,0 +1,112 @@
+
+body {
+    background-image: url('images/background.jpg');
+    background-repeat: repeat-x;
+    background-color: #d6d6d6;
+    color: #000;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 30px 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header, .footer {
+    text-align: center;
+    width: 100%;
+}
+
+.header img {
+    display: block;
+    margin: 0 auto;
+}
+      /* Column */
+  
+      .col {
+        background: rgba(255,255,255,0.85);
+        padding: 30px 15px;
+        box-sizing: border-box;
+      }
+    /* Column Left */
+    
+    .col_left {
+        margin-right: 13px;
+        width: 100%;
+    }
+
+        /* Post */
+
+        .post {
+        margin-bottom: 50px;
+        }
+
+        .post h1 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .post h1 a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .post p a {
+            color: #cc6633;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+            .post p a:hover {
+            text-decoration: underline;
+            }
+
+        .post img {
+            margin: 15px 0;
+        }
+
+        .post p {
+            font-size: 12px;
+            line-height: 1.5em;
+        }
+
+        .post .article a {
+            text-transform: uppercase;
+        }
+
+        .post .details {
+            border-bottom: 3px solid #aaa;
+            border-top: 2px dotted #ccc;
+            margin: 13px 0;
+            padding: 5px;
+        }
+
+    /* Column Right */
+
+    .col_right {
+        width: 30%;
+    }
+
+        /* Sidebar Elements */
+
+        .col_right div {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+            .col_right a {
+            color: #000;
+            text-decoration: none;
+            }
+
+            .col_right a:hover {
+                text-decoration: underline;
+            }
