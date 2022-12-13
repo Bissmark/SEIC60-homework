@@ -1,0 +1,62 @@
+farofa.css
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .dish {
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 12px;
+  }
+  .burguer {
+    background-image:url(https://i.imgur.com/5V2p6FL.jpg);
+
+  }
+  .pizza {
+    background-image:url(https://i.imgur.com/3S8cKZe.jpg);
+  }
+
+  .icecream {
+    background-image:url(https://i.imgur.com/RjGi2n6.jpg);
+  }
+  
+  @media (max-width: 500px){}
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 30px 0;
+    }
+    div {
+      margin: 20px 12px 0 12px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    small {
+      font-size: 16px;
+    }
+
+  p {
+    color: rgba(255, 255, 255, 1);
+    background: #000000;
+    padding: 10px;
+    text-align: justify;
+    line-height: 28px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    } 
+  
