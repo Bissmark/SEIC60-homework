@@ -1,17 +1,18 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr; 
     grid-gap: 20px; 
     margin: auto;
     width: 50%;
+    justify-content: center;
   
 }
 
 .main-content {
     display: grid;
-    
-    grid-column: 2/3;
+    justify-items: center;
+    /* grid-column: 2/3; */
     grid-template-columns: 28fr 10fr;
     grid-template-rows: 20fr 14fr;
     grid-gap: 15px;
