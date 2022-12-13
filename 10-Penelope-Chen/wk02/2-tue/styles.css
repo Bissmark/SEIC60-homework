@@ -1,0 +1,31 @@
+h1 { 
+    font: 36px/1.7;
+}
+
+body { 
+    background: #d6d6d6 url("img/images/background.jpg") repeat left right;
+    background-size: cover;
+    font:  12px "Helvetica";
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+header {
+    display: inline;
+}
+
+.cover {
+    z-index: 1;
+}
+
+.logo {
+    z-index: 2;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
