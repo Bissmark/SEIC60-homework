@@ -1,0 +1,43 @@
+.ads {
+display: inline;
+}
+body {
+    background-color: #d6d6d6;
+    background-image: url("images/background.jpg");
+    background-repeat: repeat-x;
+    line-height: 1.7;
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+    background-repeat: repeat-x;
+    max-width: 900px;
+}
+.section1 {
+    background-color: white;
+    padding: 0 10px 5px 10px;
+}
+.section2 {
+    background-color: white;
+    padding: 0 10px 40px 10px;
+}
+.one {
+    width: 95%;
+    text-decoration: dotted;
+}
+span {
+    color: red;
+}
+.two {
+    width: 95%;
+}
+li {
+    list-style: none;
+}
+footer, header {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    padding-left: 0;
+    padding-top: 0;
+}
+
