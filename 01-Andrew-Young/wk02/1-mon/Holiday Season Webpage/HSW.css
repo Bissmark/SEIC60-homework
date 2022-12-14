@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap&effect=neon');
+
+body {
+    padding-top: 100px;
+    text-align: center;
+    background: url("https://i.imgur.com/ST69Cjj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    font-family: proxima nova;
+}
+
+img {
+    border-radius: 50%;
+    height: 300px
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    padding-bottom: 10px;
+    opacity: 90%;
+    font-size: 200px;
+    font-weight: bold;
+    font-stretch: semi-expanded;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 10px;
+}
+
+h2 {
+    padding-bottom: 20px;
+    /* background-color: rgba(0, 0, 0, 0.5) */
+}
+
+p {
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    margin: 20px 0px 100px 0px;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* div.white-box {
+    opacity: 0.8;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    color: black;
+    width: 60%;
+    height: 800px;
+    padding: 50px 50px;
+} */

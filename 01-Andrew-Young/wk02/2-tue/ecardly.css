@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+  }
+
+body {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgb(215, 215, 215);
+    background-image: url("images/background.jpg");
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: 
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    font-family: helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+.header img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.header {
+    justify-content: center;
+   
+}
+
+.details {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top-style: 1px dotted grey;
+    border-bottom: 1px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: repeat(, auto); */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+    
+
+.cola {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+}
+
+.colb {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+
+.a {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 1 / 2;
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+}
+
+.b {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 2 / 3;
+    background-color: white;
+    padding: 0px 20px 10px 20px;
+}
+
+.c {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 1 / 2;
+    background-color: white;
+    padding: 10px
+}
+
+.d {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 2 / 3;
+    background-color: white;
+    padding: 10px
+}
+
+.e {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 3 / 4;
+    background-color: white;
+    padding: 10px
+}
+
+.f {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 4 / 5;
+    background-color: white;
+    padding: 10px
+}
+
+.g {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 5 / 6;
+    background-color: white;
+    padding: 10px
+}
+
+li {
+    list-style: none;
+    font-style: none;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
