@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: cornsilk;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("./assets/background.jpeg");
+    background-size: cover;
+}
+
+p{
+    color: rgba(255,255,255,1);
+    background: rgba(0,0,0,0.3);
+    padding:10px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+div {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    padding: 10px;
+    border-radius: 12px;
+    color: aliceblue;
+
+}
+
+.sydney{
+    background-image:url("./assets/sydney.jpeg");
+}
+
+.wollongong{
+    background-image: url("./assets/wollongong.jpeg");
+}
+
+.city{
+    color: gold;
+    float: right;
+}
