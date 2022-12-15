@@ -42,3 +42,10 @@ html {
   background-position: center;
   background-image: url(images/shot.png);
 }
+
+.timer {
+  font-size: 100px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}

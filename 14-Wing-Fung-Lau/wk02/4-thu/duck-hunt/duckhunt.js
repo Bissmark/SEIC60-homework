@@ -1,4 +1,5 @@
 const body = document.body
+const timer = document.querySelector('.timer')
 
 // ---------------------------- PART 1 ---------------------------------
 
@@ -31,7 +32,7 @@ const creatDuck = function(){
         duck.style.top = Math.random() * window.innerHeight + 'px'
         duck.style.left = Math.random() * window.innerWidth + 'px'
     }
-    setInterval(topleft, 300);
+    setInterval(topleft, 1000);
 
 
     duck.addEventListener('click', function(){
@@ -39,11 +40,6 @@ const creatDuck = function(){
         duck.classList.add('shot');
         setTimeout(function(){
                     duck.remove()
-                }, 1000)
-
-
-            
-            setTimeout(function () {
                     for (let j = 0; j < ducks.length; j++) {
                         ducks = document.querySelectorAll('.duck')
                     }
@@ -55,7 +51,7 @@ const creatDuck = function(){
                         return
                     }
                     }
-                , 1000)
+                , 1200)
         } 
     ) 
 };
@@ -65,9 +61,48 @@ const creatDuck = function(){
 
 // 2. Now, let's create lots of ducks!  Use a "for" loop to create 5 ducks
 //    using our fancy new createDuck() function
-for (let i = 0; i <= 4; i++) {
+for (let i = 0; i <= 15; i++) {
     creatDuck();
 }
+
+
+
+
+const timerInterval = setInterval(function() {timer.textContent = parseInt(timer.textContent) - 1}, 300);
+
+let ducks = document.querySelectorAll('.duck')
+
+body.addEventListener('click', function() {
+    setTimeout(function(){
+        ducks = document.querySelectorAll('.duck')
+        if (ducks.length < 1) {
+            clearInterval(timerInterval)
+            return
+    }}, 1200)
+})
+
+
+const timeCheck = setInterval(function() {
+    if (parseInt(timer.textContent) < 0) {
+        clearInterval(timeCheck)
+        clearInterval(timerInterval)
+        timer.textContent = 'GAME OVER'
+        alert('Game Over! LOSEERRRRR!!!!')
+        
+        return ducks.forEach(function(duck) {
+            duck.classList.add('shot');
+            setTimeout(function() {
+                duck.remove()
+            }, 500) 
+          });
+    }
+}, 100)
+
+
+
+
+
+
 // --------------------------- PART 3 ------------------------------------
 
 // 3. BOOM. Inside the `createDuck` function:
