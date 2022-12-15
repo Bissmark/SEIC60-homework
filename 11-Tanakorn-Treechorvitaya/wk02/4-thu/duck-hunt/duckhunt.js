@@ -21,9 +21,10 @@ const createDuck = function(){
         newFlap.className = "flap"
         newDiv.classList.toggle("flap")
         // 1.c
-        newDiv.style.top = (Math.random() * window.innerWidth)+"px"
+        newDiv.style.top = (Math.random() *window.innerHeight)+"px"
         // console.log(newDiv.style.top)
-        newDiv.style.left = (Math.random() * window.innerHeight)+"px"
+        newDiv.style.left = (Math.random() * window.innerWidth)+"px"
+        
         // console.log(newDiv.style.left)
     },250)
 
