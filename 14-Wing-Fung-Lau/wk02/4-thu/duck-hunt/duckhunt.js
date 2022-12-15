@@ -34,30 +34,30 @@ const creatDuck = function(){
     setInterval(topleft, 300);
 
 
-    // duck.addEventListener('click', function(){
-    //     let ducks = document.querySelectorAll('.duck')
-    //     duck.classList.add('shot');
-    //     setTimeout(function(){
-    //                 duck.remove()
-    //             }, 1000)
+    duck.addEventListener('click', function(){
+        let ducks = document.querySelectorAll('.duck')
+        duck.classList.add('shot');
+        setTimeout(function(){
+                    duck.remove()
+                }, 1000)
 
 
             
-    //         setTimeout(function () {
-    //                 for (let j = 0; j < ducks.length; j++) {
-    //                     ducks = document.querySelectorAll('.duck')
-    //                 }
-    //             }, 1000)
+            setTimeout(function () {
+                    for (let j = 0; j < ducks.length; j++) {
+                        ducks = document.querySelectorAll('.duck')
+                    }
+                }, 1000)
 
-    //             setTimeout(function () {
-    //                 if (ducks.length < 1) {
-    //                     alert('YOU WIN!')
-    //                     return
-    //                 }
-    //                 }
-    //             , 1000)
-    //     } 
-    // ) 
+                setTimeout(function () {
+                    if (ducks.length < 1) {
+                        alert('YOU WIN!')
+                        return
+                    }
+                    }
+                , 1000)
+        } 
+    ) 
 };
 //   1.e. Congratulations! Move on to part 2!
 
