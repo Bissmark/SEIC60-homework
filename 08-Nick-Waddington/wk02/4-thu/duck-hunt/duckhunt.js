@@ -61,8 +61,14 @@ const createDuck = function () {
     )
     setInterval(function () {
         div.style.left = (Math.random() * window.innerWidth) + 'px'; 
-        div.style.top = (Math.random() * window.innerHeight) + 'px'}, 400
+        div.style.top = (Math.random() * window.innerHeight) + 'px'}, 1000
     )
+    addEventListener('click', function () {
+        div.classList.add('shot')
+    })
 }
+    addEventListener('click', function () {
+    div.classList.add('shot')
+})
 }
 createDuck()
