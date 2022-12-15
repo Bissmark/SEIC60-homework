@@ -50,22 +50,19 @@ const body = document.body
 
 
 const createDuck = function () {
-    const div = document.createElement('div')
-    div.classList.add('duck')
-    body.append(div)
+    for (let i=0; i<5; i++) {
+        let div = document.createElement('div')
+        div = document.createElement('div')
+        div.classList.add('duck')
+        body.append(div)
+
     setInterval(function () {  
         div.classList.toggle('flap')}, 250
     )
     setInterval(function () {
         div.style.left = (Math.random() * window.innerWidth) + 'px'; 
-        div.style.top = (Math.random() * window.innerHeight) + 'px'}, 1000
+        div.style.top = (Math.random() * window.innerHeight) + 'px'}, 400
     )
 }
+}
 createDuck()
-
-    // moveHorizontal(fuction() {
-
-    //     const horizontal = (Math.Random() * window.innerWidth)
-    // })
-
-    //  = (Math.Random() * window.innerWidth)
