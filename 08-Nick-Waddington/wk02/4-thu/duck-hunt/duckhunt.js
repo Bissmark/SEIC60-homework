@@ -50,6 +50,7 @@ const body = document.body
 
 
 const createDuck = function () {
+
     for (let i=0; i<5; i++) {
         let div = document.createElement('div')
         div = document.createElement('div')
@@ -57,18 +58,24 @@ const createDuck = function () {
         body.append(div)
 
     setInterval(function () {  
-        div.classList.toggle('flap')}, 250
-    )
+        div.classList.toggle('flap')}, 250)
+
     setInterval(function () {
         div.style.left = (Math.random() * window.innerWidth) + 'px'; 
-        div.style.top = (Math.random() * window.innerHeight) + 'px'}, 1000
-    )
-    addEventListener('click', function () {
+        div.style.top = (Math.random() * window.innerHeight) + 'px'}, 1000)
+
+    // checkForWinner(function() {
+    //     const ducks = document.querySelectorAll('.duck');
+    //     if (ducks.length === 0){
+    //         alert('YOU WIN!');}
+    //         })
+
+    div.addEventListener('click', function (event) {
         div.classList.add('shot')
+        setTimeout(() => {
+        event.target.remove()
+        }, 1000)
     })
-}
-    addEventListener('click', function () {
-    div.classList.add('shot')
-})
+    }
 }
 createDuck()
