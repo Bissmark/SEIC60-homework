@@ -64,17 +64,21 @@ const createDuck = function () {
         div.style.left = (Math.random() * window.innerWidth) + 'px'; 
         div.style.top = (Math.random() * window.innerHeight) + 'px'}, 1000)
 
-    // checkForWinner(function() {
-    //     const ducks = document.querySelectorAll('.duck');
-    //     if (ducks.length === 0){
-    //         alert('YOU WIN!');}
-    //         })
+        let shotDucks = [];
+
+    const checkForWinner = (function() {
+        shotDucks = document.querySelectorAll('.duck');
+        console.log(shotDucks);
+        if (shotDucks.length === 1){
+            alert('YOU WIN!');}
+            })
 
     div.addEventListener('click', function (event) {
         div.classList.add('shot')
         setTimeout(() => {
         event.target.remove()
         }, 1000)
+        checkForWinner()
     })
     }
 }
