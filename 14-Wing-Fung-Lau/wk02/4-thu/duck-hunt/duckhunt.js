@@ -50,7 +50,7 @@ const creatDuck = function(){
 
         setTimeout(function () {
             let dogs = document.querySelectorAll('.dog')
-            if (ducks.length < 1 && dogs.length < 1) {
+            if (ducks.length < 1 && timer.textContent === 'DOG MURDERER') {
                 alert('DISQUALIFIED as dog killing is NOT allowed!')
                 return
                 } else if (ducks.length < 1) {
