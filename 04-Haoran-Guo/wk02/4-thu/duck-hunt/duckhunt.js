@@ -13,7 +13,7 @@ const checkForWinner = function () {
     const ducks = document.querySelectorAll('.duck');
     const duckCount = ducks.length;
     if (duckCount > 0) {
-        alert(`There are ${duckCount} ducks left`);
+        console.log(`There are ${duckCount} ducks left`);
 } else{
     alert("YOU WIN!");
     }
@@ -50,7 +50,7 @@ const createDuck = function(){
                 newDiv.classList.remove("duck")
             }
 
-            setInterval(removeDuck, 100);
+            setInterval(removeDuck, 1000);
             checkForWinner()
         }
 
