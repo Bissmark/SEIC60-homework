@@ -18,7 +18,7 @@ html {
 .duck {
   position: absolute;
   background-image: url(images/duckhunt.png);
-  background-position: -100px -160px;
+  background-position: -445px -290px;
   width: 110px;
   height: 115px;
   transition: top 2s, left 2s;
@@ -27,16 +27,16 @@ html {
 }
 
 .duck.right {
-  background-position: -200px -160px;
+  background-position: -340px -290px;
 }
 .duck.right.flap {
-  background-position: -300px -160px;
+  background-position: -120px -290px;
 }
 .duck {
-  background-position: -100px -160px;
+  background-position: -445px -290px;
 }
 .duck.flap {
-  background-position: -430px -160px;
+  background-position: -235px -290px;
 }
 .duck.shot {
   background-position: center;
@@ -48,4 +48,25 @@ html {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+
+.dog {
+  position: absolute;
+  background-image: url(images/duckhunt2.png);
+  background-position: -25px 0px;
+  width: 270px;
+  height: 235px;
+  transition: right 2s, left 2s;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+  bottom: 10%;
+  left: 5%;
+}
+
+.dog.walk {
+  background-position: -840px 0px;
+}
+
+.dog.hit {
+  background-position: -1110px 0px;
 }

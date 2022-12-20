@@ -1,8 +1,5 @@
 const body = document.body
 const timer = document.querySelector('.timer')
-const timerInterval = setInterval(function() {
-    timer.textContent = parseInt(timer.textContent) - 1}, 300);
-
 
 // ---------------------------- PART 1 ---------------------------------
 
@@ -42,22 +39,21 @@ const creatDuck = function(){
         let ducks = document.querySelectorAll('.duck')
         duck.classList.add('shot');
         setTimeout(function(){
-            duck.remove()
-            for (let j = 0; j < ducks.length; j++) {
-                ducks = document.querySelectorAll('.duck')
-                }
-            }, 1000)
+                    duck.remove()
+                    for (let j = 0; j < ducks.length; j++) {
+                        ducks = document.querySelectorAll('.duck')
+                    }
+                }, 1000)
 
-        setTimeout(function () {
-            let dogs = document.querySelectorAll('.dog')
-            if (ducks.length < 1 && timer.textContent === 'DOG MURDERER') {
-                alert('DISQUALIFIED as dog killing is NOT allowed!')
-                return
-                } else if (ducks.length < 1) {
-                alert('YOU WIN!')
-                return
-                }}, 1200)
-    } ) 
+                setTimeout(function () {
+                    if (ducks.length < 1) {
+                        alert('YOU WIN!')
+                        return
+                    }
+                    }
+                , 1200)
+        } 
+    ) 
 };
 //   1.e. Congratulations! Move on to part 2!
 
@@ -65,83 +61,42 @@ const creatDuck = function(){
 
 // 2. Now, let's create lots of ducks!  Use a "for" loop to create 5 ducks
 //    using our fancy new createDuck() function
-for (let i = 0; i <= 5; i++) {
+for (let i = 0; i <= 15; i++) {
     creatDuck();
 }
 
 
 
 
+// const timerInterval = setInterval(function() {timer.textContent = parseInt(timer.textContent) - 1}, 300);
+
+// let ducks = document.querySelectorAll('.duck')
+
+// body.addEventListener('click', function() {
+//     setTimeout(function(){
+//         ducks = document.querySelectorAll('.duck')
+//         if (ducks.length < 1) {
+//             clearInterval(timerInterval)
+//             return
+//     }}, 1200)
+// })
 
 
-
-const creatDog = function(){
-
-        let dog = document.createElement('div');
-
-        dog.className = 'dog';
-
-        body.appendChild(dog)
-    
-
-        setInterval(function() {
-            dog.classList.toggle('walk')
-            dog.style.top = 620 + (Math.random() * window.innerHeight)*0.1 + 'px'
-            dog.style.left = Math.random() * window.innerWidth + 'px'     
-        }, 500);
-
-
-        dog.addEventListener('click', function(){
-            dog.classList.add('hit');
-            setTimeout(function(){
-                        dog.remove()
-                        alert('DAMN YOU DOG MURDERER!')
-                        clearInterval(timerInterval)
-                        timer.textContent = 'DOG MURDERER'
-
-
-                    }, 2000)
-            } 
-        ) 
+// const timeCheck = setInterval(function() {
+//     if (parseInt(timer.textContent) < 0) {
+//         clearInterval(timeCheck)
+//         clearInterval(timerInterval)
+//         timer.textContent = 'GAME OVER'
+//         alert('Game Over! LOSEERRRRR!!!!')
         
-    };
-
-
-    for (let i = 0; i <= 1; i++) {
-        creatDog();
-    }
-
-
-
-
-
-let ducks = document.querySelectorAll('.duck')
-
-body.addEventListener('click', function() {
-    setTimeout(function(){
-        ducks = document.querySelectorAll('.duck')
-        if (ducks.length < 1) {
-            clearInterval(timerInterval)
-            return
-    }}, 1200)
-})
-
-
-const timeCheck = setInterval(function() {
-    if (parseInt(timer.textContent) < 0) {
-        clearInterval(timeCheck)
-        clearInterval(timerInterval)
-        timer.textContent = 'GAME OVER'
-        alert('Game Over! LOSEERRRRR!!!!')
-        
-        return ducks.forEach(function(duck) {
-            duck.classList.add('shot');
-            setTimeout(function() {
-                duck.remove()
-            }, 500) 
-          });
-    }
-}, 100)
+//         return ducks.forEach(function(duck) {
+//             duck.classList.add('shot');
+//             setTimeout(function() {
+//                 duck.remove()
+//             }, 500) 
+//           });
+//     }
+// }, 100)
 
 
 
