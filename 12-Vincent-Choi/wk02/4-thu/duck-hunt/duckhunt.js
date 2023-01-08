@@ -67,4 +67,15 @@ duck.addEventListener('click', function(){
 //     there are no more ducks, alert "YOU WIN!". Call your checkForWinner
 //     function each time a duck gets removed from the DOM.
 
+const checkForWinner = function() {
+    const ducks = document.querySelectorAll('.duck')
+    console.log(ducks)
+    
+    if (ducks.length === 0) {   
+        setTimeout(function() {
+            alert("YOU WIN!")
+        }, 200)
+    }
+}
+
 // FIN. You win 1 trillion tokens.  Play the day away!
