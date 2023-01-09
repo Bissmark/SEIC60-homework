@@ -108,24 +108,24 @@ until menu_choice == 'q'
         puts case menu_choice
         when 'a'
             get_a_b
-            $a+$b
+            $a + $b
         when 's'
             get_a_b
-            $a-$b
+            $a - $b
         when 'm'
             get_a_b
-            $a*$b
+            $a * $b
         when 'd'
             get_a_b
-            $a/$b
+            $a / $b
         when 'e'
             get_a_b
             $a ** $b
         when 'r'
             get_a_b
-            $a ** (1.0/$b)
+            $a ** (1.0 / $b)
         when 'l'
-            Math.log($a,$b)
+            Math.log( $a , $b )
         when 'mortgage'
             monthly_payment
         when 'bmi'

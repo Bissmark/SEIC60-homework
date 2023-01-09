@@ -11,3 +11,13 @@
 # > "some" + "string"
 # "somestring"
 # >
+
+puts "Welcome to Ruby REPL"
+puts "Type exit to quit the loop"
+while true
+    # get inputs
+    print "> " 
+    inputs = gets.chomp # > 2 + 7
+    # show results
+    puts eval(inputs) # 9
+end
