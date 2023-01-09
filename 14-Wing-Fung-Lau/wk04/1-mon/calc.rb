@@ -59,18 +59,25 @@ end
 until menu_choice == 'q'
     case menu_choice
     when 'a'
+        puts "You choose Addition!"
         calculation('+')
     when 's'
+        puts "You choose Subtraction!"
         calculation('-')
     when 'm'
+        puts "You choose Multiplication!"
         calculation('*')
     when 'd'
+        puts "You choose Division!"
         calculation('/')
     when 'e'
+        puts "You choose Exponent!"
         calculation('**')
     when 'sr'
+        puts "You choose Square roots!"
         calculation('sr')
     when 'mc'
+        puts "You choose Mortgage Calculator!"
         print "Enter amount borrowed ($): "
         amount_borrowed = gets.to_i
 
@@ -106,6 +113,7 @@ until menu_choice == 'q'
         puts ""
         puts "-" * 40
     when 'bc'
+        puts "You choose BMI Calculator!"
         print "Enter height (cm): "
         height = gets.to_f
         print "Enter weight (kg): "
@@ -134,6 +142,7 @@ until menu_choice == 'q'
     
 
     when 'tc'
+        puts "You choose Trip Calculator!"
         print "Enter distance (km): "
         distance = gets.to_f
         print "Enter km per liter (km): "
