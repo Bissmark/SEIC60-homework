@@ -13,6 +13,7 @@ const planTrip = function () {
     const nLine = ["Times Square", "34th", "28thN", "23rdN", "Union Square", "8thN"]
     const lLine = ["8thL", "6th", "Union Square", "3rd", "1st"]
     const sixLine = ["Grand Central", "33rd", "28th6", "23rd6", "Union Square", "Astor Place"]
+    const allLines = [nLine, lLine, sixLine]
 }
 // Need to find the (array method(s)?) to help choose any combo of stops
 
