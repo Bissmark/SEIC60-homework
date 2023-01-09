@@ -1,56 +1,40 @@
 const body = document.body;
-const checkDuck = document.querySelectorAll(".duck");
-let openMusic = document.querySelector("open");
-function open() {
-  openMusic.play();
-}
-
+// 1.a
 const createDuck = function () {
   const getDuck = document.createElement("div");
   getDuck.classList.add("duck");
   body.append(getDuck);
-  let flapDuck = setInterval(flap, 250);
+
+  // 1.b & 1.c
   function flap() {
-    body.classList.toggle(".flap");
+    getDuck.classList.toggle("flap");
+    getDuck.style.top = `${Math.random() * window.innerHeight}px`;
+    getDuck.style.left = `${Math.random() * window.innerWidth}px`;
   }
+  setInterval(flap, 250);
 
-  const duckTag = document.querySelector(".duck");
-  duckTag.style.top = `${Math.random() * window.innerWidth}px`;
-  duckTag.style.left = `${Math.random() * window.innerHeight}px`;
-
-  body.addEventListener("click", function () {
-    duckTag.classList.add("shot");
-    setTimeout(console.log("A duck got shot, oh no!"), 1000);
-
-    const checkForWinner = function () {
-      if (body.children.length === 0) {
-        alert("YOU WIN!");
-      }
-    };
-  });
-  checkDuck[0].addEventListener("click", function () {
-    checkForWinner();
+  //3.a
+  getDuck.addEventListener("click", function () {
+    getDuck.classList.add("shot");
+    setTimeout(function () {
+      getDuck.remove();
+      checkForWinner();
+    }, 500);
   });
 
-  checkDuck[1].addEventListener("click", function () {
-    checkForWinner();
-  });
-
-  checkDuck[2].addEventListener("click", function () {
-    checkForWinner();
-  });
-
-  checkDuck[3].addEventListener("click", function () {
-    checkForWinner();
-  });
-  checkDuck[4].addEventListener("click", function () {
-    checkForWinner();
-  });
-  for (let i = 1; i <= 5; i++) {
-    createDuck();
-  }
+  //4
+  const checkForWinner = function () {
+    const checkDuck = document.querySelectorAll(".duck");
+    if (checkDuck.length === 0) {
+      alert("YOU WIN!");
+    }
+  };
 };
-createDuck();
+
+//2
+for (let i = 0; i < 5; i++) {
+  createDuck();
+}
 
 // ---------------------------- PART 1 ---------------------------------
 
