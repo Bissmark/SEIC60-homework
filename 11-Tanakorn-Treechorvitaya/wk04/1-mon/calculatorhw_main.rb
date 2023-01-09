@@ -27,9 +27,9 @@ def show_menu
     puts "[e] - Exponents"
     puts "[r] - Square roots"
     puts "[l] - Logarithm"
-    puts "[mortgage] - monthly payment"
-    puts "[BMI] - BMI calculation"
-    puts "[trip] - time and cost calculation"
+    puts "[mg] - monthly payment"
+    puts "[bmi] - BMI calculation"
+    puts "[tp] - time and cost calculation"
     puts "[q] - Quit"
     print "Enter your choice: "
 end
@@ -55,7 +55,7 @@ def monthly_payment
     puts "Your monthly payment equal to #{ monthly_payment } AUD."
 end
 
-def BMI_cal
+def bmi_cal
     puts "BMI Calculator".center(30,"-")
     puts "*o*" * 10
     # get variable
@@ -126,11 +126,11 @@ until menu_choice == 'q'
             $a ** (1.0 / $b)
         when 'l'
             Math.log( $a , $b )
-        when 'mortgage'
+        when 'mg'
             monthly_payment
         when 'bmi'
-            BMI_cal
-        when 'trip'
+            bmi_cal
+        when 'tp'
             trip_cal
         else 
             "Invalid selection. Please select function on the menu."

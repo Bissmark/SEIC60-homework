@@ -1,7 +1,9 @@
 # BMI Calculator
 # Calculate the body mass index (BMI) for an individual, given their height and weight
 
-def BMI_cal
+def bmi_cal
+    puts "BMI Calculator".center(30,"-")
+    puts "*o*" * 10
     # get variable
     print "What is your height (cm): "
     height = gets.to_f
@@ -9,5 +11,7 @@ def BMI_cal
     weight = gets.to_f
     # show results
     puts "As your height and weight equal to #{ height } cm and #{ weight } kg respectively."
-    puts "Therefore, your BMI is #{ weight/ (( height / 100 ) ** 2) }"
+    puts "Therefore, your BMI is #{ weight/ (( height / 100 ) ** 2) }."
 end
+
+bmi_cal

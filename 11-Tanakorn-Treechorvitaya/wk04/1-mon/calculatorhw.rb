@@ -43,25 +43,18 @@ until menu_choice == 'q'
     # arithmetic
         puts case menu_choice
         when 'a'
-            get_variables
             a+b
         when 's'
-            get_variables
             a-b
         when 'm'
-            get_variables
             a*b
         when 'd'
-            get_variables
             a/b
         when 'e'
-            get_variables
             a ** b
         when 'r'
-            get_variables
             a ** (1.0/b)
         when 'l'
-            get_variables
             Math.log(a,b)
         else 
             "Invalid selection. Please select function on the menu."
