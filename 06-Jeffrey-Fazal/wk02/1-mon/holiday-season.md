@@ -1,10 +1,11 @@
 # Holiday Season Webpage
 
 ### Getting Started
+
 1. Add your HTML, CSS, images, and other files to the `wk02/1-mon` folder in your homework repo fork
-1. Commit early, commit often
-1. Take a screenshot of your finished work and commit it
-1. When you're finished push to your fork and file a Pull Request to the main homework repo
+2. Commit early, commit often
+3. Take a screenshot of your finished work and commit it
+4. When you're finished push to your fork and file a Pull Request to the main homework repo
 
 ---
 
@@ -17,10 +18,12 @@ Challenge yourself further by researching more CSS style rules that haven't been
 ### Resources
 
 #### Placeholder text
+
 - https://meettheipsums.com/
 - https://mashable.com/archive/lorem-ipsum
 
 #### Images
+
 - https://unsplash.com/
 - https://www.pexels.com/
 - https://placedog.net/
