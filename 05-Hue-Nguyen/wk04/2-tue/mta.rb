@@ -15,6 +15,7 @@ def plan_trip(startLi, startSt, endLi, endSt)
     inter_i_endLi = subway[endLi].index(inter)
     endSt_i = subway[endLi].index(endSt)
 
+    # stops in the start line that the traveller will go through
     if inter_i_startLi > startSt_i 
         s_stops = subway[startLi][startSt_i+1..inter_i_startLi] # exclude the start stop
     else 
@@ -24,6 +25,7 @@ def plan_trip(startLi, startSt, endLi, endSt)
     p "You must travel through the following stops on the #{startLi} line: #{s_stops.join(', ')}."
     p "Change at #{inter}."
 
+    # stops in the end line that the the traveller will go through till the end stop.
     if inter_i_endLi > endSt_i
         e_stops = subway[endLi][endSt_i...inter_i_endLi].reverse # exclude the intersection
     else
@@ -37,3 +39,4 @@ end
 
 plan_trip "L", "6th", "N", "34th"
 plan_trip 'N', 'Times Square', '6', '33rd'
+plan_trip 'N', 'Line-N 28th', "6", "Astor Place"
