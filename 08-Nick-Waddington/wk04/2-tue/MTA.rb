@@ -28,9 +28,20 @@ def trip_planner (start_line, start_station, end_line, end_station)
         trip_1 << n
     end
 
-    $subway_lines[start_line][:stations][end_union_square + 1..end_index].each do |n|
+    if end_union_square < end_index
+        $subway_lines[end_line][:stations][end_union_square + 1..end_index].each do |n|
         trip_2 << n
-    end
+        end
+    end 
+
+    if end_union_square > end_index
+        $subway_lines[end_line][:stations].reverse!
+        end_union_square = $subway_lines[end_line][:stations].index("Union Square")
+        end_index = $subway_lines[end_line][:stations].index(end_station)
+        $subway_lines[end_line][:stations][end_union_square + 1..end_index].each do |n|
+        trip_2 << n
+        end
+    end 
 
     #same line
         if start_line == end_line && start_index < end_index
@@ -55,20 +66,17 @@ def trip_planner (start_line, start_station, end_line, end_station)
             puts "You must travel through the following stops on the #{start_line} line: #{trip_1.join(", ")}."
             puts "Change at Union Square."
             puts "Your journey continues on the #{end_line} line through the following stops: #{trip_2.join(", ")}."
-            puts "#{end_index - start_index} stops in total."
+            puts "#{trip_1.length + trip_2.length} stops in total."
         end
 
         if start_index > start_union_square
-            puts "You must travel through the following stops on the #{start_line} line: #{trip_1.join(", ")}."
+            trip_1 = "Union Square"
+            puts "You must travel through the following stops on the #{start_line} line: #{trip_1}."
             puts "Change at Union Square."
             puts "Your journey continues on the #{end_line} line through the following stops: #{trip_2.join(", ")}."
-            puts "#{end_index - start_index} stops in total."
+            puts "#{trip_2.length + 1} stops in total."
         end
 end
 
-trip_planner "L", "8th", "N", "8th"
-
-
-#start line to union square
-#end line from union square
+trip_planner "6", "Astor Place", "N", "23rd"
 
