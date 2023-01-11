@@ -1,0 +1,20 @@
+body {
+    background-color: yellow;
+    /* background-image: url("https://img.freepik.com/premium-vector/cute-cartoon-books-doodles-seamless-border-pattern-vector-repeatable-background-texture-tile-cozy-craft-template-stock-illustration-wrapping-design-wallpaper_44769-2087.jpg?w=1380"); */
+    background-image: url("https://img.freepik.com/free-vector/watercolor-literature-concept-with-books_23-2149282291.jpg?w=1060&t=st=1673445977~exp=1673446577~hmac=a98477ab76ef9f942d14f906c80218c33cf7b2f00676ad99888b22aa0c529b69");
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.8);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    width: 500px;
+    margin: 0 auto;
+}
