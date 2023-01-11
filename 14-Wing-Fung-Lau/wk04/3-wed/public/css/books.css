@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-body > div {
+container {
     display: flex;
     /* align-items: center; */
     justify-content:center

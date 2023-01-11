@@ -2,13 +2,8 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'HTTParty'
 
-get '/' do
-    erb :home
-end
-
-get '/info' do
-    book = params[:book]
-    url = "https://www.googleapis.com/books/v1/volumes?q=title:#{ book }"
+def book_search(title)
+    url = "https://www.googleapis.com/books/v1/volumes?q=title:#{title}"
     info = (HTTParty.get url).to_s
 
     thumbnail_index = info.index('"thumbnail": ') + '"thumbnail": '.length
@@ -34,7 +29,29 @@ get '/info' do
     else
         @authors_form = "Author"
     end
+    "<container>
+        <img src=#{@book_cover}>
+        <div id='book_info'>
+            <p>Title: #{@book_title}</p>
 
+            <p>#{@authors_form}: #{@authors}</p>
 
+            <p>Publisher: #{@publisher}</p>
+
+            <p>Published date: #{@date}</p>
+        </div>
+    </container>"
+end
+
+get '/' do
+    popular_books = ["Xi Jinping: The Governance of China", "Quotations from Chairman Mao Tsetung", "Selected Works of Mao Zedong",  "The Dictator's Handbook", "The Dictator's Learning Curve", "Xi Jinping: The Governance of China", "Xi Jinping: The Governance of China", "Xi Jinping: The Governance of China", "Xi Jinping: The Governance of China"]
+    book = popular_books.sample
+    @book_details = book_search(book) 
+    erb :home
+end
+
+get '/info' do
+    book = params[:book]
+    @book_details = book_search(book) 
     erb :info
 end
