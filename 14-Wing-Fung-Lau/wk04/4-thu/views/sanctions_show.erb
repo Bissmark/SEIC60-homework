@@ -1,0 +1,19 @@
+<div class="sanction_profile">
+
+    <% unless @sanction["image"].nil? || @sanction["image"].empty? %>
+    <img class="feature" src="<%= @sanction["image"] %>" alt="<%= @sanction["name"] %>">
+    <% end%>
+
+    <div class='sanction_details'>   
+        <h2><%= @sanction["name"] %></h1>
+        <h3>Title: <%= @sanction["title"] %></h1>
+        <h3>Nationality: <%= @sanction["nationality"] %></h1>
+        <h3>Risk: <%= @sanction["risk"] %></h1>
+    </div>
+
+</div>
+
+<div class="control">
+    <a href="/sanctions/<%= @sanction["id"] %>/edit">Edit sanction</a>
+    <a href="/sanctions/<%= @sanction["id"] %>/delete">Delete sanction</a>
+</div>
