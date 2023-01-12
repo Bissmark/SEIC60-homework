@@ -1,0 +1,41 @@
+<h1>Edit Stars</h1>
+
+<form class="myForm" action="/brightest_stars/<%= @star["id"] %>" method="post">
+    <label>
+        Name:
+    </label>
+    <input name="name" required value="<%= @star["name"] %>">
+
+    <label>
+        Astronomical name:
+    </label>
+    <input name="astronomicalname" value="<%= @star["astronomicalname"] %>">
+
+    <label>
+        Meaning:
+    </label>
+    <input name="meaning" value="<%= @star["meaning"] %>">
+
+    <label>
+        Distance: 
+    </label>
+    <input name="distance" value="<%= @star["distance"] %>">
+
+    <label>
+        Apparent magitude:
+    </label>
+    <input name="apparentmagitude" value="<%= @star["apparentmagitude"] %>">
+
+    <label>
+        Absolute magnitude:
+    </label>
+    <input name="absolutemagnitude" value="<%= @star["absolutemagnitude"] %>">
+
+    <label>
+        Image: 
+    </label>
+    <input type="url" name="image">
+
+    <button>Change</button>
+    
+</form>

@@ -1,0 +1,22 @@
+<div class="details">
+    <h1><%= @star["name"] %> ( <%= @star["astronomicalname"] %> )</h1>
+    <h2> meaning : <%= @star["meaning"] %></h2>
+
+    <div class="forImage">
+        <% unless @star["image"].nil? || @star["image"].empty? %>
+            <img class = "feature" src ="<%= @star["image"] %>" alt = "<%= @star["name"] %>" >
+        <% end %>
+    </div>
+
+    <p>Details</p>
+    <ul>
+        <li>Distance: <%= @star["meaning"] %></li>
+        <li>Apparent magitude: <%= @star["meaning"] %></li>
+        <li>Absolute magnitude: <%= @star["meaning"] %></li>
+    </ul>
+</div>
+
+<div class = "controls">
+    <a href="/brightest_stars/<%= @star["id"] %>/edit">Edit</a>
+    <a href="/brightest_stars/<%= @star["id"] %>/delete">Delete</a>
+</div>
