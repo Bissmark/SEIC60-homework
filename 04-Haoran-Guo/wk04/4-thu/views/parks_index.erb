@@ -1,0 +1,10 @@
+<h1>National Parks</h1>
+
+<% @parks.each do |park| %>
+    <p>
+        <a href="/parks/<%= park['id'] %>">
+            <%= park["name"] %>
+        </a>
+    
+    </p>
+<% end %>

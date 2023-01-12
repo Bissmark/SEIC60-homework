@@ -1,0 +1,26 @@
+<h1>Edit Park Info</h1>
+
+<form action="/parks/<%= @park['id'] %>" method="post">
+    <label>
+        Name: 
+        <input type="text" name="name" value="<%= @park["name"] %>" required>
+    </label>
+
+    <label>
+        Location:
+        <input type="text" name="location" value="<%= @park["location"] %>" required>
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @park["image"] %>">
+    </label>
+
+    <label>
+        Recommend:
+        <input type="checkbox" name="recommend" value=1>
+    </label>
+    <button>Update Park</button>
+
+
+</form>
