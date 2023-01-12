@@ -1,0 +1,23 @@
+<h2><%= @unit["code"] %> Information</h2>
+
+<ul>
+    <li>Code: <%= @unit["code"] %></li>
+    <li>Name: <%= @unit["name"] %></li>
+    <li>Credit Points: <%= @unit["credit_points"] %></li>
+    <li>Mark: <%= @unit["mark"] %></li>
+    <li>Grade: <%= @unit["grade"] %></li>
+</ul>
+
+<div class="button-container">
+    <a href="/units/<%= @unit["id"] %>/edit">
+        <button>Edit</button>
+    </a>
+
+    <a href="/units/<%= @unit["id"] %>/delete">
+        <button>Delete</button>
+    </a>
+</div>
+
+<a href="/units">
+    <button class="back">Back</button>
+</a>
