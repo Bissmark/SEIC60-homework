@@ -1,0 +1,9 @@
+<h1>All Ants</h1>
+
+<% @ants.each do |ant| %>
+    <p>
+        <a href="/ants/<%= ant["id"] %> ">
+            <%= ant["name"] %>
+        </a>
+    </p>
+<% end %>
