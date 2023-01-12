@@ -1,0 +1,62 @@
+body {
+    background-color: lightgray;
+    font-size:large;
+}
+
+.container {
+    max-width: 960px;
+    margin:0 auto;
+}
+
+a {
+    margin-right: 20px;
+    font-size: large;
+}
+
+
+.sanction_profile {
+    display: inline-flex;  
+}
+
+
+
+button {
+    margin-top: 15px;
+}
+
+form {
+    width: 350px;
+    border-style: solid;
+    padding: 0 10px 20px 10px;
+}
+
+label {
+    display: block;
+    float: left;
+}
+
+input {
+    padding: 3px;
+    box-shadow: 3px 3px 3px grey;
+    width: 90%;
+  }
+
+button {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+
+.feature {
+    max-width: 250px;
+    padding-right: 20px;
+}
+
+.sanction_details {
+    text-align: left;
+    margin-top: -2%;
+}
+
+
