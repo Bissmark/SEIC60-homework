@@ -1,0 +1,29 @@
+body {
+    /* background-color: white; */
+    background-image: url(https://i.imgur.com/y8xlRbVh.jpg);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.feature {
+    max-width: 100%;
+}
+
+p {
+    /* background-color: aquamarine; */
+}
+h1 {
+    text-align: center;
+}
+
+.nav {
+    border-radius: 2px;
+    border: solid black 1px;
+    color: black;
+    background-color: white;
+    margin: 20px auto;
+}
