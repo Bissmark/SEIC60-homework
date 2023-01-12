@@ -1,0 +1,11 @@
+body {
+    background-color: peachpuff;
+    background-image: url(https://i.imgur.com/dAVnwom.jpg);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rbga(255, 255, 255, 0.8);
+    padding: 1em;
+}
