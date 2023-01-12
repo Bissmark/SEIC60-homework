@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bookshelf.jpg");
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.container {
+    display: inline;
+    background-color: white;
+    padding: 50px 120px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    margin-bottom: 0;
+}
