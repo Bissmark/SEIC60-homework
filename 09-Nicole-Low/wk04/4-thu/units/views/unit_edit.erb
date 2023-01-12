@@ -1,30 +1,32 @@
 <h2>Edit Unit</h2>
 
 <form action="/units/<%= @unit["id"] %>" method="post">
-    <label>
-        Code:
-        <input name="code" value="<%= @unit["code"] %>" required>
-    </label>
+    <div class="label-container">
+        <label>
+            Code:
+            <input name="code" value="<%= @unit["code"] %>" required>
+        </label>
 
-    <label>
-        Name:
-        <input name="name" value="<%= @unit["name"] %>" required>
-    </label>
+        <label>
+            Name:
+            <input name="name" value="<%= @unit["name"] %>" required>
+        </label>
 
-    <label>
-        Credit Points:
-        <input type="number" name="credit_points" value="<%= @unit["credit_points"] %>" required>
-    </label>
+        <label>
+            Credit Points:
+            <input type="number" name="credit_points" value="<%= @unit["credit_points"] %>" required>
+        </label>
 
-    <label>
-        Mark:
-        <input type="number" name="mark" value="<%= @unit["mark"] %>" required>
-    </label>
+        <label>
+            Mark:
+            <input type="number" name="mark" value="<%= @unit["mark"] %>" required>
+        </label>
 
-    <label>
-        Grade:
-        <input name="grade" value="<%= @unit["grade"] %>" required>
-    </label>
+        <label>
+            Grade:
+            <input name="grade" value="<%= @unit["grade"] %>" required>
+        </label>
+    </div>
 
     <div class="button-container">
         <button>Confirm</button>

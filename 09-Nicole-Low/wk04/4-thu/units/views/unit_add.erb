@@ -1,30 +1,32 @@
 <h2>Add Unit</h2>
 
 <form action="/units" method="post">
-    <label>
-        Code:
-        <input name="code">
-    </label>
+    <div class="label-container">
+        <label>
+            Code:
+            <input name="code" required>
+        </label>
 
-    <label>
-        Name:
-        <input name="name">
-    </label>
+        <label>
+            Name:
+            <input name="name" required>
+        </label>
 
-    <label>
-        Credit Points:
-        <input type="number" name="credit_points">
-    </label>
+        <label>
+            Credit Points:
+            <input type="number" name="credit_points" required>
+        </label>
 
-    <label>
-        Mark:
-        <input type="number" name="mark">
-    </label>
+        <label>
+            Mark:
+            <input type="number" name="mark" required>
+        </label>
 
-    <label>
-        Grade:
-        <input name="grade">
-    </label>
+        <label>
+            Grade:
+            <input name="grade" required>
+        </label>
+    </div>
 
    <div class="button-container">
         <button>Confirm</button>
