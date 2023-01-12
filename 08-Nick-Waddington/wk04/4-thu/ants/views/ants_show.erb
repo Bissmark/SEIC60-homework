@@ -1,0 +1,28 @@
+<%# Trying to turn boolean value into true/false %>
+
+<%# <% if @ant["origin"] == 1 %>
+<%# <% @ant["origin"] = "true" %>
+<%# <% elsif @ant["origin"] == 0 %>
+<%# <% @ant["origin"] = "false" %>
+<%# <% end %>
+
+<h1><%= @ant["name"] %></h1>
+
+<h2>Colour: <%= @ant["colour"] %></h2>
+
+<h2>Country of Origin: <%= @ant["origin"] %></h2>
+
+<h2>Does it bite? <%= @ant["bites"] %></h2>
+
+<% unless @ant["image"].nil? || @ant["image"].empty? %>
+    <img class="feature" src="<%= @ant["image"] %>" alt="<%= @ant["name"] %>">
+<% end %>
+
+<br>
+
+<div class="controls">
+    <a href="/ants/<%= @ant["id"] %>/edit">Edit Ant</a>
+    <a href="/ants/<%= @ant["id"] %>/delete">Delete Ant</a>
+</div>
+
+<br>

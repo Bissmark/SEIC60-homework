@@ -1,0 +1,31 @@
+<h1>Edit Ant</h1>
+
+<form action="/ants/<%= @ant["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @ant["name"] %>">
+    </label>
+
+    <label>
+        Colour:
+        <input name="colour" value="<%= @ant["colour"] %>">
+    </label>
+
+    <label>
+        Country of Origin:
+        <input name="origin" value="<%= @ant["origin"] %>">
+    </label>
+
+    <label>
+        Does it bite?
+        <input name="bites" value="<%= @ant["bites"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @ant["image"] %>">
+    </label>
+
+    <button>Edit Ant</button>
+
+</form>
