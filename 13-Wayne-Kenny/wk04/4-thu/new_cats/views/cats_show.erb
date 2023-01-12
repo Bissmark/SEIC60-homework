@@ -1,0 +1,14 @@
+<h1><%= @cat["name"] %></h1>
+
+<h2>breed <%= @cat["breed"] %></h2>
+
+<h2>sex <%= @cat["sex"] %></h2>
+
+<% unless @cat["image"].nil? || @cat["image"].empty? %>
+<img class="feature" src="<%= @cat["image"] %>" alt="<%= @cat["name"] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/cats/<%= @cat["id"] %>/edit">Edit Cat</a>
+    <a href="/cats/<%= @cat["id"] %>/delete">Delete Cat</a>
+</div>
