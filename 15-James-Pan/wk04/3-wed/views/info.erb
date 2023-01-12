@@ -1,0 +1,6 @@
+<img src="<%= book_info["imageLinks"]["thumbnail"] %>" class="book-cover"
+alt="Cover of <%= params[:title] %>">
+<p><strong>Description:</strong> <%= book_info["description"] %></p>
+<p><strong>Author:</strong> <%= book_info["authors"].join(", ") %></p>
+<p><strong>Publish Date:</strong> <%= book_info["publishedDate"] %></p>
+<p><strong>Rating:</strong> <%= book_info["averageRating"] %></p>
