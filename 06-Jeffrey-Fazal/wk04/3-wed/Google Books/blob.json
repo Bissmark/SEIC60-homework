@@ -1,0 +1,751 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 2480,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "f280CwAAQBAJ",
+      "etag": "CtHVFXd5BG8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/f280CwAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter: The Complete Collection (1-7)",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2015-12-14",
+        "description": "When Harry Potter is left on a doorstep as a baby, he has no idea he is the Boy Who Lived, or that he is famous throughout the wizarding world. Years later, he is astonished to receive an acceptance letter to Hogwarts School of Witchcraft and Wizardry and he is soon whisked off on a magical adventure like no other. Join Harry and his fiercely loyal friends, Hermione and Ron, in this story about the power of truth, love and hope. Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781106464"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781106460"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 4157,
+        "printType": "BOOK",
+        "categories": [
+          "Young Adult Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 54,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.26.25.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=f280CwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=f280CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=f280CwAAQBAJ&printsec=frontcover&dq=title:Harry+Potter&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=f280CwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=f280CwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 69.99,
+          "currencyCode": "AUD"
+        },
+        "retailPrice": {
+          "amount": 69.99,
+          "currencyCode": "AUD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=f280CwAAQBAJ&rdid=book-f280CwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 69990000,
+              "currencyCode": "AUD"
+            },
+            "retailPrice": {
+              "amountInMicros": 69990000,
+              "currencyCode": "AUD"
+            },
+            items.0.saleInfo.offers.0.listPrice.amountInMicros, 
+            items[0][saleInfo][0][listPrice][amountInMicros]
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/Harry_Potter_The_Complete_Collection_1_7-sample-epub.acsm?id=f280CwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/Harry_Potter_The_Complete_Collection_1_7-sample-pdf.acsm?id=f280CwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=f280CwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Join Harry and his fiercely loyal friends, Hermione and Ron, in this story about the power of truth, love and hope. Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Sm5AKLXKxHgC",
+      "etag": "G9ELNjYiYjM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Sm5AKLXKxHgC",
+      "volumeInfo": {
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "authors": [
+          "J.K. Rowling"
+        ],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2015-12-08",
+        "description": "'Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.' When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss... Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781100516"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781100519"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 445,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 2224,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.29.27.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Sm5AKLXKxHgC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Sm5AKLXKxHgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=Sm5AKLXKxHgC&pg=PP1&dq=title:Harry+Potter&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=Sm5AKLXKxHgC&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Prisoner_of_Azkaban.html?hl=&id=Sm5AKLXKxHgC"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Sm5AKLXKxHgC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "H8buBQAAQBAJ",
+      "etag": "vGWh+eQ4Ftc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/H8buBQAAQBAJ",
+      "volumeInfo": {
+        "title": "J.K. Rowling: A Bibliography 1997-2013",
+        "authors": [
+          "Philip W. Errington"
+        ],
+        "publisher": "Bloomsbury Publishing",
+        "publishedDate": "2015-02-26",
+        "description": "'As someone who respects comprehensive research, I am in awe of the level of detail and amount of time Philip Errington has dedicated to this slavishly thorough and somewhat mind-boggling bibliography.' J. K. Rowling This is the definitive bibliography of the writings of J. K. Rowling. In addition to complete bibliographic details of each edition of all her books, pamphlets and original contributions to published works, there is detailed information on the publishing history of her work, including fascinating extracts from correspondence, and information on Rowling at auction. This will be the first source on Rowling consulted by textual scholars, book dealers and collectors, auction houses, critics and researchers. The aim of the book is to record fact and dispel rumour on the fascinating publishing history of the Harry Potter series.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781849669771"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1849669775"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 753,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.6.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=H8buBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=H8buBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=H8buBQAAQBAJ&printsec=frontcover&dq=title:Harry+Potter&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=H8buBQAAQBAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/J_K_Rowling_A_Bibliography_1997_2013.html?hl=&id=H8buBQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/J_K_Rowling_A_Bibliography_1997_2013-sample-epub.acsm?id=H8buBQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/J_K_Rowling_A_Bibliography_1997_2013-sample-pdf.acsm?id=H8buBQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=H8buBQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&#39; J. K. Rowling This is the definitive bibliography of the writings of J. K. Rowling."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Q9gizgEACAAJ",
+      "etag": "8gPdRU9qSb4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Q9gizgEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter and the Chamber of Secrets (Minalima Edition)",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "publisher": "Scholastic Incorporated",
+        "publishedDate": "2021-10-26",
+        "description": "A stunning new edition of J.K. Rowling's Harry Potter and the Chamber of Secrets, with beautiful full color illustrations and eight interactive paper craft elements featuring the Whomping Willow, the Weasleys' Burrow, and more. A gift to be treasured by Harry Potter fans and book lovers of all ages! Prepare to be dazzled by this new edition of J.K. Rowling's Harry Potter and the Chamber of Secrets, designed and illustrated by MinaLima. With over 150 full-color illustrations and eight exclusive, interactive paper craft elements, readers will travel via the Floo Network, watch out for the Whomping Willow, reveal the spiral staircase to Dumbledore's office, pull Mandrakes from their pots, and more. This keepsake edition is the perfect gift for Harry Potter fans of all ages, a beautiful addition to any collector's bookshelf, and an enchanting way to introduce this beloved series to a new generation of readers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1338716530"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781338716535"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 400,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 2268,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Q9gizgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Q9gizgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=Q9gizgEACAAJ&dq=title:Harry+Potter&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=Q9gizgEACAAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Chamber_of_Secrets.html?hl=&id=Q9gizgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Q9gizgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "When the Chamber of Secrets is opened again at the Hogwarts School of Witchcraft and Wizardry, second-year student Harry Potter finds himself in danger from a dark power that has once more been released on the school."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "UvgrPwAACAAJ",
+      "etag": "7h1wR2mSSP4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UvgrPwAACAAJ",
+      "volumeInfo": {
+        "title": "The Harry Potter Collection",
+        "subtitle": "The First Five Breathtaking Adventures at Hogwarts",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "publisher": "Arthur a Levine",
+        "publishedDate": "2004-10-01",
+        "description": "The first five years of Harry Potter magic are captured in a boxed set which includes The Sorcerer's Stone, The Chamber of Secrets, The Prisoner of Azkaban, The Goblet of Fire, and The Order of the Phoenix. Simultaneous.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0439705525"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780439705523"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "averageRating": 4.5,
+        "ratingsCount": 16,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=UvgrPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UvgrPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=UvgrPwAACAAJ&dq=title:Harry+Potter&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=UvgrPwAACAAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Harry_Potter_Collection.html?hl=&id=UvgrPwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=UvgrPwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The first five years of Harry Potter magic are captured in a boxed set which includes The Sorcerer&#39;s Stone, The Chamber of Secrets, The Prisoner of Azkaban, The Goblet of Fire, and The Order of the Phoenix. Simultaneous."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Q12MCgAAQBAJ",
+      "etag": "CNYY1kQ9C8c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Q12MCgAAQBAJ",
+      "volumeInfo": {
+        "title": "The Invention of Hugo Cabret",
+        "authors": [
+          "Brian Selznick"
+        ],
+        "publisher": "Scholastic",
+        "publishedDate": "2015-09-03",
+        "description": "ORPHAN, CLOCK KEEPER, AND THIEF, twelve-year-old Hugo lives in the walls of a busy Paris train station, where his survival depends on secrets and anonymity. But when his world suddenly interlocks with an eccentric girl and her grandfather, Hugo's undercover life, and his most precious secret, are put in jeopardy. A cryptic drawing, a treasured notebook, a stolen key, a mechanical man, and a hidden message from Hugo's dead father form the backbone of this intricate, tender, and spellbinding mystery.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781407166575"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1407166573"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 534,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 6,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.6.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Q12MCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Q12MCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=Q12MCgAAQBAJ&pg=PP1&dq=title:Harry+Potter&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=Q12MCgAAQBAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Invention_of_Hugo_Cabret.html?hl=&id=Q12MCgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/The_Invention_of_Hugo_Cabret-sample-epub.acsm?id=Q12MCgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/The_Invention_of_Hugo_Cabret-sample-pdf.acsm?id=Q12MCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Q12MCgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An orphan and thief, Hugo lives in the walls of a busy train station."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "eq9XvgAACAAJ",
+      "etag": "tqFCtL6zeNc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/eq9XvgAACAAJ",
+      "volumeInfo": {
+        "title": "Fantastic Beasts and Where to Find Them: Cinematic Guide: Newt Scamander Do Not Feed Out",
+        "authors": [
+          "Felicity Baker"
+        ],
+        "publishedDate": "2017-02-02",
+        "description": "The essential film companion for Newt Scamander! Relive the magic of Newt's world with this hardback guidebook featuring your favourite scenes and quotes from Fantastic Beasts and Where to Find Them.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1407179403"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781407179407"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 64,
+        "printType": "BOOK",
+        "averageRating": 3,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=eq9XvgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=eq9XvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=eq9XvgAACAAJ&dq=title:Harry+Potter&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=eq9XvgAACAAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fantastic_Beasts_and_Where_to_Find_Them.html?hl=&id=eq9XvgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=eq9XvgAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Relive all the magic of Newt&#39;s world with this hardback guidebook featuring all you need to know about Newt from the movie."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fwRGlGnstXYC",
+      "etag": "MSm9F94hmSs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fwRGlGnstXYC",
+      "volumeInfo": {
+        "title": "The Phenomenon \"Harry Potter\" - The Secret of Its Success",
+        "authors": [
+          "Isabel Zosig"
+        ],
+        "publisher": "GRIN Verlag",
+        "publishedDate": "2012-05",
+        "description": "Seminar paper from the year 2003 in the subject English Language and Literature Studies - Literature, grade: 2 (B), University of Bamberg (Centre for British Studies), course: Introdution to british media and communication science, language: English, abstract: At the age of six, Joanne Kathleen Rowling2 wrote her first short story about a rabbit named Rabbit, who had the measles and was visited by his friends. Amongst them was a little bee called Miss Bee. However, she never told anyone about her \"burning ambition\"3 to become a writer, not even Ms Shephard, her English teacher at Wyedean Comprehensive School. Ms Shephard was a great influence on young Joanne as \"she inspired trust\"4. Shephard's comments on Harry Potter and the Philosopher's Stone \"meant more to [Joanne Rowling] than any newspaper reviews\"5. After finishing secondary school and her studies in French and Classics at Exeter University, Joanne Rowling started to work as a research asssistant at Amnesty International which was a \"very, very interesting place to work\"6, but at the same time a huge mistake, because Joanne Rowling admits that as a secretary she would be anybody's \"worst nightmare\"7. It was during a delayed train journey from Manchester to King's Cross Station in London, when she was obviously hit by magic. The story about a little orphan named Harry Potter, who has to live with his old-fashioned relatives and finds out that he is a wizard, came to her mind. And because she had no pen or notebook with her, she had to think it. So, Hogwarts - School of Witchcraft and Wizardry came to life in her imagination, and as she invented it, it \"felt like research\"8. \"It was a question of discovery why Harry was where he was, why his parents were dead\"9. At the end of the journey she knew \"it was going to be a seven-book series\"10. The next five years, while she moved to Portugal, got married, had a baby, got divorced and moved back to Britain, she continued writing the first book of the series Harry P",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783656180814"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3656180814"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 29,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fwRGlGnstXYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fwRGlGnstXYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=fwRGlGnstXYC&pg=PP1&dq=title:Harry+Potter&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=fwRGlGnstXYC&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Phenomenon_Harry_Potter_The_Secret_o.html?hl=&id=fwRGlGnstXYC"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.au/books/download/The_Phenomenon_Harry_Potter_The_Secret_o-sample-pdf.acsm?id=fwRGlGnstXYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=fwRGlGnstXYC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The story about a little orphan named Harry Potter, who has to live with his old-fashioned relatives and finds out that he is a wizard, came to her mind. And because she had no pen or notebook with her, she had to think it."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AAjjRgAACAAJ",
+      "etag": "FUnQGEE7U9U",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AAjjRgAACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter",
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "publisher": "Bloomsbury UK",
+        "publishedDate": "2010-10-28",
+        "description": "A boxed set incorporating the complete set of 'Signature' edition Harry Potter titles. Including the titles - 'Philosopher's Stone'; 'Chamber of Secrets'; 'Prisoner of Azkaban'; 'Goblet of Fire'; 'Order of the Phoenix'; 'The Half-blood Prince'; 'The Deathly Hallows'.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1408812525"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781408812525"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 7,
+        "printType": "BOOK",
+        "categories": [
+          "Children's stories, English"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AAjjRgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AAjjRgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=AAjjRgAACAAJ&dq=title:Harry+Potter&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=AAjjRgAACAAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter.html?hl=&id=AAjjRgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AAjjRgAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Since publication of Harry Potter and the Philosopher&#39;s Stone in 1997, the Harry Potter novels have sold 400 million copies worldwide and have been translated into 64 languages."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dKmVNAEACAAJ",
+      "etag": "WX8Udkzxl98",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/dKmVNAEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter and the Deathly Hallows",
+        "publisher": "Bloomsbury Publishing",
+        "publishedDate": "2011",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1408825848"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781408825846"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": [
+          "Children's stories, English"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 561,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dKmVNAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dKmVNAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com.au/books?id=dKmVNAEACAAJ&dq=title:Harry+Potter&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.au/books?id=dKmVNAEACAAJ&dq=title:Harry+Potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_Deathly_Hallows.html?hl=&id=dKmVNAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AU",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AU",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dKmVNAEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}
