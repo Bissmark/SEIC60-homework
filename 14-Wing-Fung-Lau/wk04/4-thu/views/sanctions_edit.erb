@@ -1,0 +1,31 @@
+<form action="/sanctions/<%= @sanction["id"] %>" method ="post">
+    <p>
+        <label>Name:</label><br>
+        <input name="name" required value="<%= @sanction["name"] %>">
+    </p>
+
+    <p>
+        <label>Title:</label><br>
+        <input name="title" value="<%= @sanction["title"] %>">
+    </p>
+
+    <p>
+        <label>Nationality:</label><br>
+        <input name="nationality" value="<%= @sanction["nationality"] %>">
+    </p>
+
+     <p>
+        <label>Risk:</label><br>
+        <input name="risk" value="<%= @sanction["risk"] %>">
+    </p>
+
+     <p>
+        <label>Image:</label><br>
+        <input type="url" name="image" value="<%= @sanction["image"] %>">
+    </p>
+
+
+    <button>Edit sanctioned person</button>
+
+
+</form>
