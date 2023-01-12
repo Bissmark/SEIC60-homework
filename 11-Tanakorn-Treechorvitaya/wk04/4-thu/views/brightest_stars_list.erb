@@ -1,0 +1,11 @@
+<h1>All Brightest Stars</h1>
+
+<div class ="main">
+    <% @brightest_stars.each do |star|%>
+        <p>
+            <a href= "/brightest_stars/<%= star["id"] %>">
+                <%= star["name"] %>
+            </a>
+        </p>
+    <% end %>
+</div>
