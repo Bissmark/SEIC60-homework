@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+container {
+    display: flex;
+    /* align-items: center; */
+    justify-content:center
+}
+img {
+    
+    height:250px;
+    width:auto;
+}
+
+#book_info {
+    text-align: left;
+    padding-left: 20px;
+    
+}
