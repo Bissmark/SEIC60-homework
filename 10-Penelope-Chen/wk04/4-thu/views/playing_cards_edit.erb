@@ -1,0 +1,25 @@
+<h1>Edit playing card</h1>
+
+<form action="/playing_cards/<%= @playing_card["id"] %>" method="post">
+    <label>
+        Name: 
+        <input name="name" required value="<%= @playing_card["name"] %>">
+    </label>
+
+    <label>
+        Suit: 
+        <input name="suit" value="<%= @playing_card["suit"] %>">
+    </label>
+
+    <label>
+        Power: 
+        <input name="power" value="<%= @playing_card["power"] %>"
+    </label>
+
+    <label>
+        Image: 
+        <input type="url" name="image" value="<%= @playing_card["image"] %>"
+    </label>
+    
+    <button>Update playing card</button>
+</form>

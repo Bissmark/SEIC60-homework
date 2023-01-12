@@ -1,0 +1,9 @@
+<h1>All playing cards</h1>
+
+<% @playing_cards.each do |butterfly| %>
+    <p>
+        <a href="/playing_cards/<%= playing_card["id"] %>">
+            <%= playing_card["name"] %> 
+        </a>    
+    </p>
+<% end %>

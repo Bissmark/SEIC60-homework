@@ -1,0 +1,14 @@
+<h1><%= @playing_card["name"] %></h1>
+
+<h2>Suit: <%= @playing_card["suit"] %></h2>
+
+<h2>Power: <%= @playing_card["power"] %></h2>
+
+<% unless @playing_card["image"].nil? || @playing_card["image"].empty? %>
+    <img class="feature" src="<%= @playing_card["image"] %>" alt ="<%= @playing_card["name"] %>"
+<% end %>
+
+<div class = "controls">
+    <a href="/playing_cards/<%= @playing_card["id"] %>/edit">Edit playing card</a>
+    <a href="/playing_cards/<%= @playing_card["id"] %>/delete">Delete playing card</a>
+</div>
