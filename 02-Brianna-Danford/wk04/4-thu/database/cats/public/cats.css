@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(255, 128, 38);
+    background-image: url("https://w0.peakpx.com/wallpaper/135/488/HD-wallpaper-garfield-cartoons-cute-tv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.feature {
+    max-width: 100%;
+}
+
+

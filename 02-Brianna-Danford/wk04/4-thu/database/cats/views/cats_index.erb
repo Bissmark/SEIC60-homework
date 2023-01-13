@@ -1,0 +1,11 @@
+<body>
+    <h1>All the kitties!</h1>
+
+<% @cats.each do |cat| %>
+    <p>
+        <a href="/cats/<%= cat["id"] %>">
+            <%= cat["name"] %>
+        </a>
+    </p>
+    <% end %>
+</body>
