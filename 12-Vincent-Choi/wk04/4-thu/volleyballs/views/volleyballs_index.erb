@@ -1,0 +1,9 @@
+<h1>All Volleyball Players</h1>
+
+<% @volleyball.each do |volleyball| %>
+    <p>
+        <a href="/volleyballs/<%= volleyball["id"] %>">
+            <%= volleyball["name"] %>
+        </a>
+    </p>
+<% end %>

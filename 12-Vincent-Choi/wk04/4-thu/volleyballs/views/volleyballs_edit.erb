@@ -1,0 +1,30 @@
+<h1>Edit Volleyball Player</h1>
+
+<form action="/volleyballs/<%= @volleyball["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @volleyball["name"] %>">
+    </label>
+
+    <label>
+        Country:
+        <input name="country" value="<%= @volleyball["country"] %>">
+    </label>
+
+    <label>
+        Position:
+        <input name="position" value="<%= @volleyball["position"] %>">
+    </label>
+
+    <label>
+        Number:
+        <input type="number" value="<%= @volleyball["number"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @volleyball["image"] %>">
+    </label>
+
+    <button>Update Volleyball Player</button>
+</form>

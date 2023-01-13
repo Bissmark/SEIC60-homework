@@ -1,0 +1,17 @@
+<div class ="volleyball_profile"></div>
+
+    <% unless @volleyball["image"].nil? || @volleyball["image"].empty? %>
+    <img class="feature" src="<%= @volleyballs["image"] %>" alt="<%= @volleyball["name"] %>">
+    <% end %>
+
+    <div class="volleyball_details">
+        <h2><%= @volleyball["name"] %></h1>
+        <h3>Country: <%= @volleyball["country"] %></h2>
+        <h3>Position: <%= @volleyball["position"] %></h2>
+        <h3>Number: <%= @volleyball["number"] %></h2>
+    </div>
+
+<div class="controls">
+    <a href="/volleyballs/<%= @volleyball["id"] %>/edit">Edit volleyball</a>
+    <a href="/volleyballs/<%= @volleyball["id"] %>/delete">Delete volleyball</a>
+</div>
