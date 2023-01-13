@@ -1,0 +1,20 @@
+<h1>Edit Snowboard Trick</h1>
+
+<form action="/snowboard/<%= @showsnowboard["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @showsnowboard["name"] %>">
+    </label>
+    
+    <label>
+        Trick: 
+        <input name="trick" value="<%= @showsnowboard["family"] %>"> 
+    </label>
+
+    <label> 
+        Image:
+        <input type="url" name="image" value="<%= @showsnowboard["image"] %>">
+    </label>
+
+    <button>Edit Snowboard Trick</button>
+</form>

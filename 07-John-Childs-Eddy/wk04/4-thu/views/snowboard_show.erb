@@ -1,0 +1,12 @@
+<h1> <%= @showsnowboarding["name"] %> </h1>
+
+<h2> Trick: <%= @showsnowboarding["trick"] %> </h2>
+
+<% unless @showsnowboarding["image"].nil? || @showsnowboarding["image"].empty? %>
+    <img class="feature" src="<%= @showsnowboarding["image"] %>" alt="<%= @showsnowboarding["name"] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/snowboard/<%= @showsnowboarding["id"] %>/edit">Edit Snowboard Trick</a>
+    <a href="/snowboard/<%= @showsnowboarding["id"] %>/delete">Delete Snowboard Trick</a>
+</div>

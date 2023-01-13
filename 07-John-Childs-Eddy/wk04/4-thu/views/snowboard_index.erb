@@ -1,0 +1,14 @@
+<h1>All Snowboard Tricks</h1>
+
+    <p> 
+        <%= @all_snowboardtricks.size %> Snowboard Tricks 
+    </p>
+        
+        <% @all_snowboardtricks.each do |snowboard| %>
+    
+    <p>  
+        <a href="/snowboard/<%= snowboard["id"] %>">
+        <%= snowboard["name"] %> 
+        </a>
+    </p>
+<% end %>
