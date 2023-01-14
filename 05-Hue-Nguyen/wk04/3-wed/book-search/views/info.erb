@@ -1,0 +1,27 @@
+<p class="results">Found <%= @num_results %> results</h2>
+
+        <% @books.each do |book| %>
+
+            <section>
+
+                <aside>
+                    <img src="<%= book["volumeInfo"]["imageLinks"]["thumbnail"] %>" alt="<%=
+                        book["volumeInfo"]["title"] %>">
+                </aside>
+                <div>
+                    <h2>
+                        <%= book["volumeInfo"]["title"] %>
+                    </h2>
+                    <p><span>
+                            <%= book["volumeInfo"]["authors"].join(', ') %>
+                        </span> | <span>
+                            <%= book["volumeInfo"]["publishedDate"].slice(0..3) %>
+                        </span></p>
+                    <p>
+                        <%= book["volumeInfo"]["description"] %>
+                    </p>
+                </div>
+
+            </section>
+
+        <% end %>
