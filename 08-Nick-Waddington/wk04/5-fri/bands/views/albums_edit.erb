@@ -1,0 +1,35 @@
+<h1>Edit album</h1>
+
+<form action="/albums/<%= @album["id"] %>" method="post">
+
+    <label >
+        Name:
+        <input name='name' required value="<%= @album["name"] %>">
+    </label>
+    <label>
+        Band:
+        <input name="band" value="<%= @album["band"] %>">
+    </label>
+    <label>
+        Release:
+        <input name="release" value="<%= @album["release"] %>">
+    </label>
+    <label>
+        Tracks:
+        <input name="tracks" value="<%= @album["tracks"] %>">
+    </label>
+    <label>
+        Length:
+        <input name="length" value="<%= @album["length"] %>">
+    </label>
+    <label>
+        Genre:
+        <input name="genre" value="<%= @album["genre"] %>">
+    </label>
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @album["image"] %>">
+    </label>
+
+    <button>Edit album</button>
+</form>

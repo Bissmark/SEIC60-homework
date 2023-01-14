@@ -1,0 +1,31 @@
+<h1>Edit Band</h1>
+
+<form action="/bands/<%= @band["id"] %>" method="post">
+
+    <label >
+        Name:
+        <input name="name" required value="<%= @band["name"] %>">
+    </label>
+    <label>
+        Members:
+        <input name="members" value="<%= @band["members"] %>">
+    </label>
+    <label>
+        Genre:
+        <input name="genre" value="<%= @band["genre"] %>">
+    </label>
+    <label>
+        Formed:
+        <input name="formed" value="<%= @band["formed"] %>">
+    </label>
+    <label>
+        Active:
+        <input name="active" value="<%= @band["active"] %>">
+    </label>
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @band["image"] %>">
+    </label>
+
+    <button>Edit band</button>
+</form>
