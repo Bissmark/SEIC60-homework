@@ -1,0 +1,27 @@
+<h2>Edit Holiday</h2>
+
+<form action="/holidays/<%= @holiday.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" value="<%= @holiday.name %>">
+    </label>
+
+    <label>
+        Date:
+        <input name="date" value="<%= @holiday.date %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @holiday.image %>">
+    </label>
+
+    <div class="controls-container">
+        <button>Confirm</button>
+
+        <a href="/holidays/<%= @holiday.id %>">
+            <button type="button">Cancel</button>
+        </a>
+    </div>
+   
+</form>

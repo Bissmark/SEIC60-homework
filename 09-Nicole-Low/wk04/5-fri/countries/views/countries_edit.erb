@@ -1,0 +1,32 @@
+<h2>Edit Country</h2>
+
+<form action="/countries/<%= @country.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" value="<%= @country.name %>">
+    </label>
+
+    <label>
+        Continent:
+        <input name="continent" value="<%= @country.continent %>">
+    </label>
+
+    <label>
+        Capital:
+        <input name="capital" value="<%= @country.capital %>">
+    </label>
+
+    <label>
+        Flag image:
+        <input type="url" name="flag_image" value="<%= @country.flag_image %>">
+    </label>
+
+    <div class="controls-container">
+        <button>Update</button>
+
+        <a href="/countries/<%= @country.id %>">
+            <button type="button">Cancel</button>
+        </a>
+    </div>
+    
+</form>
