@@ -1,6 +1,6 @@
-/* body::before {
-    background-image: url("/images/usdt.jpeg");
-    opacity: 0.05;
+body::before {
+    background-image: url('../images/usdt.jpg');
+    opacity: 0.03;
     background-size: cover;
     content: "";
     position: absolute;
@@ -8,10 +8,10 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-} */
+}
 
 body {
-    background-color: lightgray;
+    background-color: rgb(232, 246, 254);
     font-size:large;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -53,6 +53,10 @@ nav > a {
 
 figcaption {
     text-align: center;
+}
+
+img {
+    max-width: 250px;
 }
 
 .feature {

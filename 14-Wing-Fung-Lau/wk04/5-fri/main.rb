@@ -188,6 +188,15 @@ end
 
 get '/sanctions/:id/delete' do
     sanction = Sanction.find params[:id]
+    sanctions = Sanction.all
+    sanction_count = 0
+    sanctions.each do |san|
+        sanction_count += 1 if san.nationality == sanction.nationality
+    end
+    if sanction_count == 1
+        country = Country.find_by(name: sanction.nationality)
+        country.destroy
+    end
     sanction.destroy
     redirect to('/sanctions')
 
