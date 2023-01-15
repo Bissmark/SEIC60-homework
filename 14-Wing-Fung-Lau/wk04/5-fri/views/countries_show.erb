@@ -1,0 +1,64 @@
+<div class="profile">
+
+    <% unless @country["flag"].nil? || @country["flag"].empty? %>
+    <figure>
+        <img class="country_feature" src="<%= @country["flag"] %>" alt="<%= @country["name"] %>">
+        <figcaption><%= @country.native_official_name %></figcaption>
+    </figure>
+    <% end%>
+
+    <div class='details'>   
+        <h2><%= @country["name"] %></h2>
+        <p><%= @country["official_name"] %></p>
+        <p>Number of sanctions: <%= @country.number_of_sanctions %></p>
+    </div>
+
+</div>
+
+<button type="button" class="collapsible">▼ CIA World Factbook 2018 - <%= @country["name"] %></button>
+<div class="content">
+<% if !$cia_factbook[@country["name"].gsub(' ', '-')].nil? %>
+    <% $cia_factbook[@country["name"].gsub(' ', '-')].each do |key, value| %>
+        <p>  
+        <%= key.to_s.gsub('_', ' ') %>: <%= value %>
+        </p>
+    <% end %>
+<% else %>
+    <p>Not available</p> 
+<% end %>
+</div>
+
+
+<div class="control">
+    <a href="/countries/<%= @country["id"] %>/edit">Edit country</a>
+    <a class='delete' href="/countries/<%= @country["id"] %>/delete">Delete country</a>
+</div>
+
+<script>
+    let coll = document.querySelector(".collapsible");
+    coll.addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+
+        if (this.classList.contains("active")) {
+            this.textContent = "▲ CIA World Factbook 2018 - <%= @country["name"] %>"
+        }
+        else {
+            this.textContent = "▼ CIA World Factbook 2018 - <%= @country["name"] %>"
+        }
+    });
+    
+
+    const a = document.querySelector('.delete')
+    a.addEventListener('click', function(event) {
+        event.preventDefault();
+            if (confirm("Are you sure to delete this country? \n \n<%= @country.number_of_sanctions %> sanction(s) of this nationality will also be removed.")) {
+                window.location = this.href;
+            }
+    })
+    </script>

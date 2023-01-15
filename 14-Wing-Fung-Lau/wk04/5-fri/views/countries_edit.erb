@@ -1,0 +1,26 @@
+<form action="/countries/<%= @country["id"] %>" method ="post">
+    <p>
+        <label>Name:</label><br>
+        <input name="name" required value="<%= @country["name"] %>">
+    </p>
+
+    <p>
+        <label>Official name:</label><br>
+        <input name="official_name" value="<%= @country["official_name"] %>">
+    </p>
+
+    <p>
+        <label>Native official name:</label><br>
+        <input name="native_official_name" value="<%= @country["native_official_name"] %>">
+    </p>
+
+    <p>
+        <label>Flag:</label><br>
+        <input type="url" name="flag" value="<%= @country["flag"] %>">
+    </p>
+
+
+    <button>Edit country</button>
+
+
+</form>
