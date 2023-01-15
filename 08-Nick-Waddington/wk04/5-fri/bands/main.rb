@@ -7,23 +7,55 @@ ActiveRecord::Base.establish_connection(
     :database => 'database.sqlite3'
 )
 
-ActiveRecord::Base.logger = Logger.new(STDERR)
-
-##Model: a class that is backed by a databse
+## Model: a class that is backed by a databse
 class Band < ActiveRecord::Base
+    has_many :albums
 end
 
-class Album < ActiveRecord::Base
+# Migration
+class CreateBands < ActiveRecord::Migration[5.0]
+    def change
+        create_table :bands do |t|
+            t.string :name
+            t.integer :members
+            t.text :genre
+            t.integer :formed
+            t.boolean :active
+            t.text :image
+        end
+
+        Band.create name:"Red Hot Chili Peppers",
+                    members: 4,
+                    genre: "Rock",
+                    formed: 1983,
+                    active:true
+
+        create_table :albums do |t|
+            t.belongs_to :band, index: true
+            t.text :name
+            t.integer :release
+            t.integer :tracks
+            t.float :length
+            t.text :genre
+            t.text :image
+
+        Album.create name: "Mother's Milk",
+                     release: 1989,
+                     tracks: 13
+        end
+    end
 end
+
+
 
 #HOMEPAGE
 get '/' do
     erb :home
 end
 
-#Bands CRUD -------------------------
+# Bands CRUD -------------------------
 
-#INDEX
+# INDEX
 get '/bands' do
     @bands = Band.all
     erb :bands_index
@@ -97,7 +129,7 @@ end
 post "/albums" do
     album = Album.new
     album.name = params[:name]
-    album.band = params[:band]
+    # album.band = params[:band]
     album.release = params[:release]
     album.tracks = params[:tracks]
     album.length = params[:length]
@@ -124,7 +156,7 @@ end
 post "/albums/:id" do
     album = Album.find params[:id]
     album.name = params[:name]
-    album.band = params[:band]
+    # album.band = params[:band]
     album.release = params[:release]
     album.tracks = params[:tracks]
     album.length = params[:length]
@@ -135,6 +167,7 @@ post "/albums/:id" do
     redirect to("/albums/#{ params[:id] }")
 end
 
+#DELETE
 get "/albums/:id/delete" do
     album = Album.find params[:id]
     album.destroy

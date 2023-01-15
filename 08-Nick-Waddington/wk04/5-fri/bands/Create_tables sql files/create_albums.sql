@@ -1,14 +1,12 @@
 CREATE TABLE IF NOT EXISTS albums (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    band_id INTEGER,
     name TEXT,
-    band TEXT,
     release INTEGER,
     tracks INTEGER,
-    length INTEGER,
-    genre TEXT, 
+    length FLOAT,
+    genre TEXT,
     image TEXT
 );
 
-
-
-INSERT INTO albums (name, band) VALUES ("Mothers milk", "RHCP");
+INSERT INTO albums (name) VALUES ("Mothers Milk");
