@@ -1,0 +1,17 @@
+<h1>Alternative Country Name List&nbsp<a href="/country_names/new">+</a></h1> 
+<% @country_names.each do |country_name| %>
+    <p>
+        <a href="/country_names/<%= country_name["id"] %>">
+            <%= country_name["aka"] %> : <%= country_name["name"] %>
+        </a>
+    </p>
+<% end%>
+
+
+<script>
+
+    if (<%= @duplicate %> > 0) {
+        alert("The entry of <%= @duplicate_keys %> already exists!")
+    }
+
+</script>

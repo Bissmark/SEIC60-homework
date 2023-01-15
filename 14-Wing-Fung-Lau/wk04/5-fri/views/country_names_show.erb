@@ -1,0 +1,24 @@
+<div class="profile">
+
+    <div class='details'>   
+        <h2><%= @country_name["aka"] %> : <%= @country_name["name"] %></h2>
+    </div>
+
+</div>
+
+
+
+<div class="control">
+    <a href="/country_names/<%= @country_name["id"] %>/edit">Edit country name</a>
+    <a class='delete' href="/country_names/<%= @country_name["id"] %>/delete">Delete country name</a>
+</div>
+
+<script>
+    const a = document.querySelector('.delete')
+    a.addEventListener('click', function(event) {
+        event.preventDefault();
+            if (confirm("Are you sure to delete this aka?")) {
+                window.location = this.href;
+            }
+    })
+</script>

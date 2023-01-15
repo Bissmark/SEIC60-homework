@@ -1,0 +1,17 @@
+<form action="/country_names/<%= @country_name["id"] %>" method ="post">
+    <p>
+        <label>Name:</label><br>
+        <input name="name" required value="<%= @country_name["name"] %>">
+    </p>
+
+    <p>
+        <label>As known as:</label><br>
+        <input name="aka" required value="<%= @country_name["aka"] %>">
+    </p>
+
+
+
+    <button>Edit country name</button>
+
+
+</form>
