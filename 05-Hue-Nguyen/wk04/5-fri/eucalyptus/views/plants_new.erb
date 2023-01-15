@@ -1,0 +1,34 @@
+<h2>Add new species of Eucalyptus</h2>
+
+<form action="/plants" method="post">
+
+    <label for="name">Name<input type="text" name="name" id="name" required></label>
+    <label for="family">Family<input type="text" name="family" id="family" required></label>
+    <label for="state">Distribution Region
+        <select name="state" id="state">
+            <option value="NSW">New South Wales (NSW)</option>
+            <option value="VIC">Victoria (VIC)</option>
+            <option value="QLD">Queensland (QLD)</option>
+            <option value="WA">Western Australia (WA)</option>
+            <option value="SA">South Australia (SA)</option>
+            <option value="TAS">Tasmania (TAS)</option>
+        </select>
+    </label>
+    <label for="conservation_status">Conservation Status
+        <select name="conservation_status" id="conservation_status">
+            <option value="EX">Extinct (EX)</option>
+            <option value="EW">Extinct in the Wild (EW)</option>
+            <option value="CR">Critically Endangered (CR)</option>
+            <option value="EN">Endangered (EN)</option>
+            <option value="VU">Vulnerable (VU)</option>
+            <option value="NT">Near Threatened (NT)</option>
+            <option value="CD">Conservation Dependent (CD)</option>
+            <option value="LC">Least Concern (LC)</option>
+            <option value="DD">Data Deficient (DD)</option>
+            <option value="NE">Not Evaluated (NE)</option>
+        </select>
+    </label>
+    <label for="image">Image Link<input type="url" name="image" id="image"></label>
+
+    <button type="submit">Add</button>
+</form>
