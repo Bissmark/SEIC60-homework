@@ -1,0 +1,20 @@
+<h1><%= @album["name"] %></h1>
+
+<% unless @album["image"].nil? ||  @album["image"].empty? %>
+<img class="feature" src="<%= @album["image"] %>" alt="<%= @album["name"] %>">
+<% end %>
+
+<%# <h2> Band: <%= @album["band"] %></h2> %>
+
+<h2> Release: <%= @album["release"] %></h2>
+
+<h2> Tracks: <%= @album["tracks"] %></h2>
+
+<h2> Length: <%= @album["length"] %></h2>
+
+<h2>Genre: <%= @album["genre"] %></h2>
+
+<div class="controls"> 
+    <a href="/albums/<%= @album["id"] %>/edit">Edit album</a>
+    <a href="/albums/<%= @album["id"] %>/delete">Delete album</a>
+</div>
