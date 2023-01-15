@@ -1,0 +1,9 @@
+<h1>All Slam Dunk Players</h1>
+
+<% @slamdunks.each do |slamdunk| %>
+    <p>
+        <a href="/slamdunks/<%= slamdunk.id %>">
+            <%= slamdunk.name %>
+        </a>
+    </p>
+<% end %>

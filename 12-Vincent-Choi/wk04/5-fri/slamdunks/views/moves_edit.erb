@@ -1,0 +1,25 @@
+<h1>Edit Move</h1>
+
+<form action="/moves/<%= @move.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @move.name %>">
+    </label>
+
+    <label>
+        Type:
+        <input name="type" value="<%= @move.type %>">
+    </label>
+
+    <label>
+        Description:
+        <input type="description" value="<%= @move.description %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @move.image %>">
+    </label>
+
+    <button>Update Move</button>
+</form>
