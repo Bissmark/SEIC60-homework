@@ -1,0 +1,10 @@
+<h1>Edit architect</h1>
+
+<form action="/architects/<%= @architect["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @architect["name"] %>">
+    </label>
+
+    <button>Update architect</button>
+</form>

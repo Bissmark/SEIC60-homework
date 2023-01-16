@@ -1,0 +1,9 @@
+<h1>All architects</h1>
+
+<% @architects.each do |architect| %>
+    <p>
+        <a href="/architects/<%= architect["id"] %>">
+            <%= architect["name"] %>
+        </a>
+    </p>
+<% end %>

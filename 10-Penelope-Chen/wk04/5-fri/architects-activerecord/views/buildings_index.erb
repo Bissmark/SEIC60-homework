@@ -1,0 +1,9 @@
+<h1>All buildings</h1>
+
+<% @buildings.each do |building| %>
+    <p>
+        <a href="/buildings/<%= building.id %>">
+            <%= building.name %>
+        </a>
+    </p>
+<% end %>

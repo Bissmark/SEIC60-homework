@@ -1,0 +1,15 @@
+<h1>Edit building</h1>
+
+<form action="/buildings/<%= @building.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @building.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @building.image %>">
+    </label>
+
+    <button>Update building</button>
+</form>
