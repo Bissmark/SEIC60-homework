@@ -1,0 +1,27 @@
+body {
+    /* background-color: aqua; */
+    background-image: url(https://th.bing.com/th/id/OIP.grDHtVb2GmKGllhF7NQgDwHaE7?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+.feature {
+    max-width: 100%;
+}
+a {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+

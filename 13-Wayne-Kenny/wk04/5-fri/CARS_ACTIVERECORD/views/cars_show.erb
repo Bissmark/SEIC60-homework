@@ -1,0 +1,12 @@
+<h1><%= @car.name %></h1>
+
+<h2>Brand <%= @car["parent_brand"] %></h2>
+
+<% unless @car.image.nil? || @car.image.empty? %>
+<img class="feature" src="<%= @car.image %>" alt="<%= @car.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/cars/<%= @car.id %>/edit">Edit Car</a>
+    <a href="/cars/<%= @car.id %>/delete">Delete Car</a>
+</div>
