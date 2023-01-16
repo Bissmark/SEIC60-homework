@@ -1,0 +1,35 @@
+<h1>Edit Slam Dunk Player</h1>
+
+<form action="/slamdunks/<%= @slamdunk.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @slamdunk.name %>">
+    </label>
+
+    <label>
+        Teeam:
+        <input name="team" value="<%= @slamdunk.team %>">
+    </label>
+
+    <label>
+        Position:
+        <input name="position" value="<%= @slamdunk.position %>">
+    </label>
+
+    <label>
+        Number:
+        <input type="number" value="<%= @slamdunk.number %>">
+    </label>
+
+    <label>
+        Quote:
+        <input type="quote" value="<%= @slamdunk.quote %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @slamdunk.image %>">
+    </label>
+
+    <button>Update Player</button>
+</form>

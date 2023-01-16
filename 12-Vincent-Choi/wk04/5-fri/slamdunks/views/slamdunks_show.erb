@@ -1,0 +1,18 @@
+<div class ="slamdunk_profile"></div>
+
+    <% unless @slamdunk.image.nil? || @slamdunk.image.empty? %>
+        <img class="feature" src="<%= @slamdunk.image %>" alt="<%= @slamdunk.name %>">
+    <% end %>
+
+    <div class="slamdunk_details">
+        <h2><%= @slamdunk.name %></h1>
+        <h3>Team: <%= @slamdunk.team %></h2>
+        <h3>Position: <%= @slamdunk.position %></h2>
+        <h3>Number: <%= @slamdunk.number %></h2>
+        <h3>Quote: <%= @slamdunk.quote %></h2>
+    </div>
+
+<div class="controls">
+    <a href="/slamdunks/<%= @slamdunk.id %>/edit">Edit Player</a>
+    <a href="/slamdunks/<%= @slamdunk.id %>/delete">Delete Player</a>
+</div>

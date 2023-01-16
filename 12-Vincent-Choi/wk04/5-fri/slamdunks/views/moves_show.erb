@@ -1,0 +1,17 @@
+<div class ="move_profile"></div>
+
+    <% unless @move.image.nil? || @move.image.empty? %>
+        <img class="feature" src="<%= @move.image %>" alt="<%= @move.name %>">
+    <% end %>
+
+    <div class="move_details">
+        <h2><%= @move.name %></h1>
+        <h3>Type: <%= @move.type %></h2>
+        <h3>Description: <%= @move.description %></h2>
+        <h3>Quote: <%= @move.quote %></h2>
+    </div>
+
+<div class="controls">
+    <a href="/moves/<%= @move.id %>/edit">Edit Move</a>
+    <a href="/moves/<%= @move.id %>/delete">Delete Move</a>
+</div>
