@@ -1,0 +1,20 @@
+<h1>EDIT SONGS</h1>
+
+<form action="/songs/<%= @song.id %>" methods="post">
+    <label>
+        Name: 
+        <input name="name" required value ="<%= @song.name %>">
+    </label>
+
+ <label>
+        Album: 
+        <input name="album" required value ="<%= @song.album %>">
+    </label>
+
+    <label>
+    Image:
+        <input type="url" name="image" value="<%= @song.image %>">
+    </label>
+
+    <button>Update</button>
+</form>

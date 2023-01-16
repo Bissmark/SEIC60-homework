@@ -1,0 +1,9 @@
+<h1>ALL STARS</h1>
+
+<% @musicians.each do |musician| %>
+    <p>
+        <a href="/musicians/<%= musician["id"] %>">
+            <%= musician.name %>
+        </a>
+    </p>
+    <% end %>

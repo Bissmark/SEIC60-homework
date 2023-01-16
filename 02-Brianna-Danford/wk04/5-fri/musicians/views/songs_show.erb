@@ -1,0 +1,11 @@
+<h1><%= @song["name"] %></h1>
+<h2>Album<%= @song["album"] %></h2>
+
+<% unless @song.image.nil? || @song.image.empty?%>
+    <img class="feature" src="<%= @song.image%>" alt="<%= @song.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/songs/<%= @song.id %>/edit">EDIT SONG</a>
+    <a href="/songs/<%= @song.id %>/delete">DELETE SONG</a>
+</div>
