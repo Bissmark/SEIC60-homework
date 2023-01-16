@@ -1,0 +1,15 @@
+<div class="rockpaperscissors">
+  <form action="/games/rockpaperscissors" method="get">
+    <label>
+      <button type="submit" name="user_choice" value="rock">Rock</button>
+      <button type="submit" name="user_choice" value="paper">Paper</button>
+      <button type="submit" name="user_choice" value="scissors">
+        Scissors
+      </button>
+    </label>
+  </form>
+
+  <p>You chose: <%= @user_choice %></p>
+  <p>Computer chose: <%= @computer_choice %></p>
+  <p><%= @result %></p>
+</div>

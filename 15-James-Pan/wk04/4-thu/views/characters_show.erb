@@ -1,0 +1,11 @@
+<h1><%= @character["name"] %></h1>
+<h2>Fmmily: <%= @character["family"] %></h2>
+
+<% unless @character["image"].nil? || @character["image"].empty? %>
+<img class="feauture" src="<%= @character["image"] %>" alt="<%= @character["name"] %>">
+<% end %>
+
+<div class="controls">
+<a href="/characters/<%= @character["id"] %>/edit">Edit character</a>
+<a href="/characters/<%= @character["id"] %>/delete">Delete charcter</a>
+</div>
