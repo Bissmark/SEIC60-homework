@@ -1,0 +1,93 @@
+body {
+    background-color: aliceblue;
+    color:	#404040;
+    background-image: url('/assets/background4.png');
+    background-size: cover;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+/* homepage */
+.home h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.home p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.homepic {
+    height: 150px;
+    width: auto;
+}
+
+.show {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/* magic 8 ball */
+
+.magic {
+    text-align: center;
+}
+.magicball {
+    height: 200px;
+    width: auto;
+    margin: 40px auto;
+}
+
+/* secret number */
+.secret {
+    text-align: center;
+}
+
+.secret .numlist {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 400px;
+}
+.secret .numlist button {
+    flex: 1 1 0px;
+    font: 30px;
+    padding: 20px;
+    margin: 10px;
+}
+/* rock paper scissors */
+
+.rps {
+    text-align: center;
+}
+
+.rps form {
+    margin: 50px auto;
+}
+
+.choose {
+    height: 90px;
+    width: auto;
+}
+
+.icon {
+    display: inline;
+    height: 50px;
+    width: auto;
+}
+
+.deco {
+    height: 200px;
+    width: auto;
+}

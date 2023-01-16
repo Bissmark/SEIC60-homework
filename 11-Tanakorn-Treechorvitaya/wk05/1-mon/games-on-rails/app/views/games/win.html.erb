@@ -1,0 +1,15 @@
+<div class = "rps">
+    <h1>Rock Paper Scissors</h1>
+
+    <% if  @choice == @random_choice %>
+        <p>It is draw</p>
+        <p>You chose <%= @choice %> and computer chose <%= @random_choice %></p>
+    <% else %>
+        <p><%= @answer %></p>
+        <p>You and computer chose <%= @random_choice %></p>
+    <% end  %>
+
+    <form action = '/rockpaperscissors'>
+        <button>Play again</button>
+    </form>
+</div>
