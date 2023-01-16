@@ -1,0 +1,16 @@
+<nav>
+    <p><a href="/">Home</a></p>
+    <p><a href="/secret-number">"Drop" Secret Number</a></p>
+    <p><a href="/roshambo">Rock Paper Scissors</a></p>
+</nav>
+<div>
+    <% unless @answer.nil? %>
+        <p class="answer"><%= @answer %></p>
+    <% end %>
+</div>
+<form action="/magic-eight-ball">
+    <label for="question"> Ask me a yes-no question
+        <input type="text" name="question" id="question" placeholder="Ask me anything" autofocus>
+    </label>
+    <button>Ask</button>
+</form>

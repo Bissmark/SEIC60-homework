@@ -1,0 +1,21 @@
+<nav>
+    <p><a href="/">Home</a></p>
+    <p><a href="/magic-eight-ball">"Roll" Magic 8 Ball</a></p>
+    <p><a href="/secret-number">"Drop" Secret Number</a></p>
+</nav>
+<form action="/roshambo">
+    <p>Your choice</p>
+    <input type="radio" id="paper" name="choice" value="0">
+    <label for="paper">paper</label><br>
+    <input type="radio" id="Rock" name="choice" value="1">
+    <label for="rock">rock</label><br>
+    <input type="radio" id="scissors" name="choice" value="2">
+    <label for="scissors">scissors</label>
+    <br>
+    <button>Render</button>
+</form>
+
+<% unless @result.nil? %>
+    <p><%= @result %></p>
+<% end %>
+
