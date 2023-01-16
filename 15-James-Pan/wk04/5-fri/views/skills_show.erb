@@ -1,0 +1,10 @@
+<h1><%= @skill.name %></h1>
+
+<% unless @skill.image.nil? || @skill.image.empty? %>
+    <img class="feature" src="<%= @skill.image %>" alt="<%= @skill.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/skills/<%= @skill.id %>/edit">Edit skill</a>
+    <a href="/skills/<%= @skill.id %>/delete">Delete skill</a>
+</div>

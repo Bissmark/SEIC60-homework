@@ -1,0 +1,9 @@
+<h1>All characters</h1>
+
+<% @characters.each do |character| %>
+    <p>
+        <a href="/characters/<%= character["id"] %>">
+            <%= character["name"] %>
+        </a>
+    </p>
+<% end %>

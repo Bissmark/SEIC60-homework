@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gamesonrails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <nav>
+  <a href="/">Home</a>
+  <a href="/games/magic8ball">Magic 8 Ball</a>
+  <a href="/games/secretnumber">Secret Number</a>
+  <a href="/games/rockpaperscissors">Rock Paper Scissors</a>
+  
+  </nav>
+    <%= yield %>
+  </body>
+
+
+</html>

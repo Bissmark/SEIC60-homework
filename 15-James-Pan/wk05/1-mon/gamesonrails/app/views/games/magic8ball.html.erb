@@ -1,0 +1,17 @@
+<div class="magic8ball">
+  <h2>Magic 8 Ball</h2>
+
+  <form action="/games/magic8ball">
+    <label>
+      <input
+        type="search"
+        name="title"
+        placeholder="Enter your question"
+        required
+        autofocus
+      />
+      <button>Check</button>
+    </label>
+  </form>
+  <p><%= @answer %></p>
+</div>

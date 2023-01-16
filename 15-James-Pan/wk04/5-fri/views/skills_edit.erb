@@ -1,0 +1,15 @@
+<h1>Edit skill</h1>
+
+<form action="/skills/<%= @skill.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @skill.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @skill.image %>">
+    </label>
+
+    <button>Update skill</button>
+</form>
