@@ -1,0 +1,12 @@
+<h1><%= @musician["name"] %></h1>
+<!-- <h2><%= @musician["dob"] %></h2> -->
+
+<% unless @musician.image.nil? || @musician.image.empty?%>
+    <img class="feature" src="<%= @musician.image%>" alt="<%= @musician.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/musicians/<%= @musician.id %>/edit">EDIT STAR</a>
+    <a href="/musicians/<%= @musician.id %>/delete">DELETE STAR</a>
+
+</div>

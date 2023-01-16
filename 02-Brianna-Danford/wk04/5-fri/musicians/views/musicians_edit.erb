@@ -1,0 +1,15 @@
+<h1>EDIT MUSICIANS</h1>
+
+<form action="/musicians/<%= @musician.id %>" methods="post">
+    <label>
+        Name: 
+        <input name="name" required value ="<%= @musician.name %>">
+    </label>
+
+    <label>
+    Image:
+        <input type="url" name="image" value="<%= @musician.image %>">
+    </label>
+
+    <button>Update</button>
+</form>
