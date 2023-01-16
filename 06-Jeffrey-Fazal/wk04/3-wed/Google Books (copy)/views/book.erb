@@ -1,0 +1,101 @@
+<h1>So you like ... <%= params[:book_name] %></h1>
+<p>The closest matching book we have on file is <b><%= @book_title %></b> by <b><%= @author %></b></p>
+<p>Imagine you walked into a book store, you may see something like this:</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="<%= @book_image %>" alt="book cover" class="mx-auto"> 
+    </div>
+    <div class="col">
+      <p><%= @book_short_description %></p>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>For only <%= @book_price %> you can buy the book from <a href="<%= @buy %>">Google Books</a></p>
+    </div>
+  </div>
+<p>Wondering why this isn't the book you were thinking about? Well we don't know all the books and <%= @book_volumes %> similar books! We can't get an exact match.</p>
+<p>Join our members section and we'll let you know about the latest updates.</p>
+<div class="container">
+    <h2>Technical Infomation about the book:</h2>
+    <div class="row">
+        <div class="column">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Book Name</th>
+                  <th scope="col">Book URL</th>
+                  <th scope="col">Book Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><%=@search_book %></td>
+                  <td><%=@book_url_raw %></td>
+                  <td><%=@book_image %></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Book name given by the user</td>
+                  <td>The URL created with input from user</td>
+                  <td>Image retried from generated URL</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Description
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <%= @book_description %>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Link to self
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>See <a href="<%= @google_link %>">Googles Link</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Full Details
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>"DEBUG @book_url << <%=@book_url %></p>
+      </div>
+    </div>
+  </div>
+</div>    
+        
+
+
+        </div>
+    </div>
+</div>

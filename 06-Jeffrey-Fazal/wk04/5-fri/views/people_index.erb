@@ -1,0 +1,15 @@
+<h1>All People</h1>
+<table>
+<tr>
+<th>Person</th>
+<th>Notes</th>
+</tr>
+<% @people.each do |people| %>
+    <tr>
+        <td><a href="/people/<%= people["id"] %>">
+            <%= people["name"] %>
+        </a></td>
+    <td>Login for notes</td>
+    </tr>
+<% end %>
+</table>

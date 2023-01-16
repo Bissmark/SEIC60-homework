@@ -29,29 +29,17 @@ get '/book' do
   @search_book = params[:book_name]
   @book_url_raw = "https://www.googleapis.com/books/v1/volumes?q=title:#{params[:book_name]}"
   @book_url = HTTParty.get("https://www.googleapis.com/books/v1/volumes?q=title:#{params[:book_name]}")
-  @book_volumes = @book_url["totalItems"].to_i
-  if @book_volumes > 0
-    # @isbn = @book_url items.0.volumeInfo.industryIdentifiers.0.type
-    # {
-    #   "type": "ISBN_13",
-    #   "identifier": "9781932100884"
-    # },
-    @book_image = @book_url["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
-    @book_description = @book_url["items"][0]["volumeInfo"]["description"]
-    @book_short_description = @book_url["items"][0]["volumeInfo"]["description"].slice(0, 140) + '...' #maybe link to full description?
-    @book_title = @book_url["items"][0]["volumeInfo"]["title"]
-    @author = @book_url["items"][0]["volumeInfo"]["authors"][0]
-    @google_link = @book_url["items"][0]["selfLink"]
-    @buy = @book_url["items"][0]["saleInfo"]["buyLink"]
-    @book_price = @book_url["items"][0]["saleInfo"]["listPrice"]["amount"]
-    binding.irb
-    erb :book
-  else
-    puts"redirect to another page"
-    binding.irb
-    erb :nobook
-  end
-
+  @book_volumes = @book_url["books#volumes"]
+  binding.irb
+  @book_image = @book_url["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
+  @book_description = @book_url["items"][0]["volumeInfo"]["description"]
+  @book_short_description = @book_url["items"][0]["volumeInfo"]["description"].slice(0, 140) + '...' #maybe link to full description?
+  @book_title = @book_url["items"][0]["volumeInfo"]["title"]
+  @author = @book_url["items"][0]["volumeInfo"]["authors"][0]
+  @google_link = @book_url["items"][0]["selfLink"]
+  @buy = @book_url["items"][0]["saleInfo"]["buyLink"]
+  @book_price = @book_url["items"][0]["saleInfo"]["listPrice"]["amount"]
+  erb :book
 end
 
 get '/login/form' do

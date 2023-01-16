@@ -77,6 +77,14 @@ def calculator_function(calculation)
     n = gets.to_f
     months = p*((i*(1 + i)**n) / ((1 + i)**n - 1)) # TODO: Fix calculation, look into order of operations
     years = months / 12
+
+# def mortage_calculator(p, i, n)
+#     part = (1 + i)**n
+#     numerator = i * part
+#     denominator = part - 1
+#     return (p * (numerator / denominator)).round(2)
+
+
     puts "You've got #{months.ceil} months left or #{years.ceil} years" 
     when 't'
     puts "How far is the destination in kilometers?"
@@ -95,6 +103,22 @@ def calculator_function(calculation)
     Likewise, don't use units like kg or %"
     end
 end
+
+# def trip_time(distance, speed)
+#     (distance / speed).round(2)
+# end
+
+# def trip_cost(distance, miles, price)
+#     fuel_needed = distance / miles
+#     (price * fuel_needed).round(2)
+# end
+
+# def mortage_calculator(p, i, n)
+#     part = (1 + i)**n
+#     numerator = i * part
+#     denominator = part - 1
+#     return (p * (numerator / denominator)).round(2)
+# end
 
 until menu_choice == 'q'
     #do what they asked for

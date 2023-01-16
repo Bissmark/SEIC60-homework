@@ -1,0 +1,14 @@
+<h1> View all the peoples </h1>
+
+<% @people.each do |people|  %>
+ <table>
+  <tr>
+    <th>Person ID</th>
+    <th>Person Name</th>
+  </tr>
+  <tr>
+    <td><%= people["fullName"]%></td>
+    <td><%= people["fullName"] %><a href="/people/<%= people["id"] %>"><%= people["fullName"] %></a></td>
+  </tr>
+  <tr>
+</table> 

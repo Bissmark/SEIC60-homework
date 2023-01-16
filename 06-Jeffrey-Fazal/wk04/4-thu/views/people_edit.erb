@@ -1,0 +1,31 @@
+<h1>Edit Person</h1>
+
+<form action="/butterflies/<%= @butterfly["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @people["fullName"] %>">
+    </label>
+
+    <label>
+        Photo:
+        <input type="url" name="photo" value="<%= @people["photo"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" val<%=  %>ue="<%= @people["image"] %>">
+    </label>
+
+    <button>Update Person</button>
+</form>
+
+<p>Looking to add more info? Contact the admin, the current values are being added:</p>
+	<ul>
+        <li>id INTEGER PRIMARY KEY,</li>
+        <li>fullName TEXT,</li>
+        <li>photo TEXT,</li>
+        <li>preferredName TEXT,</li>
+        <li>city TEXT,</li>
+        <li>employer TEXT,</li>
+        <li>valueEstimate INTEGER</li>
+    </ul>

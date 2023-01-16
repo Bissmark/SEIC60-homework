@@ -2,25 +2,28 @@
 L_LINE = ["8th on L", "6th", "Union Square", "3rd", "1st"]
 # SIX_LINE = ["Grand Central", "33rd", "28th on 6", "23rd on 6", "Union Square",  "Astor Place"]
 
-def single_trip(line_name='L_Line')
+def single_trip()
     puts "These are the stops you can choose from: #{L_LINE}"
     print "What is your starting station? " 
-    stop_one = gets.chomp #TODO: if not in aray prompt again / error handlingg
+    stop_one = gets.chomp #TODO: if not in aray prompt again
+    p  "You have chosen to start at (stop_one): #{stop_one}"
     stop_one_index = L_LINE.index "#{stop_one}"
+    p "This is the (stop_one_index) #{stop_one_index} station"
     print "What is your final destination? " 
     stop_two = gets.chomp
+    p "You have chosen to end at (stop_two:) #{stop_two}"
     stop_two_index = L_LINE.index "#{stop_two}"
-
+    p "Which is the (stop_two_index) #{stop_two_index} station"
     l_reversed = L_LINE.reverse
     if stop_two_index > stop_one_index # Train goes forward
         p 'Train goes forwards'
-        puts "You must travel through the following stops on the #{line_name}: #{L_LINE[stop_one_index .. stop_two_index]}"
+        puts "You must travel through the following stops: #{L_LINE[stop_one_index .. stop_two_index]}"
         puts "#{stop_two_index - stop_one_index} stops in total."
         
     else # Train goes backwards
         p 'Train goes backwards'
-        puts "You must travel through the following stops on the #{line_name}: #{l_reversed[stop_two_index .. stop_one_index]}"
-        puts "#{stop_one_index - stop_two_index} stops in total." # Figure out edge case i.e starts at 0
+        puts "You must travel through the following stops: #{l_reversed[stop_two_index .. stop_one_index]}"
+        puts "#{stop_two_index unless stop_one_index == 0} stops in total" # Figure out edge case i.e starts at 0
         
     end 
 end 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Who am I</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <nav>
+    <a href='/people'>View People</a>
+    <a href='/organisations'>View Oranisations</a>
+
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens src w3c -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+    <a href='/people'>View People</a>
+    <a href='/organisations'>View Oranisations</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
+    
+  </nav>
+    <%= yield %>
+	<script src="index.js"></script>
+  </body>
+</html>

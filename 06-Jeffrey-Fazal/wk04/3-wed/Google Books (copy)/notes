@@ -1,0 +1,16 @@
+<iframe frameborder="0" scrolling="no" style="border:0px" src="https://books.google.com.au/books?id=H8buBQAAQBAJ&lpg=PP1&dq=title%3AHarry%20Potter&pg=PR15&output=embed" width=500 height=500></iframe>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fulfillmentToken fulfillmentType="buy" xmlns="http://ns.adobe.com/adept">
+    <distributor>urn:uuid:00000000-0000-0000-0000-000000000001</distributor>
+    <operatorURL>http://books.google.com/books/acs4/fulfillment</operatorURL>
+    <expiration>2023-01-11T08:17:57-08:00</expiration>
+    <transaction>ge:ad45873e-3bcd-cf56-6a45-71b2c7ed4b8c:1673452977241270</transaction>
+    <resourceItemInfo>
+        <resource>urn:uuid:ad45873e-3bcd-cf56-6a45-71b2c7ed4b8c</resource>
+        <resourceItem>1</resourceItem>
+        <src>https://books.google.com.au/books/download/J_K_Rowling_A_Bibliography_1997_2013.epub?acsid=urn:uuid:ad45873e-3bcd-cf56-6a45-71b2c7ed4b8c&amp;output=acs4_book_bytes&amp;dl_type=sample&amp;ar=a1067e8388ea77f0294e38f3bfd8892e</src>
+        <downloadType>simple</downloadType>
+    </resourceItemInfo>
+    <hmac>KlqvA8VmaeXvEF34VdDWKxh9+SY=</hmac>
+</fulfillmentToken>

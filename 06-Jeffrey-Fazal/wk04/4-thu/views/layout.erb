@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The people DB</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/people">Alll People</a></li>
+        <!-- <li><a href="/people/:id/edit">People Edit</a></li> -->
+        <li><a href="/people/new">New People</a></li>
+        <!-- <li><a href="/people/delete">Delete People</a></li>
+        <li><a href="/people/show">See People</a></li> -->
+      </ul>
+    </nav>
+    <hr class="seperate">
+    <div id="main-content">
+    <%= yield %>
+    </div>
+    <hr class="seperate">
+    <footer>Thanks for visiting the people DB</footer>
+  </body>
+</html>
