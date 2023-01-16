@@ -1,0 +1,36 @@
+<h1> Magic 8 Ball </h1>
+
+
+   
+    <p>
+        <label>What is your question?</label>
+        <input required>
+    </p>
+
+    <button>Ask Magic 8 Ball!</button>
+
+
+
+
+<script>
+
+
+    button = document.querySelector("button")
+    button.addEventListener("click", function(){
+        question = document.querySelector("input").value
+        if (question.length <= 0) {
+            alert("Please ask a question!")
+        }
+        else if (question.indexOf('?') != question.length - 1){
+            alert("Please place a question mark at the end of the sentence as otherwise it is not a question!")
+        }
+        else {
+            let questionURL = "/magic8ball/" + document.querySelector("input").value.replaceAll(' ','-')
+            document.location.href = questionURL
+        }
+    })
+
+
+
+ 
+</script>

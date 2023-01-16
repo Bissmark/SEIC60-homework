@@ -190,7 +190,7 @@ get '/sanctions/:id/delete' do
     sanction = Sanction.find params[:id]
     sanctions = Sanction.all
     sanction_count = 0
-    if !sanction.nationality.empty? && !!sanction.nationality.nil?
+    if !sanction.nationality.empty? && !sanction.nationality.nil?
         sanctions.each do |san|
             sanction_count += 1 if san.nationality == sanction.nationality
         end

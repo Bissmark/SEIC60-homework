@@ -1,0 +1,63 @@
+<h1> Rock Paper Scissor </h1>
+
+<button class='shape'>Rock</button>
+<button class='shape'>Paper</button>
+<button class='shape'>Scissor</button>
+
+
+<h2>Choose a shape!</h2>
+
+<button class='secret' style='font-size:100px; padding: 20px;'></button>
+
+<script>
+
+    let AIplayer = document.querySelector('.secret')
+    const secretShapes = ['Rock', 'Paper', 'Scissor']
+    let result = document.querySelector('h2')
+
+    let shapes = document.querySelectorAll('.shape')
+    shapes.forEach(target =>
+    
+        target.addEventListener('click', function() {
+            AIplayer.textContent = secretShapes[Math.floor(Math.random() * 3)]
+            let secretShape = AIplayer.textContent
+            AIplayer.style.display = 'initial'
+            shapes.forEach(target =>
+                    target.style.backgroundColor = "")
+
+    
+            
+
+
+            if (target.textContent == secretShape){
+                result.textContent = `Draw!` 
+                target.style.backgroundColor = "yellow";
+                AIplayer.style.backgroundColor = "yellow"
+            }
+
+            if ((target.textContent == 'Rock' && secretShape == 'Scissor') || (target.textContent == 'Paper' && secretShape == 'Rock') || (target.textContent == 'Scissor' && secretShape == 'Paper')){
+                target.style.backgroundColor = "green";
+                AIplayer.style.backgroundColor = "red"
+                result.textContent = "You win!"
+            }
+
+            if ((target.textContent == 'Rock' && secretShape == 'Paper') || (target.textContent == 'Paper' && secretShape == 'Scissor') || (target.textContent == 'Scissor' && secretShape == 'Rock')){
+                target.style.backgroundColor = "red";
+                AIplayer.style.backgroundColor = "green"
+                result.textContent = "You loss!"
+            }
+            
+            
+
+       
+                
+
+
+
+
+
+    }))
+
+
+
+</script>
