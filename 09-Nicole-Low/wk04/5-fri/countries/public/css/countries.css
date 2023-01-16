@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(115, 170, 214);
+    margin: 0;
+    padding: 20px 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content-container {
+    background-color: #DFEEEE;
+    padding: 30px 160px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.exit-button {
+    margin-top: 15px;
+}
+
+ul {
+    margin: 20px 0 0 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.controls-container {
+    margin-top: 30px;
+}
+
+a:has(> button) {
+    text-decoration: none;
+}
+
+button {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+a {
+    font-weight: bold;
+}
+
+.home-button {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.world-map-image {
+    display: block;
+    width: 50%;
+    margin-bottom: 40px;
+    border-radius: 18px;
+}
+
+.info-image {
+    width: 500px;
+}
+
+.content-container p a:visited {
+    color: black;
+}
+
+.content-container p {
+    text-align: center;
+}

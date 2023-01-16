@@ -1,0 +1,21 @@
+<h2>Countries</h2>
+
+<div class="content-container">
+    <% @countries.each do |country| %>
+        <p>
+            <a href="/countries/<%= country.id %>">
+                <%= country.name %>
+            </a>
+        </p>    
+    <% end %>
+</div>
+
+<div class="controls-container">
+    <a href="/countries/add">
+        <button>Add</button>
+    </a>
+    
+    <a href="/">
+        <button>Back</button>
+    </a>
+</div>

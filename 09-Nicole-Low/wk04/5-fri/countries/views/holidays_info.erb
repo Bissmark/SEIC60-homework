@@ -1,0 +1,23 @@
+<h2><%= @holiday.name %></h2>
+
+<div class="content-container">
+    <img src="<%= @holiday.image %>" alt="<%= @holiday.name %> flag" class="info-image">
+    <ul>
+        <li>Name: <%= @holiday.name %></li>
+        <li>Date: <%= @holiday.date %></li>
+    </ul>
+</div>
+
+<div class="controls-container">
+    <a href="/holidays/<%= @holiday.id %>/edit">
+        <button>Edit</button>
+    </a>
+
+    <a href="/holidays/<%= @holiday.id %>/delete">
+        <button>Delete</button>
+    </a>
+</div>
+
+<a href="/holidays">
+    <button class="exit-button">Back</button>
+</a>

@@ -1,0 +1,24 @@
+<h2><%= @country.name %></h2>
+
+<div class="content-container">
+    <img src="<%= @country.flag_image %>" alt="<%= @country.name %> flag" class="info-image">
+    <ul>
+        <li>Name: <%= @country.name %></li>
+        <li>Continent: <%= @country.continent %></li>
+        <li>Capital: <%= @country.capital %></li>
+    </ul>
+</div>
+
+<div class="controls-container">
+    <a href="/countries/<%= @country.id %>/edit">
+        <button>Edit</button>
+    </a>
+
+    <a href="/countries/<%= @country.id %>/delete">
+        <button>Delete</button>
+    </a>
+</div>
+
+<a href="/countries">
+    <button class="exit-button">Back</button>
+</a>

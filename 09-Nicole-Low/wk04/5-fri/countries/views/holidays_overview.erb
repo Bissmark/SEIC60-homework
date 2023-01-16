@@ -1,0 +1,21 @@
+<h2>Holidays</h2>
+
+<div class="content-container">
+    <% @holidays.each do |holiday| %>
+        <p>
+            <a href="/holidays/<%= holiday.id %>">
+                <%= holiday.name %>
+            </a>
+        </p>    
+    <% end %>
+</div>
+
+<div class="controls-container">
+    <a href="/holidays/add">
+        <button>Add</button>
+    </a>
+
+    <a href="/">
+        <button>Back</button>
+    </a>
+</div>

@@ -1,0 +1,26 @@
+<h2>Add Holiday</h2>
+
+<form action="/holidays" method="post">
+    <label>
+        Name:
+        <input name="name" placeholder="German Unity Day" required>
+    </label>
+
+    <label>
+        Date:
+        <input name="date" placeholder="3 October" required>
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" placeholder="https://i0.wp.com/germanyinusa.com/wp-content/uploads/2018/09/57698230.jpg?w=1680" required>
+    </label>
+
+    <div class="controls-container">
+        <button>Confirm</button>
+
+        <a href="/holidays">
+            <button type="button">Cancel</button>
+        </a>
+    </div>
+</form>

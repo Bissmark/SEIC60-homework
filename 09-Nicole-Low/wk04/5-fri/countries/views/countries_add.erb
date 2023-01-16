@@ -1,0 +1,31 @@
+<h2>Add Country</h2>
+
+<form action="/countries" method="post">
+    <label>
+        Name:
+        <input name="name" placeholder="Germany" required>
+    </label>
+
+    <label>
+        Continent:
+        <input name="continent" placeholder="Europe" required>
+    </label>
+
+    <label>
+        Capital:
+        <input name="capital" placeholder="Berlin" required>
+    </label>
+
+    <label>
+        Flag image:
+        <input type="url" name="flag_image" placeholder="https://www.sciencekids.co.nz/images/pictures/flags680/Germany.jpg" required>
+    </label>
+
+    <div class="controls-container">
+        <button>Confirm</button>
+
+        <a href="/countries">
+            <button type="button">Cancel</button>
+        </a>
+    </div>
+</form>
