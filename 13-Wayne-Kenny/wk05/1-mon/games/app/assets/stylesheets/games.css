@@ -1,0 +1,32 @@
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Circus_Circus_Las_Vegas_-_001.jpg/1920px-Circus_Circus_Las_Vegas_-_001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 960px; */
+}
+nav {
+    margin: 40px auto;
+}
+a {
+    /* color: white; */
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 10px;
+
+}
+.loser {
+    max-width: 600px;
+    margin-left: 550px;
+}
+img {
+    max-width: 600px;
+    margin-left: 325px;
+}
