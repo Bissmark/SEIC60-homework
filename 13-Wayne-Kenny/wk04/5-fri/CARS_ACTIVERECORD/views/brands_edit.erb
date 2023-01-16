@@ -1,0 +1,20 @@
+<h1>Edit Brand</h1>
+
+<form action="/brands/<%= @brand.id %>" method="post">
+    <label>
+        Brand Name:
+        <input name="name" required value="<%= @brand.name %>">
+    </label>
+
+    <label>
+        Origin:
+        <input name="origin" value="<%= @brand.origin %>">
+    </label>
+
+    <label>
+        Logo:
+        <input type="url" name="logo" value="<%= @brand.logo %>">
+    </label>
+
+    <button>Update Brand</button>
+</form>
