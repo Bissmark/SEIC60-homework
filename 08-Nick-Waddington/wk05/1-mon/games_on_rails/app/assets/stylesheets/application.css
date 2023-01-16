@@ -17,14 +17,14 @@
  @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Serif+Pro:wght@300&display=swap');
 
 body {
-    background-image: url("/images/colours1.jpg");
+    background-image: url("/assets/carnival1.jpg");
     background-repeat: repeat;
     background-color: blueviolet;
     font-family: 'Source Serif Pro', serif;
-    color: rgb(255, 247, 0);
+    color: rgb(95, 216, 91);
 }
 a {
-    color: rgb(255, 247, 0);
+    color: rgb(95, 216, 91);
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
@@ -39,7 +39,8 @@ a {
     flex-wrap: wrap;
     max-width: 720px;
     margin: 0 auto;
-
+    padding-top: 5px;  
+    padding-bottom: 5px;
 }
 
 h1 {
@@ -59,3 +60,12 @@ label{
     max-width: 90%;
 }
 
+.img {
+    height: 500px;
+    width: 333px;
+}
+
+.mask {
+    max-width: 70%;
+    max-height: 70%;
+}
