@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Rock, Paper, Scissors</h1>
+    <nav>
+        <p><a href="/">Home</a></p>
+        <p><a href="/magic-eight-ball">"Roll" Magic 8 Ball</a></p>
+        <p><a href="/secret-number">"Drop" Secret Number</a></p>
+    </nav>
+
+    <div class="answer">
+        <% unless @result.nil? %>
+            <p class="text">
+                <%= @result %>
+            </p>
+            <% end %>
+    </div>
+
+    <form action="/roshambo" >
+        <p><strong>Your choice</strong><strong></strong></p>
+        <div class="radio-inputs">
+            <label for="paper"><input type="radio" id="paper" name="choice" value="0">Paper</label>
+
+            <label for="rock"><input type="radio" id="Rock" name="choice" value="1">Rock</label>
+
+            <label for="scissors"><input type="radio" id="scissors" name="choice" value="2">Scissors</label>
+        </div>
+
+
+        <button>Render</button>
+    </form>
+
+</div>

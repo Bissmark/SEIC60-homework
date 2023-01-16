@@ -1,0 +1,22 @@
+<div class="container">
+    <nav>
+        <p><a href="/">Home</a></p>
+        <p><a href="/magic-eight-ball">"Roll" Magic 8 Ball</a></p>
+        <p><a href="/roshambo">Rock Paper Scissors</a></p>
+    </nav>
+    <p>Guess a number between 0 and 10</p>
+    <div class="answer">
+        <% unless @message.nil? %>
+        <p class="text"><%= @message %></p>
+        <% end %>
+    </div>
+    <form action="/secret-number">
+        Your Guess
+        <label for="number" place="1">
+            <input type="number" name="number" id="number" autofocus>
+        </label>
+        <button>Check</button>
+    </form>
+
+</div>
+

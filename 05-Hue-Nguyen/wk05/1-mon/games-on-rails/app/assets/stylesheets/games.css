@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(34, 31, 31);
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* -------------NAV-------------------- */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav p {
+    margin-left: 1rem;
+    padding: 1.5rem;
+}
+
+/* -------------FORM --------------*/
+.answer {
+    width: 400px;
+    height: 100px;
+    border: 1px solid white;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.answer .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+form input {
+    width: 90%;
+    height: 50px;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+}
+
+form button {
+    width: 90px;
+    height: 45px;
+    margin: 0 auto;
+    font-weight: bolder;
+    border-radius: 0.2rem;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: beige;
+}
+
+/* -----------RADIO INPUTS */
+.radio-inputs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 2rem 0 3rem;
+}
+
+.radio-inputs input {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 0;
+    border-radius: 0.2rem;
+    margin-right: 1rem
+}
+
+.radio-inputs label {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
