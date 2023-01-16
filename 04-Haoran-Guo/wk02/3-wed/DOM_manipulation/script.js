@@ -101,10 +101,10 @@ const createNewBlogPost = () => {
 
   newDiv.append(newH2);
   newDiv.append(newP);
-  main.appendChild(newDiv);
+  main.append(newDiv);
 
-  // console.log(newDiv)
-  // console.log(main.children)
+  console.log(newDiv)
+  console.log(main.children)
 
 }
 
