@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Serif+Pro:wght@300&display=swap');
+
+body {
+    background-image: url("/assets/carnival1.jpg");
+    background-repeat: repeat;
+    background-color: blueviolet;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(95, 216, 91);
+}
+a {
+    color: rgb(95, 216, 91);
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.container {
+    background-color: rgb(42, 41, 41);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 5px;  
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-family: 'Creepster';
+    font-size: 52px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+label{
+    font-size: 16px;
+}
+
+.feature {
+    max-width: 90%;
+}
+
+.img {
+    height: 500px;
+    width: 333px;
+}
+
+.mask {
+    max-width: 70%;
+    max-height: 70%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yoshi's Carnival</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="container">
+    <nav>
+      <a href="/">Home</a>
+      |
+      <a href="/magic">Fortune Teller</a>
+      |
+      <a href="/number">Numbers From The Grave</a>
+      |
+      <a href="/rps">The Final Challenge</a>
+    </nav>
+    <%= yield %>
+    </div>
+  </body>
+</html>
