@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GamesOnRail</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="container">
+   <div class="header">
+    <nav class="navMenu">
+      <a href="/">Home</a>
+      |
+      <a href="/magicballs">Magic 8 Ball</a>
+      |
+      <a href="/selectnumbers">Select Number</a>
+      |
+      <a href="/games/rock_paper_scissors/:throw">Rock Paper Scissors</a>
+      |
+      <div class="dot"></div>
+    </nav>
+    </div>
+    <div class="main">
+    <%= yield %>
+    </div>
+    </div>
+  </body>
+</html>
