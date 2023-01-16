@@ -1,0 +1,7 @@
+<% @statuses.each do |status| %>
+    <h2>
+        <a href="/statuses/<%= status.id %>">
+            <%= status.name %>
+        </a>
+    </h2>
+<% end %>

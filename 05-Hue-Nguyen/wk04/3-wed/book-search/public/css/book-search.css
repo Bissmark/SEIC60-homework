@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* -----General styling for body and container--------------- */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    min-width: 500px;
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/* Format the header which include page title and navigation */
+header {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style the form */
+form {
+    margin: 0 auto;
+    min-width: 500px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 90%;
+    height: 55px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+form button {
+    width: 10%;
+    height: 50px;
+    margin-left: 5px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: rgb(8, 101, 145);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/* -----------------Style the  results--------------------*/
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    margin-top: 20px;
+}
+
+section aside {
+    margin-right: 10px;
+}
+
+section span {
+    font-size: 16px;
+    padding-right: 5px;
+}

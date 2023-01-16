@@ -1,0 +1,10 @@
+<h2>Edit Status</h2>
+
+<form action="/statuses/<%= @status.id %>" method="post">
+
+    <label for="code">Code<input type="text" name="code" id="code" required value="<%= @status.code %>"></label>
+    <label for="name">Name<input type="text" name="name" id="name" required value="<%= @status.name %>"></label>
+    <label for="description">Description<input type="text" name="description" id="description" value="<%= @status.description %>"></label>
+
+    <button type="submit">Add</button>
+</form>

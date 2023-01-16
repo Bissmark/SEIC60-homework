@@ -1,0 +1,7 @@
+<% @plants.each do |plant| %>
+    <h2>
+        <a href="/plants/<%= plant.id %>">
+            <%= plant.name %>
+        </a>
+    </h2>
+<% end %>

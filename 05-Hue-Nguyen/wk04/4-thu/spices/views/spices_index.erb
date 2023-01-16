@@ -1,0 +1,46 @@
+<h2>All Spices</h2>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Country of Origin</th>
+        <th>Organic</th>
+        <th>Image Link</th>
+        <th>Controls</th>
+    </tr>
+    <% @spices.each_with_index do |spice, index| %>
+
+        <tr>
+            <th>
+                <%= index %>
+            </th>
+            <th>
+                <%= spice["id"] %>
+            </th>
+            <th>
+                <%= spice["name"] %>
+            </th>
+            <th>
+                <%= spice["price"] %>
+            </th>
+            <th>
+                <%= spice["country_origin"] %>
+            </th>
+            <th>
+                <%= spice["is_organic"] %>
+            </th>
+            <th>
+                <%= spice["image"] %>
+            </th>
+            <th>
+                <p><a href="/spices/<%= spice["id"] %>">View</a></p>
+                <p><a href="/spices/<%= spice["id"] %>/edit">Edit</a></p>
+                <p><a href="/spices/<%= spice["id"] %>/delete">Delete</a></p>
+            </th>
+        </tr>
+
+    <% end %>
+</table>

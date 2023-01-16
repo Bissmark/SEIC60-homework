@@ -1,0 +1,28 @@
+<section>
+
+    <aside class="image" style="background-image: url('<%= @spice["image"] %>');">
+        <!-- <img src="<%= @spice["image"] %>" alt="<%= @spice["name"] %>" > -->
+    </aside>
+
+    <div class="content">
+        <h1 class="name">
+            <%= @spice["name"] %>
+        </h1>
+        <p class="price">Price: <span><%= @spice["price"] %></span></p>
+        <p class="weight">Weight: <span>100 gram</span></p>
+        <p class="country-origin">Country of origin: <span><%= @spice["country_origin"] %></span></p>
+        <p class="is_organic">Quality:
+            <% if @spice["is_organic"] == 1 then %>
+                <span>Organic</span>
+                <% else %>
+                <span>Non-organic</span>
+            <% end %>
+
+        </p>
+        <div class="controls">
+            <button><a href="/spices/<%= @spice["id"] %>/edit">Edit</a></button>
+            <button><a href="/spices/<%= @spice["id"] %>/delete">Delete</a></button>
+        </div>
+    </div>
+
+</section>

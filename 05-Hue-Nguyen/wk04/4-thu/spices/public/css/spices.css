@@ -1,0 +1,56 @@
+
+
+/* -----------Table Styling------------- */
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+th:nth-child(1) {
+    width: 5%;
+}
+
+th:nth-child(2) {
+    width: 5%;
+}
+
+th:nth-child(3) {
+    width: 15%;
+}
+
+th:nth-child(7) {
+    width: 20%;
+}
+
+
+/* ------------"Edit page" styling ----- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+button {
+    width: 50%;
+}
+
+/* ---------- "Show page" styling-------- */
+section {
+    display: flex;
+}
+
+section aside {
+    width: 50%;
+    padding-top: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+section .content {
+    margin-left: 5%;
+}
+

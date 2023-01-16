@@ -1,0 +1,13 @@
+<h2>Edit</h2>
+
+<form action="/spices/<%= @spice["id"] %>" method="post">
+
+    <label for="name">Product Name<input type="text" name="name" id="name" required value="<%= @spice["name"] %>"></label>
+    <label for="price">Product Price (AUD)<input type="text" name="price" id="price" required value="<%= @spice["price"] %>"></label>
+    <label for="is_organic">Organic <input id="is_organic" name="is_organic" type="text"
+            placeholder="1 for organic or 0 for non-organic" required value="<%= @spice["is_organic"] %>"></label>
+    <label for="country_origin">Country of Origin<input type="text" id="country_origin" name="country_origin" value="<%= @spice["country_origin"] %>"></label>
+    <label for="image">Image Link<input type="url" name="image" id="image" value="<%= @spice["image"] %>"></label>
+
+    <button type="submit">Save</button>
+</form>
