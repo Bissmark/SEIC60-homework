@@ -1,0 +1,15 @@
+<h1>Edit Book</h1>
+
+<form action="/books/<%= @book.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @book.name %>">
+    </label>
+
+    <label> 
+        Image:
+        <input type="url" name="image" value="<%= @book.image %>">
+    </label>
+
+    <button>Edit book</button>
+</form>

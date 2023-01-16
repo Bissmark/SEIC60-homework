@@ -1,0 +1,15 @@
+<h1>Add a New Author to the Database!</h1>
+
+<form action="/authors" method="post">
+    <label>
+        Name:
+            <input name="name"required>
+    </label>
+
+    <label> 
+        Image:
+            <input type="url" name="image">
+    </label>
+
+    <button>Create New Author!</button>
+</form>

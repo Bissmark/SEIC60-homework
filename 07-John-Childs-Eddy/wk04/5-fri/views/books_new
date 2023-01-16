@@ -1,0 +1,15 @@
+<h1>Add a New Book to the Database!</h1>
+
+<form action="/books" method="post">
+    <label>
+        Name:
+            <input name="name"required>
+    </label>
+
+    <label> 
+        Image:
+            <input type="url" name="image">
+    </label>
+
+    <button>Create New Book!</button>
+</form>

@@ -1,0 +1,10 @@
+<h1> <%= @book.name %> </h1>
+
+<% unless @book.image.nil? || @book.image.empty? %>
+    <img class="feature" src="<%= @book.image %>" alt="<%= @book.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/books/<%= @book.id %>/edit">Edit Book</a>
+    <a href="/books/<%= @book.id %>/delete">Delete Book</a>
+</div>
