@@ -1,0 +1,34 @@
+<h1>New Whale</h1>
+
+<form action="<%= whales_path %>" method="post">
+    <label>
+        Common Name:
+        <input name='com_name' required>
+    </label>
+    <label>
+        Scientific Name:
+        <input name='sci_name'>
+    </label>
+    <label>
+        Size:
+        <input type='number' name='size'>
+    </label>
+    <label>
+        Weight:
+        <input type="number" name='weight'>
+    </label>
+    <label>
+        Image:
+        <input type='url'name='image'>
+    </label>
+    <label>
+        Is it endangered?
+        <input name='endangered'>
+    </label>
+    <label>
+        Intersting fact:
+        <input name='special_info'>
+    </label>
+
+    <button>New Whale</button>
+</form>

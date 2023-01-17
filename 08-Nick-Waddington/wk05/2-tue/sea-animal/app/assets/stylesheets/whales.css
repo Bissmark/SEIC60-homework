@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Serif+Pro:wght@300&display=swap');
+
+html {
+    height: 90%;
+    margin: auto;
+}
+body {
+    background-image: url("/assets/ocean.jpg");
+    background-size: cover;
+    background-color: blueviolet;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(83, 169, 198);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: rgb(83, 169, 198);
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    background-color: rgb(42, 41, 41);
+    border-color: rgb(83, 169, 198);
+    border: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Permanent Marker';
+    color: rgb(83, 169, 198);
+    font-size: 52px;
+    text-align: center;
+    margin-top: 0;
+}
+h2 {
+    text-align: center;
+}
+
+label{
+    font-size: 16px;
+}
+
+.feature {
+    max-width: 90%;
+}
+
+.img {
+    height: 500px;
+    width: 333px;
+}
+
+.mask {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+form {
+    padding-left: 60px;
+}
+
+nav {
+    padding-top: 5px;
+}
+
+.controls {
+    font-weight: bold;
+    font-size: 20px;
+}
