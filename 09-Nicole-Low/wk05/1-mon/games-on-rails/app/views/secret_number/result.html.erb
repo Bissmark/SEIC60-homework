@@ -1,0 +1,19 @@
+<a href="/">Home</a>
+
+<h2>Secret Number</h2>
+
+<div class="answer">
+    <% if @secret_number == @result %>
+        <h3>You guessed correctly!</h3>
+    <% else %>
+        <h3>You're wrong!</h3>
+    <% end %>
+
+    <p>Your guess: <%= @result %></p>
+    <p>Secret number: <%= @secret_number %></p>
+</div>
+
+
+<a href="/secret_number">
+    <button>Play again</button>
+</a>

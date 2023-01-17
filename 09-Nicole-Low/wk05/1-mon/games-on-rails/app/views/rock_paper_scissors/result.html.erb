@@ -1,0 +1,21 @@
+<a href="/">Home</a>
+
+<h2>Rock Paper Scissors</h2>
+
+<div class="answer">
+    <% if @winner == "player" %>
+        <h3>You win!</h3>
+    <% elsif @winner == "bot" %>
+        <h3>You lose!</h3>
+    <% else%>
+        <h3>Draw!</h3>
+    <% end %>
+
+    <p>Your choice: <%= @choice %></p>
+    <p>Bot choice: <%= @bot_choice %></p>
+</div>
+
+
+<a href="/rock_paper_scissors">
+    <button>Play again</button>
+</a>
