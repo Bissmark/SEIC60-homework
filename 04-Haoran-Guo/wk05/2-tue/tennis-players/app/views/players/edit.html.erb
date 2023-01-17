@@ -1,0 +1,18 @@
+<h1>Edit Player</h1>
+
+<form action="<%= player_path(@player.id) %>" method="post">
+
+    <label>
+        Name: 
+        <input type="text" name="name" required autofocus value="<%= @player.name %>">
+        Brith Country: 
+        <input type="text" name="birth_country" value="<%= @player.birth_country %>">
+        Height:
+        <input type="number" name="height" value="<%= @player.height %>">
+        Weight:
+        <input type="number" name="weight" value="<%= @player.weight %>">
+        Image: 
+        <input type="url" name="image" value="<%= @player.image %>">
+    </label>
+    <button>Update Player</button>
+</form>

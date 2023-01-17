@@ -1,0 +1,14 @@
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    text-align: center;
+    align-items: center;
+}
+
+.index{
+    display: flex;
+    flex-direction: column;
+}

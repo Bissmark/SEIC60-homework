@@ -1,0 +1,15 @@
+<h1><%= @player.name %></h1>
+
+<%= image_tag @player.image, :class => "feature" if @player.image.present? %>
+
+<ul>
+    <li>Name: <%= @player.name %></li>
+    <li>Birth Country: <%= @player.birth_country %></li>
+    <li>Height: <%= @player.height %></li>
+    <li>Weight: <%= @player.weight %></li>
+</ul>
+
+<div class="control">
+    <%= link_to 'Edit Player', edit_player_path(@player.id) %>
+    <%= link_to  'Delete Player', player_path(@player.id), :method => 'delete' %>
+</div>
