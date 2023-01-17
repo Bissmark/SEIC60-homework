@@ -1,0 +1,17 @@
+<h1><%= @whale.com_name %></h1>
+
+<%= image_tag @whale.image, :class => 'feature' if @whale.image.present? %>
+
+<ul>
+    <li>Common Name: <%= @whale.com_name %></li>
+    <li>Scientific Name: <%= @whale.sci_name %></li>
+    <li>Size: <%= @whale.size %> feet</li>
+    <li>Weight: <%= @whale.weight %> tons</li>
+    <li>Is it endangered? <%= @whale.endangered %></li>
+    <li>Interesting fact: <%= @whale.special_info %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to 'Edit whale', edit_whale_path(@whale.id) %>
+    <%= link_to 'Delete whale', whale_path(@whale.id), :method => 'delete' %>
+</div>

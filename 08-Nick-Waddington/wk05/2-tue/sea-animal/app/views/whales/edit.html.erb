@@ -1,0 +1,35 @@
+<h1>Edit Whale</h1>
+
+<form action="<%= whale_path(@whale.id) %>" method="post">
+    <label>
+        Common Name:
+        <input name='com_name' required value="<%= @whale.com_name %>">
+    </label>
+    <label>
+        Scientific Name:
+        <input name='sci_name' value="<%= @whale.sci_name %>">
+    </label>
+    <label>
+        Size:
+        <input type='number' name='size' value="<%= @whale.size %>">
+    </label>
+    <label>
+        Weight:
+        <input type="number" name='weight' value="<%= @whale.weight %>">
+    </label>
+    <label>
+        Image:
+        <input type='url'name='image' value="<%= @whale.image %>">
+    </label>
+    <label>
+        Is it endangered?
+        <input name='endangered' value="<%= @whale.endangered %>">
+    </label>
+    <label>
+        Interesting fact:
+        <input name='special_info' value="<%= @whale.special_info %>">
+    </label>
+
+<button>Edit whale</button>
+
+</form>
