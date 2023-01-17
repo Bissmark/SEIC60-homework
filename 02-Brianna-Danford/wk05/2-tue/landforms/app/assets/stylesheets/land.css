@@ -1,0 +1,13 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/fd/09/f7/fd09f7c5093408bcdd7510347301920f.png");
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 960px;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+/* center All mountains & New mountain */
