@@ -1,0 +1,10 @@
+<h1>All Oceans</h1>
+
+<% @oceans.each do |ocean| %>
+    <p>
+        <%= link_to ocean.name, ocean_path(ocean.id) %>
+        is 
+        <%= ocean.maxdepth %>
+        m's deep.
+    </p>
+<% end %>
