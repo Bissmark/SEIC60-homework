@@ -1,0 +1,52 @@
+<div class="container show">
+
+    <h2>
+        <%= @river.name %>
+    </h2>
+    <div class="controls">
+        <%= link_to 'Edit' , edit_river_path(@river.id) %>
+            |
+            <%= link_to 'Delete' , river_path(@river.id), :method=> 'delete' %>
+    </div>
+    <%= image_tag @river.image, :alt=> @river.name if @river.image.present? %>
+
+        <table class="content">
+            <tr>
+                <th>Countries</th>
+                <th>
+                    <%= @river.countries %>
+                </th>
+            </tr>
+            <tr>
+                <th>Length</th>
+                <th>
+                    <%= @river.length %>
+                </th>
+            </tr>
+            <tr>
+                <th>Basin Size</th>
+                <th>
+                    <%= @river.basin_size %>
+                </th>
+            </tr>
+            <tr>
+                <th>Sources</th>
+                <th>
+                    <%= @river.sources %>
+                </th>
+            </tr>
+            <tr>
+                <th>Mouth</th>
+                <th>
+                    <%= @river.mouth %>
+                </th>
+            </tr>
+            <tr>
+                <th>Continent</th>
+                <th>
+                    <%= @river.continent %>
+                </th>
+            </tr>
+        </table>
+
+</div>

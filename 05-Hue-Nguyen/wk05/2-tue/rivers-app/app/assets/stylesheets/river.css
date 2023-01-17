@@ -1,0 +1,42 @@
+/* ----------------INDEX PAGE------------------------- */
+.index h1 {
+    text-align: center;
+}
+
+img {
+    position: relative;
+    width: 100%;
+}
+
+.index a {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.index p {
+    margin-bottom: 5%;
+}
+
+/* ------------SHOW PAGE ----------------------------- */
+h2 {
+    font-size: 30px;
+}
+
+table {
+    margin: 20px auto;
+}
+
+tr th:nth-child(2) {
+    font-weight: 500;
+}
+
+/* -----------NEW PAGE- ------------------------------ */
+input {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 10px;
+}

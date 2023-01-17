@@ -1,0 +1,14 @@
+<div class="container index">
+    <h1>Most famous rivers around the world</h1>
+    <% @rivers.each do |river| %>
+        <%= image_tag(river.image) %>
+        <p><%= link_to river.name, river_path(river.id) %>
+            flows through
+            <%= pluralize river.countries.split(', ').size, 'country'%>,
+            including
+            <%= river.countries %>,
+            and ends at
+            <%= river.mouth %>.
+        </p>
+    <% end %>
+</div>

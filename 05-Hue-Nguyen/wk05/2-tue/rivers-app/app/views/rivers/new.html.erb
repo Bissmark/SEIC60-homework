@@ -1,0 +1,49 @@
+<div class="container new">
+    <h2>Create river</h2>
+    <form action="<%= rivers_path %>" method="post">
+
+        <label for="name">
+            River name:
+
+        </label><input type="text" id="name" name="name" required autofocus>
+
+        <label for="Continent">
+            Continent:
+
+        </label><input type="text" id="continent" name="continent" autofocus>
+
+        <label for="countries">
+            Countries:
+        </label>
+        <textarea type="text" id="countries" name="countries" autofocus></textarea>
+
+        <label for="sources">
+            Sources:
+
+        </label><input type="text" id="sources" name="sources" autofocus>
+
+        <label for="mouth">
+            Mouth:
+
+        </label><input type="text" id="mouth" name="mouth" autofocus>
+
+        <label for="basin_size">
+            Basin size:
+
+        </label><input type="number" id="basin_size" name="basin_size" autofocus>
+
+        <label for="length">
+            Length:
+
+        </label><input type="number" id="length" name="length" autofocus>
+
+        <label for="image">
+            Image link:
+
+        </label> <input type="url" id="image" name="image" autofocus>
+
+        <button type="submit">Create</button>
+
+    </form>
+
+</div>
