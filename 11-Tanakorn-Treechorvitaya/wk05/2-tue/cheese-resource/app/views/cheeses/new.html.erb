@@ -1,0 +1,41 @@
+<h1><img class = "icon" src = "/assets/new.png" alt = "new icon">New cheese</h1>
+
+<form action = "<%= cheeses_path %>" method = "post">
+    <label>
+        Name:
+        <input name="name" required>
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name ="image">
+    </label>
+
+    <label>
+        Country of origin:
+        <input type="text" name ="country">
+    </label>
+
+    <label>
+        Family:
+        <input type="text" name ="family">
+    </label>
+
+    <label>
+        Made from:
+        <input type="text" name ="made">
+    </label>
+
+    <label>
+        Fat per 100g (g):
+        <input type="number" name ="fat">
+    </label>
+
+    <label>
+        Color:
+        <input type="text" name ="color">
+    </label>
+
+
+    <button>Create cheese</button>
+</form>
