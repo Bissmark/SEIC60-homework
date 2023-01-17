@@ -1,0 +1,19 @@
+<h1><img class = "icon" src = "/assets/show.png" alt = "show icon"><%= @cheese.name %></h1>
+
+<div class = 'show'>
+    <%= image_tag @cheese.image, :class => 'feature' if @cheese.image.present?%>
+
+    <ul>
+        <li>Name: <%= @cheese.name %></li>
+        <li>Country of origin:  <%= @cheese.country  %></li>
+        <li>Family:  <%= @cheese.family  %></li>
+        <li>Made from <%= @cheese.made  %></li>
+        <li>Fat per 100g: <%= @cheese.fat %></li>
+        <li>Color: <%= @cheese.color  %></li>
+    </ul>
+
+    <div class = "controls">
+        <%= link_to "Edit cheese", edit_cheese_path(@cheese.id) %>
+        <%= link_to "Delete cheese", cheese_path(@cheese.id), :method => 'delete'%>
+    </div>
+</div>

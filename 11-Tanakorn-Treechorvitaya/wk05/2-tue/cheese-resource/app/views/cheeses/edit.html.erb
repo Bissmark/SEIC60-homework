@@ -1,0 +1,40 @@
+<h1><img class = "icon" src = "/assets/edit.png" alt = "edit icon">Edit Cheese</h1>
+
+<form action = "<%= cheese_path(@cheese.id) %>" method = "post">
+    <label>
+        Name:
+        <input name="name" required value = "<%= @cheese.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name ="image" value = "<%= @cheese.image %>">
+    </label>
+
+    <label>
+        Country of origin:
+        <input type="text" name ="country" value = "<%= @cheese.country %>">
+    </label>
+
+    <label>
+        Family:
+        <input type="text" name ="family" value = "<%= @cheese.family %>">
+    </label>
+
+    <label>
+        Made from:
+        <input type="text" name ="made" value = "<%= @cheese.made %>">
+    </label>
+
+    <label>
+        Fat per 100g (g):
+        <input type="number" name ="fat" value = "<%= @cheese.fat %>">
+    </label>
+
+    <label>
+        Color:
+        <input type="text" name ="color" value = "<%= @cheese.color %>">
+    </label>
+
+    <button>Update cheese</button>
+</form>

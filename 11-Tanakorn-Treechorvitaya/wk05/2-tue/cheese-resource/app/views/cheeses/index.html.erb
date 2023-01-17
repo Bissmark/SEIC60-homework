@@ -1,0 +1,15 @@
+<h1><img class = "icon" src = "/assets/index.png" alt = "index icon">All Cheeses</h1>
+
+<div class = 'index'>
+    <% @cheeses.each do |cheese| %>
+            <p>
+                <%= link_to cheese_path(cheese.id) do %>
+                    <%= image_tag cheese.image, :class => 'featurehome' if cheese.image.present?%>
+                <% end %>
+            </p>
+            
+            <p>
+            <%= link_to cheese.name, cheese_path(cheese.id) %>
+            </p>
+    <% end %>
+</div>
