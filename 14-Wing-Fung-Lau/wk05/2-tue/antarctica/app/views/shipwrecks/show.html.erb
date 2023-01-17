@@ -1,0 +1,15 @@
+<h1><%= @shipwreck.vessel %></h1>
+
+<h2>Shipwreck Year: <%= @shipwreck.year %></h2>
+
+<h2>Country of Registration: <%= @shipwreck.country %></h2>
+
+<%= image_tag @shipwreck.image, :class => 'feature' if @shipwreck.image.present? %>
+
+<div class="control">
+
+    <%= link_to "Edit vessel", edit_shipwreck_path(@shipwreck.id) %>
+    &nbsp&nbsp&nbsp
+    <%= link_to "Delete vessel", shipwreck_path(@shipwreck.id), :method => 'delete' %>
+
+</div>
