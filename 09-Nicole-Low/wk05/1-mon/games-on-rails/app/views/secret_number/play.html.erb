@@ -1,0 +1,15 @@
+<a href="/">Home</a>
+
+<h2>Secret Number</h2>
+
+<p>Click on a number to guess the secret number</p>
+
+<form action="/secret_number/result">
+    <% i = 1 %>
+    <% while i <= 10 %>
+        <button name="guess" value="<%= i %>"><%= i %></button>
+        <% i += 1 %>
+    <% end %>
+</form>
+
+

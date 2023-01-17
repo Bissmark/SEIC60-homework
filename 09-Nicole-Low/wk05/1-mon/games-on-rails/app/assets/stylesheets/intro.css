@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 50px 0;
+    padding: 20px 0;
+    background-color: orange;
+}
+
+a:has(> button) {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.answer {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    width: 35vw;
+    background-color: rgb(219, 219, 219);
+    border-radius: 15px;
+}
+
+button {
+    font-size: 14px;
+}
+
+.home-button {
+    font-size: 18px;
+    margin: 20px 10px;
+    padding: 5px 10px;
+}
