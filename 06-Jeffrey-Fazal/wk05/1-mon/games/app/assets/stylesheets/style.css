@@ -1,0 +1,62 @@
+body {
+    background: url('/assets/clown-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+p, form {
+    color: white;
+    font-size: 20px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+/* https://stackoverflow.com/questions/23968961/css-how-can-i-make-a-font-readable-over-any-color */
+
+#main-content {
+    background-color: rgba(200,30,30,0.5);
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+
+  /* https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black */
