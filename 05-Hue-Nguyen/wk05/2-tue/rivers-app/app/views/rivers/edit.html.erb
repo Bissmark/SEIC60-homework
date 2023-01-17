@@ -1,0 +1,49 @@
+
+<div class="container new">
+    <h2>Update river</h2>
+    <form action="<%= river_path(@river.id) %>" method="post">
+
+        <label for="name">
+            River name:
+        </label>
+        <input type="text" id="name" name="name" required value="<%= @river.name %>">
+
+        <label for="Continent">
+            Continent:
+        </label>
+        <input type="text" id="continent" name="continent" value="<%= @river.continent %>">
+
+        <label for="countries">
+            Countries:
+        </label>
+        <input type="text" id="countries" name="countries" value="<%= @river.countries %>">
+
+        <label for="sources">
+            Soruces:
+        </label>
+        <input type="text" id="sources" name="sources" value="<%= @river.sources %>">
+
+        <label for="mouth">
+            Mouth:
+        </label>
+        <input type="text" id="mouth" name="mouth" value="<%= @river.mouth %>">
+
+        <label for="basin_size">
+            Basin size:
+        </label>
+        <input type="number" id="basin_size" name="basin_size" value="<%= @river.basin_size %>">
+
+        <label for="length">
+            Length:
+        </label>
+        <input type="number" id="length" name="length" value="<%= @river.length %>">
+
+        <label for="image">
+            Image link:
+        </label>
+        <input type="url" id="image" name="image" value="<%= @river.image %>">
+
+        <button type="submit">Update</button>
+
+    </form>
+</div>
