@@ -1,0 +1,60 @@
+body {
+    background-image: url("ocean_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: #1C6A92;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.content-container {
+    background-color: white;
+    width: 40vw;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+.animals-container {
+    width: 30vw;
+}
+
+.feature {
+    width: 400px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 120px;
+}
+
+.controls {
+    margin-top: 50px;
+}
+
+.cancel {
+    margin-top: 30px
+}
+
+form {
+    margin-top: 40px;
+}
+
+a:visited {
+    color: black;
+}
+
+button {
+    font-size: 15px;
+}
