@@ -1,0 +1,20 @@
+<%= link_to "Animals", animals_path %>
+
+<h2><%= @animal.name %></h2>
+
+<div class="content-container">
+    <%= image_tag @animal.image, :class => 'feature' if @animal.image.present? %>
+
+    <ul>
+        <li>Name: <%= @animal.name %></li>
+        <li>Scientific name: <%= @animal.scientific_name %></li>
+        <li>Life span: <%= @animal.life_span %> years</li>
+        <li>Location: <%= @animal.location %></li>
+    </ul>
+
+    <div class="controls">
+        <%= link_to "Edit", edit_path(@animal.id) %>
+        <%= link_to "Delete", delete_path(@animal.id), :method => 'delete'%>
+    </div>
+</div>
+

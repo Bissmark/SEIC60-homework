@@ -1,0 +1,34 @@
+<h2>Add Animal</h2>
+
+<form action="<%= animals_path %>" method="post">
+    <label>
+        Name:
+        <input name="name" required>
+    </label>
+
+    <label>
+        Scientific name:
+        <input name="scientific_name" required>
+    </label>
+
+    <label>
+        Life span:
+        <input name="life_span" required>
+    </label>
+
+    <label>
+        Location:
+        <input name="location" required>
+    </label>
+
+    <label>
+        Image:
+        <input name="image">
+    </label>
+
+    <button>Add</button>
+
+    <div class="cancel">
+        <%= link_to "Cancel", animals_path %>
+    </div>
+</form>

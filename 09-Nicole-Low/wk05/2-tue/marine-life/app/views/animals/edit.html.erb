@@ -1,0 +1,35 @@
+<h2>Edit Animal</h2>
+
+<form action="<%= animal_path(@animal.id) %>" method="post">
+    <label>
+        Name:
+        <input name="name" value="<%= @animal.name %>" required>
+    </label>
+
+    <label>
+        Scientific name:
+        <input name="scientific_name" value="<%= @animal.scientific_name %>" required>
+    </label>
+
+    <label>
+        Life span:
+        <input name="life_span" value="<%= @animal.life_span %>" required>
+    </label>
+
+    <label>
+        Location:
+        <input name="location" value="<%= @animal.location %>" required>
+    </label>
+
+    <label>
+        Image:
+        <input name="image" value="<%= @animal.image %>">
+    </label>
+
+    <button>Update</button>
+    
+    <div class="cancel">
+        <%= link_to "Cancel", animal_path(@animal.id) %>
+    </div>
+    
+</form>
