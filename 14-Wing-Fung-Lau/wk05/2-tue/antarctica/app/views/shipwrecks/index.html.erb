@@ -1,0 +1,6 @@
+<h1>List of Shipwrecks in Antarctica!</h1>
+<% @shipwrecks.each do |shipwreck| %>
+    <p>
+        <%= link_to shipwreck.vessel, shipwreck_path(shipwreck.id) %>
+    </p>
+<% end %>

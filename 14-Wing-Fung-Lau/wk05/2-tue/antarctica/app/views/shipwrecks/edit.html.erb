@@ -1,0 +1,22 @@
+<h1>Edit shipwreck</h1>
+
+<form action="<%= shipwreck_path(@shipwreck.id) %>" method="post">
+    <label>Vessel:
+        <input type="text" name="vessel" value="<%= @shipwreck.vessel %>" required>
+    </label>
+    <label>Year:
+        <input type="text" name="year" value="<%= @shipwreck.year %>">
+    </label>
+
+    <label>Country:
+        <input type="text" name="country" value="<%= @shipwreck.country %>">
+    </label>
+
+    <label>Image:
+        <input type="url" name="image" value="<%= @shipwreck.image %>">
+    </label>
+
+
+
+<button>Edit shipwreck</button>
+</form>
