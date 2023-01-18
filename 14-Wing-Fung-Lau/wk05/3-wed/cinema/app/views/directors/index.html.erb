@@ -1,0 +1,13 @@
+<h1>Directors Index</h1>
+
+<div class="directors">
+    <% @directors.each do |director|%>
+        <p>
+        <% if director.image.present?%>
+        <%= link_to image_tag(director.image, :class => 'thumbDirectors'), director %>
+        <% end %>
+        <%= link_to director.name, director %>
+        </p>
+        <br>
+    <% end%>
+</div>
