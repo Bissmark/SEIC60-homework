@@ -1,0 +1,17 @@
+<h1><%= @actor.name %></h1>
+
+<%= image_tag @actor.image, :class => 'feature' if @actor.image.present? %>
+<ul>
+    <li>Name: <%= @actor.name %></li>
+    <li>Date of Birth: <%= @actor.dob.strftime '%A, %B %e, %Y' if @actor.dob.present? %></li>
+    <li>Nationality: <%= @actor.nationality %></li>  
+</ul>
+
+<% @actor.movies.each do |movie| %>
+    <%= link_to image_tag(movie.image, :class => 'thumb'), movie %>
+<% end %>
+
+<div class="controls">
+    <%= link_to 'Edit Artist', edit_actor_path(@actor) %>
+    <%= link_to 'Delete Artist', @actor, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

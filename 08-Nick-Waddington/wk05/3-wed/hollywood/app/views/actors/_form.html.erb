@@ -1,0 +1,13 @@
+<%= form_for @actor do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true  %>
+    <%= f.label :dob, 'Date of Birth' %>
+    <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD' %>
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality %>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+    <%= f.submit %>
+
+<% end %>

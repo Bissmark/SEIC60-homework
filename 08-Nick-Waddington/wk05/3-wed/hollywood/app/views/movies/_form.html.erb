@@ -1,0 +1,19 @@
+<%= form_for @movie do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+    <%= f.label :director %>
+    <%= f.text_field :director %>
+    <%= f.label :genre %>
+    <%= f.text_field :genre %>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.label :actor_id %>
+    <%= f.select :actor_id, Actor.pluck(:name, :id), :include_blank => true %>
+    
+    <%= f.submit %>
+
+<% end %>

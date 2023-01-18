@@ -1,0 +1,21 @@
+<h1><%= @movie.title %></h1>
+
+
+<ul>
+
+    <li>Title: <%= @movie.title %></li>
+    <% if @movie.actor.present? %>
+    <li>Actor: <%= link_to @movie.actor.name, @movie.actor %></li>
+    <% end %>
+    <li>Year: <%= @movie.year %></li>
+    <li>Director: <%= @movie.director %></li>
+    <li>Genre: <%= @movie.genre %></li>
+
+</ul>
+
+<div class="controls">
+
+    <%= link_to 'Edit movie', edit_movie_path(@movie) %>
+    <%= link_to 'Delete movie', @movie, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+
+</div>
