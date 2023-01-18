@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/mountains/:id' => 'mountains#show', :as => "mountain"
   get '/mountains/:id/edit' => 'mountains#edit', :as => "edit_mountain"
   post '/mountains/:id' => 'mountains#update'
-  delete '/mountains/:id/delete' => 'mountains#destroy'
+  delete '/mountains/:id/' => 'mountains#destroy'
   
 end
