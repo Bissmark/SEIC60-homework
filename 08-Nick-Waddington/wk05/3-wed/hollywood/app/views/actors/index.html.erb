@@ -1,0 +1,11 @@
+<h1>All actors</h1>
+
+<% @actors.each do |actor| %>
+    <%= image_tag actor.image, :class => 'thumb' if actor.image.present? %>
+    <ul>
+        <li>Name: <%= link_to actor.name, actor %></li>
+        <li>Date of birth: <%= actor.dob%></li>
+        <li>Nationality: <%= actor.nationality %></li>  
+    </ul>
+
+<% end %>
