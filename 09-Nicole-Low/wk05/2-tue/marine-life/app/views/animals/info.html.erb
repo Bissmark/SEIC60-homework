@@ -13,8 +13,8 @@
     </ul>
 
     <div class="controls">
-        <%= link_to "Edit", edit_path(@animal.id) %>
-        <%= link_to "Delete", delete_path(@animal.id), :method => 'delete'%>
+        <%= link_to button_tag("Edit"), edit_path(@animal.id) %>
+        <%= link_to button_tag("Delete"), delete_path(@animal.id), :method => 'delete'%>
     </div>
 </div>
 
