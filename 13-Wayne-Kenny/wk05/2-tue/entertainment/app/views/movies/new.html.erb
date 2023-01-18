@@ -1,0 +1,31 @@
+<div class="new">
+<h1>New Movie</h1>
+
+<form action="<%= movies_path %>" method="post">
+
+<label>Name:
+    <input type="text" name="name" required>
+</label>
+
+<label>Poster:
+    <input type="url" name="poster">
+</label>
+
+<label>Director:
+    <input type="text" name="director">
+</label>
+
+<label>Year of release:
+    <input type="number" name="year">
+</label>
+
+<label>Age rating:
+    <input type="text" name="age_rating">
+</label>
+
+<label>iMDb rating:
+    <input type="float" name="imdb_rating">
+</label>
+<button>Add Movie</button>
+</form>
+</div>

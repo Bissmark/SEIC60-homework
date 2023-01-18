@@ -1,0 +1,80 @@
+body {
+    /* background-image: url(https://wallpapercave.com/wp/wp4061875.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: black;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.feature {
+    max-width: 80%;
+}
+
+.links {
+    /* display: flex;
+    flex-direction: row; */
+    background-color: white;
+    color: black;
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold; 
+
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+ul {
+    /* color: white; */
+    /* display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;*/
+    padding: 0;
+    /*font-size: 1.2rem;
+    font-weight: bold; */
+    /* margin: 20px 10px; */
+
+}
+p {
+    /* color: white; */
+    /* display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 10px; */
+
+}
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button {
+    margin: 15px;
+    margin-left: 0;
+}

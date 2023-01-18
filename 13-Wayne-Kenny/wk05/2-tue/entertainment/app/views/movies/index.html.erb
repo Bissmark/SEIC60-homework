@@ -1,0 +1,8 @@
+<h1>All Movies</h1>
+
+<%# show each movie name on the index page %>
+<% @movies.each do |movie| %>
+    <p>
+        <%= link_to movie.name, movie_path(movie.id), :class => 'links' %>
+    </p>
+<% end %>
