@@ -1,0 +1,18 @@
+<h1><%= @building.name %></h1>
+
+<%= image_tag @building.image, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @building.name %></li>
+    <% if @building.architect.present? %>
+        <li>Architect: <%= link_to @building.architect.name, @building.architect %></li>
+    <% end %>
+    <li>Year: <%= @building.year %></li>
+    <li>Style: <%= @building.style %></li>
+    <li>Location: <%= @building.location %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to 'Edit building', edit_building_path(@building) %>
+    <%= link_to 'Delete building', @building, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

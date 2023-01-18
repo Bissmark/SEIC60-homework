@@ -1,0 +1,12 @@
+<h1>All architects</h1>
+
+<% @architects.each do |architect| %>
+    <%= image_tag architect.image, :class => 'thumb' if architect.image.present? %>
+    <ul>
+        <li>Name: <%= link_to architect.name, architect %></li>
+        <li>Nationality: <%= architect.nationality %></li>
+        <% if architect.dob.present? %>
+            <li>Date of birth: <%= architect.dob.strftime '%A, %B %e, %Y' %></li>
+        <% end %>
+    </ul>
+<% end %>

@@ -1,0 +1,15 @@
+<%= form_for @building do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+    <%= f.label :style %>
+    <%= f.text_field :style %>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+    <%= f.label :image %>
+    <%= f.url_field :image, :required => true %>
+    <%= f.label :architect_id %>
+    <%= f.select :architect_id, Architect.pluck(:name, :id), :include_blank => true %>
+    <%= f.submit %>
+<% end %>
