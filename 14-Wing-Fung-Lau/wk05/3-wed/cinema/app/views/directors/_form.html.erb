@@ -1,0 +1,17 @@
+<%= form_for @director do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality %>
+    <br>
+    <%= f.label :dob, 'Date of birth' %>
+    <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD' %>
+    <br>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+    <br>
+
+    <%= f.submit %>
+    <br>
+<% end %>

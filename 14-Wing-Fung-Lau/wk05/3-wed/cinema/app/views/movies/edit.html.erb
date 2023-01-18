@@ -1,0 +1,5 @@
+<h1>Edit Movie</h1>
+
+<%= render :partial => 'form' %>
+
+<%= button_to 'Delete Movie', @movie, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
