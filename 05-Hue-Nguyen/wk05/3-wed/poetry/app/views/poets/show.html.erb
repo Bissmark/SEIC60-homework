@@ -1,0 +1,48 @@
+<div class="poet-info">
+    <%= image_tag @poet.image, :alt=> @poet.name if @poet.image.present? %>
+
+        <div class="details">
+            <h2>
+                <%= @poet.name %>
+            </h2>
+            <% if @poet.pen_name.present? %>
+            <p>Pen Name:
+                <span>
+                    <%= @poet.pen_name %>
+                </span>
+            </p>
+        <% end %>
+            <% if @poet.nationality.present? %>
+                <p>Nationality:
+                    <span>
+                        <%= @poet.nationality %>
+                    </span>
+                </p>
+            <% end %>
+
+            <% if @poet.dob.present? %>
+                <p>Date of birth:
+                    <span>
+                        <%= @poet.dob.strftime '%A, %B %e, %Y' %>
+                    </span>
+                </p>
+            <% end %>
+            <div class="poet-works">
+                <h3>Famous Poems</h3>
+                <ul>
+                    <% if @poet.poems.present? %>
+                    <% @poet.poems.each do |poem| %>
+                        <li><%= link_to poem.name, poem_path(poem.id) %></li>
+                    <% end %>
+                <% end %>
+                </ul>
+            </div>
+            <div class="controls">
+                <%= link_to 'Edit' , edit_poet_path(@poet.id) %>
+                                    |
+                <%= link_to 'Delete' , poet_path(@poet.id), :method=> 'delete' %>
+            </div>
+
+        </div>
+</div>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poetry</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"></div>
+        <h1>Bird's Poetry</h1>
+        <nav>
+          <%= link_to 'All poets', poets_path %>
+          |
+          <%= link_to 'New poet', new_poet_path %>
+          |
+          <%= link_to 'All poems', poems_path %>
+          |
+          <%= link_to 'New poem', new_poem_path %>
+        </nav>
+      </div>
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

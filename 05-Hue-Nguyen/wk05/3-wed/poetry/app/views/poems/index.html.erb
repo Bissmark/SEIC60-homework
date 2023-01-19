@@ -1,0 +1,14 @@
+<h1>All poems</h1>
+<div class="poems">
+    <% @poems.each do |poem| %>
+        <div class="poem">
+            <h2><%= link_to poem.name, poem_path(poem.id) %></h2>
+            <% if poem.poet_id.present? %>
+            <p>Author: <%= link_to poem.poet.name, poet_path(poem.poet_id) %></p>
+            <% end %>
+            <% if poem.genre.present? %>
+            <p>Genre: <%= poem.genre %></p></p>
+            <% end %>
+        </div>
+    <% end %>
+</div>

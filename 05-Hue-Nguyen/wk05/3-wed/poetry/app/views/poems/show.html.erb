@@ -1,0 +1,31 @@
+<div class="poem-info">
+    <h2>
+        <%= @poem.name %>
+    </h2>
+    <% if @poem.poet.present? %>
+        <p>Author: <span><%= link_to @poem.poet.name, @poem.poet %></span></p>
+    <% end %>
+    <% if @poem.genre.present? %>
+        <p>Genre: <span><%= @poem.genre %></span></p>
+    <% end %>
+    <div class="content">
+        <div class="original">
+            <% if @poem.original.present? %>
+            <p><span>Original</span></p>
+            <%= simple_format @poem.original %>
+        <% end %>
+        </div>
+        <div class="translation">
+            <% if @poem.translation.present? %>
+            <p><span>Translation</span></p>
+            <%= simple_format @poem.translation %>
+        <% end %>
+        </div>
+    </div>
+    <div class="controls">
+        <%= link_to 'Edit' , edit_poem_path(@poem.id) %>
+                                    |
+        <%= link_to 'Delete' , poem_path(@poem.id), :method=> 'delete' %>
+    </div>
+
+</div>
