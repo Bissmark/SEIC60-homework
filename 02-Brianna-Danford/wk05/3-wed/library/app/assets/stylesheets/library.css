@@ -1,0 +1,26 @@
+body {
+    background-color: lavender;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.thumb {
+    height: 10em;
+}
+
+.feature {
+    max-height: 30ems;
+}
+
+label {
+    display: block;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
