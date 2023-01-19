@@ -12,6 +12,8 @@
     <%= f.label :logo, 'Logo image' %>
     <%= f.url_field :logo %>
 
-    <%= f.submit %>
-    <%= link_to button_tag('Cancel'), @brand %>
+    <div class="controls">
+        <%= f.submit %>
+        <%= link_to button_tag('Cancel'), @brand %>
+    </div>
 <% end %>

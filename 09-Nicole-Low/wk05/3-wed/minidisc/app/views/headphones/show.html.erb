@@ -1,4 +1,4 @@
-<div>
+<div class='navigation'>
     <%= link_to 'Headphone list', headphones_path %>
     |
     <%= link_to 'Brand list', brands_path %>
@@ -17,6 +17,6 @@
 </ul>
 
 <div class="controls">
-    <%= link_to "Edit", edit_headphone_path(@headphone.id) %>
-    <%= link_to "Delete", @headphone, :method => 'delete', :data => { :confirm => "Are you sure?" } %>
+    <%= link_to button_tag("Edit"), edit_headphone_path(@headphone.id) %>
+    <%= link_to button_tag("Delete"), @headphone, :method => 'delete', :data => { :confirm => "Are you sure?" } %>
 </div>

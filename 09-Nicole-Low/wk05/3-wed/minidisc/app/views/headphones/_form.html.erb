@@ -15,6 +15,8 @@
     <%= f.label :brand_id %>
     <%= f.select :brand_id, Brand.pluck(:name, :id), :include_blank => true %>
 
-    <%= f.submit %>
-    <%= link_to button_tag('Cancel'), @headphone %>
+    <div class="controls">
+        <%= f.submit %>
+        <%= link_to button_tag('Cancel'), @headphone %>
+    </div>
 <% end %>

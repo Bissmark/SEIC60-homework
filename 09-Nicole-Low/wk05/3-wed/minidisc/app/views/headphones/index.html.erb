@@ -1,10 +1,10 @@
 <div>
-    <%= link_to 'Brands list', brands_path %>
+    <%= link_to 'Brands list', brands_path, class: 'navigation' %>
 </div>
 
 <h2>All Headphones</h2>
 
-<%= link_to "Add headphone", new_headphone_path %>
+<%= link_to button_tag("Add headphone", class: 'add-btn'), new_headphone_path %>
 
 <% @headphones.each do |headphone| %>
     <div>

@@ -1,11 +1,63 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    background-color: #FF840E;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #D7D7D7;
+    display: block;
+    padding: 15px 0;
+}
+
 .logo-index {
     width: 10em;
+    margin-top: 50px;
 }
 
 .logo-show, .image-show {
     max-width: 25em;
+    margin-top: 50px;
 }
 
 .image-index {
     height: 10em;
+    margin-top: 50px;
 }
+
+.add-btn {
+    margin-bottom: 30px;
+}
+
+.items {
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 50px;
+}
+
+.edit_brand, .edit_headphone, .new_brand, .new_headphone {
+    margin-top: 40px;
+}
+
