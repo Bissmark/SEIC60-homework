@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ContactsCrm</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
+    <!-- Tacit Framework: https://yegor256.github.io/tacit/ -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+    <%= link_to 'Home', root_path %> | 
+    <%= link_to 'All Contact', contacts_path %> |
+    <%= link_to 'Create Contact', new_contact_path %>
+  </nav>
+    <%= yield %>
+  </body>
+</html>
+
+  <%# get '/planets/new' => 'planets#new', :as => 'new_planet'
+  post '/planets' => 'planets#create'
+  get '/planets/:id' => 'planets#show', :as => 'planet'
+  get '/planets/:id/edit' => 'planets#edit', :as => 'edit_planet'
+  post '/planets/:id' => 'planets#update'
+  delete '/planets/:id' => 'planets#destroy' %>

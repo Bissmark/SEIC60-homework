@@ -1,0 +1,7 @@
+<h1>Welcome to the Index Page</h1>
+<h2>Here is a list of people in the database</h2>
+
+<% @contacts.each do |contact| %>
+<ul><li><%= link_to contact.name, contacts_path(contact.id) %></li></ul>
+<% end %>
+

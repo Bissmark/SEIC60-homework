@@ -1,0 +1,46 @@
+<style>
+label {
+  display: block;
+}
+input {
+  border: 1px solid #595959;
+	padding: 0.3375rem 0.39375rem;
+}
+</style>
+<h1>Add a new contact</h1>
+
+<h2>New Contact</h2>
+
+<form action="<%= contacts_path %>" method="post">
+    <label>
+        Name:
+        <input name="name" required>
+    </label>
+
+    <label>
+        Preferred Name:
+        <input type="text" name="preferred_name">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+
+    <label>
+        Company:
+        <input type="text" name="company">
+    </label>
+
+    <label>
+        Email:
+        <input type="text" name="company">
+    </label>
+
+    <label>
+        Phone:
+        <input type="number" name="phone">
+    </label>
+
+    <button>Create Contact</button>
+</form>
