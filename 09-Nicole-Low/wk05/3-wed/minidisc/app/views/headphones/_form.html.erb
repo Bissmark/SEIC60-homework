@@ -1,0 +1,22 @@
+<%= form_for @headphone do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+    <%= f.label :weight %>
+    <%= f.number_field :weight %>
+    <%= f.label :frequency %>
+    <%= f.text_field :frequency, :placeholder => 'YYYY-MM-DD' %>
+    <%= f.label :impedance %>
+    <%= f.number_field :impedance, :placeholder => 'China' %>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.label :brand_id %>
+    <%= f.select :brand_id, Brand.pluck(:name, :id), :include_blank => true %>
+
+    <div class="controls">
+        <%= f.submit %>
+        <%= link_to button_tag('Cancel'), @headphone %>
+    </div>
+<% end %>
