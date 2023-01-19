@@ -1,0 +1,22 @@
+<div>
+    <%= link_to 'Headphone list', headphones_path %>
+    |
+    <%= link_to 'Brand list', brands_path %>
+</div>
+
+<%= image_tag @headphone.image, :class => 'image-show' if @headphone.image.present? %>
+
+<h2><%= @headphone.name %></h2>
+
+<ul>
+    <li>Brand: <%= link_to @headphone.brand.name, @headphone.brand if @headphone.brand.present? %></li>
+    <li>Price: <%= number_to_currency @headphone.price %></li>
+    <li>Weight: <%= @headphone.weight %> g</li>
+    <li>Frequency: <%= @headphone.frequency %> Hz</li>
+    <li>Impedance: <%= @headphone.impedance %> ohms</li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit", edit_headphone_path(@headphone.id) %>
+    <%= link_to "Delete", @headphone, :method => 'delete', :data => { :confirm => "Are you sure?" } %>
+</div>

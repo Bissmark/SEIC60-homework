@@ -1,0 +1,11 @@
+.logo-index {
+    width: 10em;
+}
+
+.logo-show, .image-show {
+    max-width: 25em;
+}
+
+.image-index {
+    height: 10em;
+}

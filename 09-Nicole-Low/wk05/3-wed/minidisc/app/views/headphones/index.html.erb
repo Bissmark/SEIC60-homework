@@ -1,0 +1,16 @@
+<div>
+    <%= link_to 'Brands list', brands_path %>
+</div>
+
+<h2>All Headphones</h2>
+
+<%= link_to "Add headphone", new_headphone_path %>
+
+<% @headphones.each do |headphone| %>
+    <div>
+        <% if headphone.image.present? %>
+            <%= link_to image_tag(headphone.image, :class => 'image-index'), headphone %>
+        <% end %>
+        <h3><%= link_to headphone.name, headphone %></h3>
+    </div>
+<% end %>

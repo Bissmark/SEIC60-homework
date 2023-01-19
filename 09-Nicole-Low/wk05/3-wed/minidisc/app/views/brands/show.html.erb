@@ -1,0 +1,30 @@
+<div>
+    <%= link_to 'Brand list', brands_path %>
+    |
+    <%= link_to 'Headphone list', headphones_path %>
+</div>
+
+<%= image_tag @brand.logo, :class => 'logo-show' if @brand.logo.present? %>
+
+<h2><%= @brand.name %></h2>
+
+<ul>
+    <li>CEO: <%= @brand.ceo %></li>
+    <li>Founder: <%= @brand.founder %></li>
+    <li>Founded: <%= @brand.founded.strftime '%e %B, %Y' %></li>
+    <li>Headquarters: <%= @brand.headquarters %></li>
+</ul>
+
+<h3>Products</h3>
+<ul>
+    <% @brand.headphones.each do |headphone|%>
+        <li><%= link_to headphone.name, headphone %></li>
+    <% end %>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit", edit_brand_path(@brand.id) %>
+    <%= link_to "Delete", @brand, :method => 'delete', :data => { :confirm => "Are you sure?" } %>
+</div>
+
+

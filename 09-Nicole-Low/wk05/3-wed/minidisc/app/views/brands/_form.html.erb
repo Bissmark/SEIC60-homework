@@ -1,0 +1,17 @@
+<%= form_for @brand do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :ceo, 'CEO' %>
+    <%= f.text_field :ceo %>
+    <%= f.label :founder %>
+    <%= f.text_field :founder %>
+    <%= f.label :founded %>
+    <%= f.text_field :founded, :placeholder => 'YYYY-MM-DD' %>
+    <%= f.label :headquarters %>
+    <%= f.text_field :headquarters, :placeholder => 'China' %>
+    <%= f.label :logo, 'Logo image' %>
+    <%= f.url_field :logo %>
+
+    <%= f.submit %>
+    <%= link_to button_tag('Cancel'), @brand %>
+<% end %>
