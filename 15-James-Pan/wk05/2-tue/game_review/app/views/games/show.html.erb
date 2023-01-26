@@ -1,0 +1,20 @@
+<h1>Game coming soon</h1>
+
+<%= image_tag @game.image, :class => 'feature' if @game.image.present? %>
+
+<ul>
+<li>Name: <%= @game.name %> </li>
+<li>Mode: <%= @game.mode %> </li>
+<li>Developer: <%= @game.developer %> </li>
+<li>Release date: <%= @game.release_date %></li>
+<li>Platform: <%= @game.platform %> </li>
+
+
+
+</ul>
+
+
+<div class="controls">
+<%= link_to "Edit game", edit_game_path(@game.id)  %>
+<%= link_to "Delete game", game_path(@game.id), :method => 'delete' %>
+</div>
