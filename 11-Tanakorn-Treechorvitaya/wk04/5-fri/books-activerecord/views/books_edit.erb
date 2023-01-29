@@ -1,0 +1,19 @@
+<h1>Edit book</h1>
+
+<form action="/butterflies/<%= @book["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @book["name"] %>">
+    </label>
+
+    <label>
+        Family:
+        <input name="genre" value="<%= @book["genre"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @book["image"] %>">
+    </label>
+    <button>Create book</button>
+</form>
