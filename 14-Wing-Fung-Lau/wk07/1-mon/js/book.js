@@ -1,6 +1,6 @@
 const fetchBook = function (book) {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', `https://www.googleapis.com/books/v1/volumes?q=title:Xi Jinping: The Governance of China`);
+    xhr.open('GET', `https://www.googleapis.com/books/v1/volumes?q=title:${book}`);
     xhr.send();
     
     xhr.onreadystatechange = function () {
