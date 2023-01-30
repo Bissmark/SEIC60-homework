@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entertainment</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma"> %>
+    <%# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+    <nav>
+      <%= link_to 'All movies', movies_path, :class => 'links' %>
+      <%= link_to  'Add new movies', new_movie_path, :class => 'links' %>
+    </nav>
+    <%= yield %>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<h1>Edit Movie</h1>
+
+<form action="<%= movie_path(@movie.id) %>" method="post">
+
+<label>
+Name: <input type="text" name="name" required value="<%= @movie.name %>">
+</label>
+
+<label> 
+Poster: <input type="url" name="poster" value="<%= @movie.poster %>">
+</label>
+
+<label>
+Director: <input type="text" name="director" value="<%= @movie.director %>">
+</label>
+
+<label>
+Year of release: <input type="number" name="year" value="<%= @movie.year %>">
+</label>
+
+<label>
+Age rating: <input type="text" name="age_rating" value="<%= @movie.age_rating %>">
+</label>
+
+<label>
+iMDb rating: <input type="float" name="imdb_rating" value="<%= @movie.imdb_rating.to_f %>">
+</label>
+<button>Update Movie</button>
+</form>
