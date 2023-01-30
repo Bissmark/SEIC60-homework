@@ -153,9 +153,7 @@ end
 post '/sanctions/:id' do
     sanction = Sanction.find params[:id]
     previous_nationality = sanction.nationality
-    sanction.name = params[:name]
-    sanction.title = params[:title]
-    sanction.nationality = titleize(params[:nationality])
+    
     sanction.risk = params[:risk]
     sanction.image = params[:image]
     sanction.save
@@ -306,25 +304,25 @@ end
 # binding.irb
 
 get '/country_names' do
-    country_names = Country_name.all
-    aka_array = []
-    aka_keys = {}
+    countries = Country.all
+    name_array = []
+    name_keys = {}
     @duplicate_keys = ""
-    country_names.each do |country_name|
-        aka_array.push country_name.aka 
-        aka_keys["#{country_name.aka}"] = 0
+    countries.each do |country|
+        name_array.push country.aka 
+        name_keys["#{country.name}"] = 0
     end
-    @duplicate =  country_names.length - aka_array.uniq.length
+    @duplicate =  countries.length - name_array.uniq.length
     
-    country_names.each do |country_name|
-        aka_keys["#{country_name.aka}"] = aka_keys["#{country_name.aka}"] + 1
-        if aka_keys["#{country_name.aka}"] > 1
-            @duplicate_keys = @duplicate_keys + country_name.aka + ', '
-            country_name.destroy
+    countries.each do |country|
+        name_keys["#{country.name}"] = name_keys["#{country.name}"] + 1
+        if name_keys["#{country.name}"] > 1
+            @duplicate_keys = @duplicate_keys + country.name + ', '
+            country.destroy
         end
     end 
     @duplicate_keys = @duplicate_keys.chop.chop
-    @country_names = Country_name.all
+    @countries = Country.all
 
     erb :country_names_index
 end

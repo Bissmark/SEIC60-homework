@@ -19,7 +19,7 @@
 
 <button type="button" class="collapsible">▼ CIA World Factbook 2018 - <%= @country["name"] %></button>
 <div class="content">
-<% if !$cia_factbook[@country["name"].gsub(' ', '-')].nil? %>
+<% unless $cia_factbook[@country["name"].gsub(' ', '-')].nil? %>
     <% $cia_factbook[@country["name"].gsub(' ', '-')].each do |key, value| %>
         <p>  
         <%= key.to_s.gsub('_', ' ') %>: <%= value %>
@@ -31,9 +31,8 @@
 </div>
 
 
-<div class="control">
-    <a href="/countries/<%= @country["id"] %>/edit">Edit country</a>
-    <a class='delete' href="/countries/<%= @country["id"] %>/delete">Delete country</a>
+<div class="controls">
+    <%= link_to 'Edit/Delete movie', edit_movie_path(@movie) %>
 </div>
 
 <script>
@@ -56,11 +55,5 @@
     });
     
 
-    const a = document.querySelector('.delete')
-    a.addEventListener('click', function(event) {
-        event.preventDefault();
-            if (confirm("Are you sure to delete this country? \n \n<%= @country.number_of_sanctions %> sanction(s) of this nationality will also be removed.")) {
-                window.location = this.href;
-            }
-    })
+  
     </script>
