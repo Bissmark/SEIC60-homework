@@ -1,0 +1,11 @@
+<h1>All Poets</h1>
+<div class="poets">
+    <% @poets.each do |poet| %>
+        <div class="poet">
+            <%if poet.image.present? %>
+                <%= image_tag poet.image, :class=> 'feature' %>
+            <% end %>
+            <span><%= link_to poet.name, poet_path(poet.id) %></span>
+        </div>
+    <% end %>
+</div>

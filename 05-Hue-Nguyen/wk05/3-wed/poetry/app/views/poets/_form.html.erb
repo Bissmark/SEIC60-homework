@@ -1,0 +1,13 @@
+<%= form_for @poet do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality %>
+    <%= f.label :dob, 'Date of birth' %>
+    <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD' %>
+    <%= f.label :pen_name %>
+    <%= f.text_field :pen_name %>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+    <%= f.submit %>
+<% end %>

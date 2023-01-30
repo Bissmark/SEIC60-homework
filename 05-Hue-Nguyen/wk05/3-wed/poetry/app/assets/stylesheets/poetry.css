@@ -1,0 +1,113 @@
+/* -------------- GENERAL STYLING ----------------------*/
+body {
+    width: 100%;
+    background-image: url(vintage-textured-watercolor-paper-background.jpg);
+}
+
+nav {
+    font-size: 18px;
+}
+
+span,li {
+    font-size: 20px;
+}
+
+input, select {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 30%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+/* ---------------HEADER STYLING --------------------------- */
+.header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    color: brown;
+    height: 100%;
+    width: 220px;
+    background-image: url(bird.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    text-align: right;
+}
+
+nav a.active{
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* ---------------CUSTOMISE STYLES FOR EACH PAGE ----------- */
+
+/* ----------------POET/ INDEX PAGE------------------------- */
+.index h1 {
+    text-align: center;
+}
+
+.poets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poet {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.poet img {
+    aspect-ratio: 3 / 4;
+    width: 330px;
+    border-radius: 2px;
+}
+
+/* --------------POET/ INFO PAGE-------------------------- */
+.poet-info {
+    display: flex;
+    margin-top: 50px;
+    border: 5px solid brown;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.poet-info img {
+    width: 400px;
+    height: auto;
+}
+
+.poet-info .details {
+    margin-left: 20px;
+}
+
+/* ----------POEM/ SHOW PAGE ------------------------ */
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content p {
+    line-height: 25px;
+    margin-right: 60px
+}

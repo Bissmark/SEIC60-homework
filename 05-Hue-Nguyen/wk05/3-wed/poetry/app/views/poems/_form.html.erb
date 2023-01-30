@@ -1,0 +1,13 @@
+<%= form_for @poem do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :poet_id %>
+    <%= f.select :poet_id, Poet.pluck(:name, :id), :include_blank => true %>
+    <%= f.label :genre %>
+    <%= f.text_field :genre %>
+    <%= f.label :original %>
+    <%= f.text_area :original %>
+    <%= f.label :translation %>
+    <%= f.text_area :translation %>
+    <%= f.submit %>
+<% end %>
