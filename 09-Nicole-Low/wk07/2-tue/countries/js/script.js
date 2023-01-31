@@ -11,6 +11,8 @@ $('#search').on('submit', function(event) {
         const population = result[0].population
 
         $('#image').attr('src', image)
+
+        $('#info').empty()
         $('#info').append(`<li>Name: ${name}</li>`)
         $('#info').append(`<li>Capital: ${capital}</li>`)
         $('#info').append(`<li>Continent: ${continent}</li>`)

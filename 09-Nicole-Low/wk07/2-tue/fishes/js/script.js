@@ -11,6 +11,8 @@ $('#search').on('submit', function(event) {
         const cholesterol = result[0]["Cholesterol"]
 
         $('#image').attr('src', image)
+
+        $('#info').empty()
         $('#info').append(`<li>Name: ${name}</li>`)
         $('#info').append(`<li>Scientific Name: ${scientificName}</li>`)
         $('#info').append(`<li>Protein: ${protein}</li>`)

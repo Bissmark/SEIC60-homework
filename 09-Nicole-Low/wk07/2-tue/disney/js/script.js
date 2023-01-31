@@ -16,7 +16,9 @@ $('#search').on('submit', function(event) {
         allFilms = allFilms.substring(0, allFilms.length - 2)
 
         $('#image').attr('src', image)
-        $('#info').append(`<li>NAME: ${name}</li>`)
-        $('#info').append(`<li>FILMS: ${allFilms}</li>`)
+
+        $('#info').empty()
+        $('#info').append(`<li>Name: ${name}</li>`)
+        $('#info').append(`<li>Films: ${allFilms}</li>`)
     })
 })
