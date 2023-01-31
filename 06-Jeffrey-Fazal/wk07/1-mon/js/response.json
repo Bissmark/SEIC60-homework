@@ -1,0 +1,876 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 4621,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "_ft4AQAACAAJ",
+        "etag": "RjMxuOAe8oI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/_ft4AQAACAAJ",
+        "volumeInfo": {
+          "title": "Jaws",
+          "authors": [
+            "Peter Benchley"
+          ],
+          "publishedDate": "2017-09-07",
+          "description": "A special edition of Jaws by Peter Benchley reissued with a bright retro design to celebrate Pan's 70th anniversary. It was just another day in the life of a small Atlantic resort until the terror from the deep came to prey on unwary holiday makers. The first sign of trouble - a warning of what was to come - took the form of a young woman's body, or what was left of it, washed up on the long, white stretch of beach . . . A summer of terror had begun. Peter Benchley's Jaws first appeared in 1974. It has sold over twenty million copies around the world, creating a legend that refuses to die - it's never safe to go back in the water . . .",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1509860169"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781509860166"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 336,
+          "printType": "BOOK",
+          "averageRating": 3.5,
+          "ratingsCount": 77,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=_ft4AQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=_ft4AQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=_ft4AQAACAAJ&dq=title:Jaws&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com.au/books?id=_ft4AQAACAAJ&dq=title:Jaws&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Jaws.html?hl=&id=_ft4AQAACAAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=_ft4AQAACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "It was just another day in the life of a small Atlantic resort until the terror from the deep came to prey on unwary holiday makers."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "Ajj1DwAAQBAJ",
+        "etag": "wGd9nW2PY2Q",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/Ajj1DwAAQBAJ",
+        "volumeInfo": {
+          "title": "The Jaws Book",
+          "subtitle": "New Perspectives on the Classic Summer Blockbuster",
+          "authors": [
+            "I.Q. Hunter",
+            "Matthew Melia"
+          ],
+          "publisher": "Bloomsbury Publishing USA",
+          "publishedDate": "2020-09-17",
+          "description": "After 45 years, Steven Spielberg's Jaws remains the definitive summer blockbuster, a cultural phenomenon with a fierce and dedicated fan base. The Jaws Book: New Perspectives on the Classic Summer Blockbuster is an exciting illustrated collection of new critical essays that offers the first detailed and comprehensive overview of the film's significant place in cinema history. Bringing together established and young scholars, the book includes contributions from leading international writers on popular cinema including Murray Pomerance, Peter Krämer, Sheldon Hall, Nigel Morris and Linda Ruth Williams, and covers such diverse topics as the film's release, reception and canonicity; its representation of masculinity and children; the use of landscape and the ocean; its status as a western; sequels and fan-edits; and its galvanizing impact on the horror film, action movie and contemporary Hollywood itself.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781501347542"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1501347543"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 288,
+          "printType": "BOOK",
+          "categories": [
+            "Performing Arts"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=Ajj1DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=Ajj1DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=Ajj1DwAAQBAJ&pg=PA207&dq=title:Jaws&hl=&cd=2&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=Ajj1DwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Ajj1DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 53.99,
+            "currencyCode": "AUD"
+          },
+          "retailPrice": {
+            "amount": 34.99,
+            "currencyCode": "AUD"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=Ajj1DwAAQBAJ&rdid=book-Ajj1DwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 53990000,
+                "currencyCode": "AUD"
+              },
+              "retailPrice": {
+                "amountInMicros": 34990000,
+                "currencyCode": "AUD"
+              },
+              "giftable": true
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/The_Jaws_Book-sample-pdf.acsm?id=Ajj1DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=Ajj1DwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Yet, it was advertised with the Roman III, which featured prominently in the trailer and in the press kit for the movie. And finally, the trade press referred to the last sequel as Jaws IV, simply rejecting the correct \u003cb\u003etitle\u003c/b\u003e, \u003cb\u003eJaws\u003c/b\u003e: The&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "VT3hAAAAQBAJ",
+        "etag": "D0UabRuMvV0",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/VT3hAAAAQBAJ",
+        "volumeInfo": {
+          "title": "SQL Success",
+          "subtitle": "",
+          "authors": [
+            "Stéphane Faroult"
+          ],
+          "publisher": "RoughSea Ltd",
+          "publishedDate": "2013-09-18",
+          "description": "\"SQL Success\" is about problem-solving in SQL. It bridges the gap between dry and dull database theory books, and developer books that focus on giving recipes without explaining sufficiently the reasons behind the recipes or discussing alternative solutions. Many developers struggle with SQL due to the contrast between the top-down logic of most programming languages and SQL's set-based approach. \"SQL Success\" aims to be different. This book is more than syntax examples. \"SQL Success\" explains how to use SQL to solve problems, and covers syntax in the process-not as the focus, but as a tool toward accomplishing the objective. \"SQL Success\" also shows something that most other books do not: the pitfalls and traps of SQL, a deceptively simple language, and how easy it is to get a query wrong. Written in a conversational way, \"SQL Success\" talks about logic more than theory, avoids jargon, and refers to common-sense more than rules. It ignores features that are rarely used and tries to avoid information overload. The intention of \"SQL Success\" is not to cover every aspect of all variants of SQL. The goal is to cover everything that is of practical use. That goal is informed by the author's many years of practical experience leading an understanding of what professional developers need to know, the common mistakes that are made, and how those mistakes can be avoided. * Focuses on the practical implications of theory. * Emphasizes accuracy and efficiency. * Teaches how to \"think SQL\", not merely the syntax. * Applies to Oracle, SQL Server, MySQL, PostgreSQL, DB2, and SQLite. * Suitable for college-level database courses, SQL certification preparation, and professionals who want to take their database skills to the next level. * Bolstered by downloadable files and online database with practice exercises at edu.konagora.com. * Includes resources for instructors.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781909765016"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1909765015"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 592,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=VT3hAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=VT3hAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=VT3hAAAAQBAJ&pg=PT114&dq=title:Jaws&hl=&cd=3&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=VT3hAAAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=VT3hAAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 65.47,
+            "currencyCode": "AUD"
+          },
+          "retailPrice": {
+            "amount": 65.47,
+            "currencyCode": "AUD"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=VT3hAAAAQBAJ&rdid=book-VT3hAAAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 65470000,
+                "currencyCode": "AUD"
+              },
+              "retailPrice": {
+                "amountInMicros": 65470000,
+                "currencyCode": "AUD"
+              },
+              "giftable": true
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/SQL_Success-sample-epub.acsm?id=VT3hAAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=VT3hAAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "There is always a title, it&#39;s always equal to itself, and the condition is always true and satisfied by ALL movies, whatever their title is. If I write where \u003cb\u003etitle\u003c/b\u003e = \u003cb\u003eJaws\u003c/b\u003e then the SQL engine will think that the unquoted Jaws is a column&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "bY4BD9E7-48C",
+        "etag": "b1f5YKtfzkc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/bY4BD9E7-48C",
+        "volumeInfo": {
+          "title": "The Book Of Lists",
+          "subtitle": "The Original Compendium of Curious Information",
+          "authors": [
+            "David Wallechinsky",
+            "Amy Wallace"
+          ],
+          "publisher": "Canongate Books",
+          "publishedDate": "2009-08-06",
+          "description": "The first and best compendium of facts weirder than fiction, of intriguing information and must-talk-about trivia has spawned many imitators - but none as addictive or successful. For nearly three decades the editors have been researching curious facts, unusual statistics and the incredible stories behind them. Now the most entertaining and informative of these have been brought together in a long-awaited, thoroughly up-to-date new edition.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781847676672"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1847676677"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 444,
+          "printType": "BOOK",
+          "categories": [
+            "Humor"
+          ],
+          "averageRating": 4,
+          "ratingsCount": 10,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.16.16.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=bY4BD9E7-48C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=bY4BD9E7-48C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=bY4BD9E7-48C&pg=PT250&dq=title:Jaws&hl=&cd=4&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=bY4BD9E7-48C&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=bY4BD9E7-48C"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 21.08,
+            "currencyCode": "AUD"
+          },
+          "retailPrice": {
+            "amount": 21.08,
+            "currencyCode": "AUD"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=bY4BD9E7-48C&rdid=book-bY4BD9E7-48C&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 21080000,
+                "currencyCode": "AUD"
+              },
+              "retailPrice": {
+                "amountInMicros": 21080000,
+                "currencyCode": "AUD"
+              },
+              "giftable": true
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/The_Book_Of_Lists-sample-epub.acsm?id=bY4BD9E7-48C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/The_Book_Of_Lists-sample-pdf.acsm?id=bY4BD9E7-48C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=bY4BD9E7-48C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Original title: Tomorrow Is Another Day; also Tote the Weary Load, Milestones, Jettison, Ba! Ba! Black Sheep, None So Blind, ... The Jaws of the Leviathan Final \u003cb\u003etitle\u003c/b\u003e: \u003cb\u003eJaws\u003c/b\u003e (1974) Author: Peter Benchley 25. Original title: Before This&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "IZD2CwAAQBAJ",
+        "etag": "UeWaNf9GFKI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/IZD2CwAAQBAJ",
+        "volumeInfo": {
+          "title": "Screening the Nonhuman",
+          "subtitle": "Representations of Animal Others in the Media",
+          "authors": [
+            "Amber E. George",
+            "J. L. Schatz"
+          ],
+          "publisher": "Lexington Books",
+          "publishedDate": "2016-04-27",
+          "description": "Screening the Nonhuman draws connections between how animals represented on screen translate into reality. In doing so, the book demonstrates that consuming media is not a neutral act but rather a political one. The images humans consume have real world consequences for how animals are treated as actors, as pets, and in nature. The contributors propose that altering the representations of animals can change the way humans relate to non/humans. Our hope is for humans to generate more ethical relationships with non/humans, ultimately mediating reality both in terms of fiction and non-fiction. To achieve this end, film, television, advertisements, and social media are analyzed through an intersectional lens. But the book doesn’t stop here. Each author creates counter-representational strategies that promise to unweave the assumptions that have led to the mistreatment of humans and non/humans alike.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781498513753"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1498513751"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 240,
+          "printType": "BOOK",
+          "categories": [
+            "Social Science"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=IZD2CwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=IZD2CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=IZD2CwAAQBAJ&pg=PA37&dq=title:Jaws&hl=&cd=5&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=IZD2CwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=IZD2CwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 65.95,
+            "currencyCode": "AUD"
+          },
+          "retailPrice": {
+            "amount": 49.46,
+            "currencyCode": "AUD"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=IZD2CwAAQBAJ&rdid=book-IZD2CwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 65950000,
+                "currencyCode": "AUD"
+              },
+              "retailPrice": {
+                "amountInMicros": 49460000,
+                "currencyCode": "AUD"
+              },
+              "giftable": true
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/Screening_the_Nonhuman-sample-epub.acsm?id=IZD2CwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/Screening_the_Nonhuman-sample-pdf.acsm?id=IZD2CwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=IZD2CwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In this respect, the \u003cb\u003etitle\u003c/b\u003e, \u003cb\u003eJaws\u003c/b\u003e, literally (through eating) and figuratively (through representations of them) reproduces future sharks and the fear humans have of sharks. In this respect, the jaws of the great white shark represent a&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "921qCQAAQBAJ",
+        "etag": "A8ss8evLxbQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/921qCQAAQBAJ",
+        "volumeInfo": {
+          "title": "Scalable Uncertainty Management",
+          "subtitle": "First International Conference, SUM 2007, Washington, DC, USA, October 10-12, 2007, Proceedings",
+          "authors": [
+            "Henri Prade",
+            "V.S. Subrahmanian"
+          ],
+          "publisher": "Springer",
+          "publishedDate": "2007-09-20",
+          "description": "This book constitutes the refereed proceedings of the First International Conference on Scalable Uncertainty Management, SUM 2007, held in Washington, DC, USA, in October 2007. The 20 revised full papers presented were carefully reviewed and selected from numerous submissions for inclusion in the book. The papers address artificial intelligence researchers, database researchers and practitioners.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9783540754107"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "3540754105"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 280,
+          "printType": "BOOK",
+          "categories": [
+            "Business & Economics"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.12.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=921qCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=921qCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=921qCQAAQBAJ&pg=PA113&dq=title:Jaws&hl=&cd=6&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=921qCQAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=921qCQAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "FOR_SALE_AND_RENTAL",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 109,
+            "currencyCode": "AUD"
+          },
+          "retailPrice": {
+            "amount": 75.65,
+            "currencyCode": "AUD"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=921qCQAAQBAJ&rdid=book-921qCQAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 109000000,
+                "currencyCode": "AUD"
+              },
+              "retailPrice": {
+                "amountInMicros": 75650000,
+                "currencyCode": "AUD"
+              },
+              "giftable": true
+            },
+            {
+              "finskyOfferType": 3,
+              "listPrice": {
+                "amountInMicros": 38150000,
+                "currencyCode": "AUD"
+              },
+              "retailPrice": {
+                "amountInMicros": 34340000,
+                "currencyCode": "AUD"
+              },
+              "rentalDuration": {
+                "unit": "DAY",
+                "count": 90
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/Scalable_Uncertainty_Management-sample-pdf.acsm?id=921qCQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=921qCQAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Table 1. Answer quality (&#39;X&#39; marks an incorrect answer) (a) Query 1: //movie[.//genre=&quot;Horror&quot;]/\u003cb\u003etitle\u003c/b\u003e (All horror movies) Poll. P(a) Answer Prec Rec 2 79.4% “\u003cb\u003eJaws\u003c/b\u003e” 79.4% “\u003cb\u003eJaws\u003c/b\u003e 2” 79.4% 79.4% 5 77.4% “\u003cb\u003eJaws\u003c/b\u003e” 69.5% 77.4% 77.4% “\u003cb\u003eJaws\u003c/b\u003e 2” 10&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "WuHurwjZ1i8C",
+        "etag": "vsd03a1EczI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/WuHurwjZ1i8C",
+        "volumeInfo": {
+          "title": "Power SAS",
+          "subtitle": "A Survival Guide",
+          "authors": [
+            "Darlynn Lafler"
+          ],
+          "publisher": "Apress",
+          "publishedDate": "2002-09-20",
+          "description": "Lafler's book provides SAS users (Version 8.2) with a wonderful collection of tips, undocumented or hard-to-find tidbits of information, and other useful techniques in more than 1,000 entries.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781430211556"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1430211555"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 318,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.4.2.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=WuHurwjZ1i8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=WuHurwjZ1i8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=WuHurwjZ1i8C&pg=PA47&dq=title:Jaws&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.com.au/books?id=WuHurwjZ1i8C&dq=title:Jaws&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Power_SAS.html?hl=&id=WuHurwjZ1i8C"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/Power_SAS-sample-pdf.acsm?id=WuHurwjZ1i8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=WuHurwjZ1i8C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "2. DATALINES may be substituted for the CARDS input designation on the INFILE Statement and the CARDS Statement. Code: DATA MOVIES; INFILE CARDS DSD DLM=&#39;09&quot;x TRUNCOVER; INPUT \u003cb\u003eTITLE\u003c/b\u003e $ RATING $; CARDS; \u003cb\u003eJaws\u003c/b\u003e PG Rocky PG Titanic PG-13 RUN;&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "J9j-CgAAQBAJ",
+        "etag": "aSZTb8ih4MU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/J9j-CgAAQBAJ",
+        "volumeInfo": {
+          "title": "Head First Ruby",
+          "subtitle": "A Brain-Friendly Guide",
+          "authors": [
+            "Jay McGavren"
+          ],
+          "publisher": "\"O'Reilly Media, Inc.\"",
+          "publishedDate": "2015-08-21",
+          "description": "What will you learn from this book? What’s all the buzz about this Ruby language? Is it right for you? Well, ask yourself: are you tired of all those extra declarations, keywords, and compilation steps in your other language? Do you want to be a more productive programmer? Then you’ll love Ruby. With this unique hands-on learning experience, you’ll discover how Ruby takes care of all the details for you, so you can simply have fun and get more done with less code. Why does this book look so different? Based on the latest research in cognitive science and learning theory, Head First Ruby uses a visually rich format to engage your mind, rather than a text-heavy approach to put you to sleep. Why waste your time struggling with new concepts? This multi-sensory learning experience is designed for the way your brain really works.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780596803988"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0596803982"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 571,
+          "printType": "BOOK",
+          "categories": [
+            "Computers"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "2.3.0.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=J9j-CgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=J9j-CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=J9j-CgAAQBAJ&pg=PA446&dq=title:Jaws&hl=&cd=8&source=gbs_api",
+          "infoLink": "http://books.google.com.au/books?id=J9j-CgAAQBAJ&dq=title:Jaws&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Head_First_Ruby.html?hl=&id=J9j-CgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=J9j-CgAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&lt;/h12 &lt;ul&lt;% Gmovies. each do movie | * &gt; &lt;li&gt;&lt;%= movie. \u003cb\u003etitle\u003c/b\u003e %23/li&gt; &lt;% end o X &lt;/ul&lt;a href=&quot;/movies/new&quot;&gt;Add New Movie /a&lt;/body&lt;/html&gt; views/index.erb O. O. O. [h My Movies - \\ &lt;- - G D localhost 4567/movies My Movies • \u003cb\u003eJaws\u003c/b\u003e • Alien&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "-1RjCwAAQBAJ",
+        "etag": "SO+NFgIbzF8",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/-1RjCwAAQBAJ",
+        "volumeInfo": {
+          "title": "The Weird World of Eerie Publications",
+          "subtitle": "Comic Gore That Warped Millions of Young Minds",
+          "authors": [
+            "Mike Howlett"
+          ],
+          "publisher": "Feral House",
+          "publishedDate": "2010-11-30",
+          "description": "Eerie Publications' horror magazines brought blood and bad taste to America's newsstands from 1965 through 1975. Ultra-gory covers and bottom-of-the-barrel production values lent an air of danger to every issue, daring you to look at (and purchase) them. The Weird of World of Eerie Publications introduces the reader to Myron Fass, the gun-toting megalomaniac publisher who, with tyranny and glee, made a career of fishing pocketbook change from young readers with the most insidious sort of exploitation. You'll also meet Carl Burgos, who, as editor of Eerie Publications, ground his axe against the entire comics industry. Slumming comic art greats and unknown hacks were both employed by Eerie to plagiarize the more inspired work of pre-Code comic art of the 1950s. Somehow these lowbrow abominations influenced a generation of artists who proudly blame career choices (and mental problems) on Eerie Publications. One of them, Stephen R. Bissette (Swamp Thing, Taboo, Tyrant), provides the introduction for this volume. Here's the sordid background behind this mysterious comics publisher, featuring astonishingly red reproductions of many covers and the most spectacularly creepy art.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781936239214"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1936239213"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 340,
+          "printType": "BOOK",
+          "categories": [
+            "Comics & Graphic Novels"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=-1RjCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=-1RjCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=-1RjCwAAQBAJ&pg=PA129&dq=title:Jaws&hl=&cd=9&source=gbs_api",
+          "infoLink": "http://books.google.com.au/books?id=-1RjCwAAQBAJ&dq=title:Jaws&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Weird_World_of_Eerie_Publications.html?hl=&id=-1RjCwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/The_Weird_World_of_Eerie_Publications-sample-epub.acsm?id=-1RjCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/The_Weird_World_of_Eerie_Publications-sample-pdf.acsm?id=-1RjCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=-1RjCwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Kong (Countrywide, 1976) 130 Jaws of Horror V4 #2 (Summer 1978) and one ... none of these publications examined the movie per se, they all featured the name Jaws prominently in the \u003cb\u003etitle\u003c/b\u003e:\u003cb\u003eJaws\u003c/b\u003e of Blood, Jaws of Death and Jaws of Horror."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "xM1CDwAAQBAJ",
+        "etag": "+bHIY42ayQc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/xM1CDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Focus On: 100 Most Popular United States National Film Registry Films",
+          "authors": [
+            "Wikipedia contributors"
+          ],
+          "publisher": "e-artnow sro",
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 2436,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=xM1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=xM1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com.au/books?id=xM1CDwAAQBAJ&pg=PT1036&dq=title:Jaws&hl=&cd=10&source=gbs_api",
+          "infoLink": "http://books.google.com.au/books?id=xM1CDwAAQBAJ&dq=title:Jaws&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_United_States.html?hl=&id=xM1CDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AU",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AU",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/Focus_On_100_Most_Popular_United_States-sample-epub.acsm?id=xM1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.au/books/download/Focus_On_100_Most_Popular_United_States-sample-pdf.acsm?id=xM1CDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=xM1CDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "[201] Jaws set the template for many subsequent horror films, to the extent that the script for Ridley Scott &#39;s 1979 ... Jawseven ,[205] featured in Mystery Science Theater 3000 has the alternate \u003cb\u003etitle Jaws\u003c/b\u003e 5: Cruel Jaws,[209] and the&nbsp;..."
+        }
+      }
+    ]
+  }
+  
