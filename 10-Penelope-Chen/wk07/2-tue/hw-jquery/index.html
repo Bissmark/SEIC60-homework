@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework: Hobbies</title>
+</head>
+<body>
+    <h1>Search for New Hobbies (or bucket list items)</h1>
+
+    <p class="list">Choice of Categories are: 
+        <ul>
+            <li>general</li>
+            <li>sports_and_outdoors</li>
+            <li>education</li>
+            <li>collection</li>
+            <li>competition</li>
+            <li>observation</li>
+        </ul>
+    </p>
+
+    <form id ="search">
+        <label>
+            Hobby category:
+            <input type="search" id="title" placeholder="category (optional)" autofocus>
+        </label>
+
+        <button>Search</button>
+    </form>
+
+    <div>
+        <p id="answer"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
+    <script src="js/hw.js"></script>
+</body>
+</html>
