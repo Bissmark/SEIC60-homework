@@ -4,7 +4,8 @@ const fetchData = function () {
     // request the data based on the play option
     $.ajax(`https://www.folgerdigitaltexts.org/${choice}/synopsis/`).done(function (data) {
     // show the play synopsis
-    $('.synopsis').append(data);
+    console.log(data);
+    $('.synopsis').html(data);
     })
 };
 
