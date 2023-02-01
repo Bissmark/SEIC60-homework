@@ -57,14 +57,14 @@ const generateURL = function (p) {
 
 
 let timeout;
-
+let chicken;
 $(document).ready(function () {
     
     $('#btnFly').on('click', function(){
         let $imgs = $('img');
         $imgs.each(function(index){
             let $img = $(this);
-            setTimeout(function() {
+            chicken = setTimeout(function() {
                 rand = _.random(1, 5)
                 switch(rand){
                     case 1:
