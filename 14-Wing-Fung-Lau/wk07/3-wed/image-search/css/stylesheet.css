@@ -1,0 +1,81 @@
+#backTop {
+    position:fixed;
+    right:30%;
+    bottom: 0.5%;
+    height:auto;
+    font-size:3.5vh;
+    cursor: pointer;
+}
+
+#noMorePhoto{
+    font-size: 3.5vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#btnFly {
+    border-style: none;
+    color: transparent;
+    background-color: transparent;
+    position:fixed;
+    right:1%;
+    top: 20%;
+    height:auto;
+    font-size:3.5vh;
+    cursor: pointer;
+}
+
+#btnFly:hover {
+    border-style:solid;
+    color: white;
+    background-color: orange;
+}
+
+
+
+
+
+
+
+.fly {
+	animation: fly 6.5s linear infinite;
+	height: 300px;
+}
+
+  
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}

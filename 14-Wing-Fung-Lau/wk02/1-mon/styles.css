@@ -75,7 +75,7 @@ img {
 	z-index: 999999;
 }
 
-#fast > * {
+#fast {
 	animation: fly 15s linear infinite;
 	height: 300px;
 }

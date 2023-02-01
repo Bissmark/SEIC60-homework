@@ -1,4 +1,3 @@
-
 $('#search').on('submit', function (event) {
     event.preventDefault();
     const result = $('#wiki').val()
@@ -32,5 +31,3 @@ $('#search').on('submit', function (event) {
         }
     })
 })
-
-
