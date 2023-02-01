@@ -1,5 +1,11 @@
 let page = 1;
 let pages
+const chick1 = new Audio("./audio/chick1.mov");
+const chick2 = new Audio("./audio/chick2.mov");
+const chick3 = new Audio("./audio/chick3.mov");
+const chick4 = new Audio("./audio/chick4.mov");
+const chick5 = new Audio("./audio/chick5.mov");
+
 const searchFlickr = function (keywords) {
     console.log('Searching for', keywords);
 
@@ -59,8 +65,24 @@ $(document).ready(function () {
         $imgs.each(function(index){
             let $img = $(this);
             setTimeout(function() {
+                rand = _.random(1, 5)
+                switch(rand){
+                    case 1:
+                        chick1.play()
+                    break;
+                    case 2:
+                        chick2.play()
+                    break;
+                    case 3:
+                        chick3.play()
+                    break;
+                    case 4:
+                        chick4.play()
+                    break;
+                    case 5:
+                        chick5.play()
+                }
                 $img.addClass('fly');
-                console.log($img.attr('class'));
             }, 1000* (index + 1));
         });
     });
@@ -113,7 +135,7 @@ $(document).ready(function () {
                 searchFlickr(searchTerms);
             }
         })
-    },300)
+    },1000)
     });
 
 
