@@ -1,0 +1,31 @@
+body {
+    background-color: lime;
+    color: white;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(84, 78, 78);
+    border: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
