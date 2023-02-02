@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 50px;
+    background-color: rgb(167, 203, 191);
+}
+h1 {
+    margin-top: 40px;
+}
+
+#search {
+    margin-bottom: 40px;
+}
+
+#image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
