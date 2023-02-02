@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imdb</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     <div class="container">
+    <nav>
+      <%= link_to 'All directors', directors_path %>
+      <%= link_to 'New director', new_director_path %>
+      |
+      <%= link_to 'All movies', movies_path %>
+      <%= link_to 'New movie', new_movie_path %>
+    </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>

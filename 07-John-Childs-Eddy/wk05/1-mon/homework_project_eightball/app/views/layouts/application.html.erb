@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomeworkProjectEightball</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<nav>
+<a href="/">Home</a>
+<a href="/eightball">8-ball</a>
+<a href="/secretnumber">Secret Number</a>
+<a href="/paperrockscissors">Paper, Rock, Scissors</a>
+</nav>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

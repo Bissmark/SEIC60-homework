@@ -1,0 +1,17 @@
+<h1><%= @director.name %></h1>
+
+<%= image_tag @director.image, :class => 'feature' if @director.image.present? %>
+    <ul>
+        <li>Name: <%= @director.name %></li>
+        <li>Nationality: <%= @director.nationality %></li>
+        <li>Genre: <%= @director.genre %></li>
+    </ul>
+
+    <%@director.movies.each do |movie| %>
+        <%= link_to image_tag(movie.image, :class => 'thumb'), movie %>
+    <% end %>
+
+    <div class="controls">
+        <%= link_to 'Edit director', edit_director_path(@director) %>
+        <%= link_to 'Delete director', @director, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+    </div>

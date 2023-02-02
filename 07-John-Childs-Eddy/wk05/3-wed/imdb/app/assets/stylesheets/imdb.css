@@ -1,0 +1,16 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.thumb {
+    height: 10em;
+}
+
+.feature {
+    max-height: 30em;
+}
+
+label {
+    display: block;
+}
