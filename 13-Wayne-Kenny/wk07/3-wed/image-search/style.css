@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: azure;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#images {
+    max-width: 450px;
+    margin-right: 5px;
+}
+#largeimages {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    margin-left: 5px;
+}
+#search {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
