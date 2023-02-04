@@ -112,7 +112,7 @@ class Tictactoe extends Component {
             for (let condition of winningCondtions) {
                 let p1Check = ''
                 let p2Check = ''
-                if (p1Win != 'XXX' && p2Win != '〇〇〇' ) {
+                if (p1Win !== 'XXX' && p2Win !== '〇〇〇' ) {
                     for (let index of condition) {
                         if (board[index] === 'X') {
                             p1Check = p1Check + 'X'}

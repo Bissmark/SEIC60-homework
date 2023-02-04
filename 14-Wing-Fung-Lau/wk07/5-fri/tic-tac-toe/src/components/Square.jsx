@@ -75,7 +75,7 @@ setTimeout(function(){
         for (let condition of winningCondtions) {
             let p1Check = ''
             let p2Check = ''
-            if (p1Win != 'XXX' && p2Win != '〇〇〇' ) {
+            if (p1Win !== 'XXX' && p2Win !== '〇〇〇' ) {
                 for (let index of condition) {
                     if (board[index] === 'X') {
                         p1Check = p1Check + 'X'}
@@ -128,7 +128,7 @@ setTimeout(function(){
     }
 
 
-    if (x + o === 9 && p1Win != 'XXX' && p2Win != '〇〇〇') {
+    if (x + o === 9 && p1Win !== 'XXX' && p2Win !== '〇〇〇') {
         play = ''
         result.textContent = 'Draw!'
         result.style.visibility = 'visible'
@@ -139,7 +139,7 @@ setTimeout(function(){
         play = ''
     }
 
-    if (p1Win != 'XXX' && p2Win != '〇〇〇') {
+    if (p1Win !== 'XXX' && p2Win !== '〇〇〇') {
         if (x > o) {
             play = '〇'
             for (let square of squares) {
@@ -192,11 +192,6 @@ setTimeout(function(){
             result.style.visibility = 'hidden'
         }
     }
-
-
-
-
-
 }, 100)
 
 
