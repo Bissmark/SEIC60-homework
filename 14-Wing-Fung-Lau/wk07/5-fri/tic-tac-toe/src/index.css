@@ -1,0 +1,103 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: -webkit-center;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  grid-column: 2;
+}
+.App {
+  grid-column: 2;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+.P1 {
+  grid-column: 1;
+}
+
+.P2 {
+  grid-column: 3;
+}
+
+.P1, .P2 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.tictactoe {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  width: 60vh;
+}
+
+.square {
+  height: 20vh;
+  width: 20vh;
+  border-style:solid;
+  font-size: 10vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.square:hover {
+  background-color: lightblue;
+}
+
+.played:hover{
+  background-color: inherit;
+}
+
+.square.player2:hover {
+  background-color: lightpink;
+}
+
+#restart {
+  font-size: 3.5vh;
+  height: 5vh;
+  margin-top: 5vh;
+  justify-self: center;
+  width:fit-content;
+}
+
+#btnAI {
+  font-size: 3.5vh;
+  height: 5vh;
+  margin-top: 5vh;
+  justify-self: center;
+  width:fit-content;
+}
+
+.p1Scores {
+  text-align: left;
+}
+
+.p2Scores {
+  text-align: right;
+}
+
+#result {
+  visibility:hidden;
+}
+
+
