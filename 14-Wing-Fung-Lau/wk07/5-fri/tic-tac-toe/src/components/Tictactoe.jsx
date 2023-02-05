@@ -218,7 +218,7 @@ class Tictactoe extends Component {
                 }    
             }
 
-        }, 200)
+        }, 10)
 
 
 

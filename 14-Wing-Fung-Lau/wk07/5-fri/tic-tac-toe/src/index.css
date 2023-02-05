@@ -30,16 +30,14 @@ header {
 }
 .P1 {
   grid-column: 1;
+  font-size: 3.5vh;
+  justify-self: right;
 }
 
 .P2 {
   grid-column: 3;
-}
-
-.P1, .P2 {
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  justify-self: left;
+  font-size: 3.5vh;
 }
 
 .tictactoe {

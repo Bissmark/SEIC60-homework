@@ -89,6 +89,7 @@ setTimeout(function(){
                         squares.forEach(square =>
                             square.classList.remove('player2'))
                         result.textContent = 'Player 1 wins!'
+                        result.style.color = "blue"
                         result.style.visibility = 'visible'
                         p1.textContent = parseInt(p1.textContent) + 1
 
@@ -101,6 +102,7 @@ setTimeout(function(){
                             squares.forEach(square =>
                                 square.classList.remove('player2'))
                             result.textContent = 'Player 2 wins!'
+                            result.style.color = "red"
                             result.style.visibility = 'visible'
                             p2.textContent = parseInt(p2.textContent) + 1
                         }
@@ -186,10 +188,11 @@ setTimeout(function(){
         p1Win = ''
         board = ["", "", "", "", "", "", "", "", ""]
         result.textContent = 'Result'
+        result.style.color = "initial"
+        result.style.visibility = 'hidden'
         for (let square of squares) {
             square.classList.remove('played')
             square.classList.remove('player2')
-            result.style.visibility = 'hidden'
         }
     }
 }, 100)
