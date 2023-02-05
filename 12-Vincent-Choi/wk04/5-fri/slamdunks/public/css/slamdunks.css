@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(215, 221, 225);
+    background-color: rgb(141, 31, 31);
+    color:rgb(233, 230, 230);
 }
 
 .container {
@@ -10,6 +11,7 @@ body {
 a {
     margin-right: 20px;
     font-size: large;
+    color:azure;
 }
 
 
@@ -24,6 +26,7 @@ a {
 
 button {
     margin-top: 15px;
+    color: white;
 }
 
 form {
@@ -39,7 +42,7 @@ label {
 
 input {
     padding: 3px;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 3px 3px 3px rgb(233, 230, 230);
     width: 90%;
   }
 
