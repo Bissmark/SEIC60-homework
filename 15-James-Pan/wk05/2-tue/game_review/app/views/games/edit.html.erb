@@ -1,0 +1,40 @@
+<p>Edit game</p>
+
+
+<form action="<%= games_path(@game.id) %>" method="post">
+<label>Name: 
+<input name="name" required value="<%= @game.name %>"/> 
+
+</label>
+
+
+
+
+<label>mode:
+<input type="text" name="name" value="<%= @game.mode %>"/>
+</label>
+
+
+<label>developer:
+<input type="text" name="developer" value="<%= @game.developer %>" />
+</label>
+
+
+<label>release_date:
+<input type="date" name="release_date" value="<%= @game.release_date %>" />
+</label>
+
+
+<label>platform:
+<input type="text" name="platform" value="<%= @game.platform %>" />
+</label>
+
+
+<label> Image:
+
+<input type="url" name="image" value="<%= @game.image %>"/>
+</label>
+
+
+<button>Update game</button>
+</form>

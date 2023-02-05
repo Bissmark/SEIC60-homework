@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(19, 243, 251);
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+.homepage {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(187, 246, 24);
+}
+
+a:visited {
+  color: rgb(24, 87, 246);
+}
+
+a:hover {
+  color: rgb(243, 72, 129);
+}
+
+p {
+  background-color: #b2e834;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
