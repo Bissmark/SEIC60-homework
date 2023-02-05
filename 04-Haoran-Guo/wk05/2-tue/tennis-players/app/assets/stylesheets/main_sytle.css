@@ -11,30 +11,39 @@ body{
 .container{
     text-align: center;
     align-items: center;
-    
+    max-width: 960px;
+    margin:0 auto;
 }
 
 .index{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
-    gap: 8rem;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    /* gap: 8rem; */
+    max-width: 960px;
+    margin:0 auto;
 }
 
-.index > h1{
-    color:blue ;
-    grid-column: 1/3 ;
+.players{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.index h1{
+    color: lightcoral ;
 }
 
 .player{
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     font-size: 20px;
     color: black;
-
+    align-items: center;
+    
 }
+
 
 .show{
     display: grid;
@@ -65,4 +74,17 @@ body{
 .control{
     grid-column: 1/3;
     grid-row: 3/4;
+}
+
+.thumb{
+    max-width: 60%;
+}
+
+.player_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.player_form input{
+    margin: 10px;
 }

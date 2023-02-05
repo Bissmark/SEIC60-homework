@@ -1,10 +1,14 @@
 <div class='container index'>
 <h1>All Players</h1>
 
+<div class="players">
 <% @players.each do |player|%>
     <p class="player" id="<%= player.id %>">
-        <%= image_tag player.image if player.image.present? %>
+        <%= image_tag player.image, :class =>'thumb' if player.image.present? %>
+        <br >
         <%= link_to player.name, player_path(player.id) %>
     </p>
 <% end %>
+
+</div>
 </div>

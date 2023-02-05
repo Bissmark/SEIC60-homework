@@ -1,21 +1,32 @@
 <div class="container new">
 <h1>New Player</h1>
 
-<form action="<%= players_path %>" method="post">
+    <form  action="<%= players_path %>" method="post">
 
-    <label>
-        Name: 
-        <input type="text" name="name" required autofocus>
-        Brith Country: 
-        <input type="text" name="birth_country">
-        Height:
-        <input type="number" name="height">
-        Weight:
-        <input type="number" name="weight">
-        Image: 
-        <input type="url" name="image">
-    </label>
-    <button>Create Player</button>
-</form>
+        <label class="player_form">
+            <p>
+            Name:
+            </p> 
+            <input type="text" name="name" required autofocus>
+            <p>
+            Brith Country: 
+            </p>
+            <input type="text" name="birth_country">
+            <p>
+            Height:
+            </p>
+            <input type="number" name="height">
+            <p>
+            Weight:
+            </p>
+            <input type="number" name="weight">
+            <p>
+            Image:
+            </p> 
+            <input type="url" name="image">
+        </label>
+        <button>Create Player</button>
+    </form>
+
 
 </div>

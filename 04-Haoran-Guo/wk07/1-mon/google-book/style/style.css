@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Shadows+Into+Light&display=swap');
+  
+* {
+    margin: 0;
+    padding: 0; 
+ 
+}
+
+.container{
+    margin: auto 285px;
+    text-align: center;
+    background-color: rgba(176, 216, 240, 0.3);
+   
+}
+
+.container h1{
+    padding: 10px;
+    
+}
+
+.search-section{
+    margin: 50px auto;
+    background-color: rgba(176, 216, 240, 0.3);
+    font-family: 'Shadows Into Light', cursive;
+}
+.search-log{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.search-log div{
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Caveat', cursive;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: blue;
+    box-shadow: 0 0 10px blue;
+    transform: translateY(-2px);
+  }
+  
+  input[type="search"] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="search"]:focus {
+    border: 2px solid blue;
+  }
+  

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <title>Peek into the Universe</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SPACE?</h1>
+        <div class="space">
+            <form class="spacemen">
+                <label>
+                    Do you wish to know who are in the space?
+                    <input type="text" placeholder="yes" value="Yes! Please tell me!">
+                    <button class="btn">Click Me</button>
+                </label>
+            </form>
+                
+        </div>
+
+
+        <div class="stattelite">
+            <form class="location">
+                <label>
+                    Do you wish to know where the stattelite is?
+                    <input type="text" placeholder="yes" value="Yes! Please tell me!">
+                    <button class="btn">Click Me</button>
+                </label>
+            </form>
+            <h3 id="coord-title"></h3>
+            <p id="coordinates"></p>
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/outerspace.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmdJSmWQQIRfzoc9VA0CcgbMNzsDtt5kU&callback=initMap"></script>
+</body>
+</html>
