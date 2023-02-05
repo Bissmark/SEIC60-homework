@@ -1,0 +1,41 @@
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h1,h2 {
+    color:white;
+    text-align: center;
+}
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    color:white;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.scroll-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    background: rgb(45, 11, 66);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: bold;
+    line-height: normal;
+    border: none;
+}
