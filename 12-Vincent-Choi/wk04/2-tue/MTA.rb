@@ -66,6 +66,41 @@ if start_line == end_line
 end
         puts "#{num_stops} stops in total."
         puts "You must travel through the following stops on the #{start_line} line: #{trip.join(', ')}."
+else
 
-# notes for tonight *retry to code so we can get on with it*
+    sl_interchange_index = subway_station[start_line].index(interchange)
+    el_interchange_index = subway_station[end_line].index(interchange)
+    
+    start_journey =[]
+
+    start_num_stops = sl_interchange_index - start_position
+    
+    if start_num_stops > 0
+  
+        start_journey = subway_station[start_line][start_position + 1 .. sl_interchange_index]
+    else
+        start_journey = subway_station[start_line][sl_interchange_index .. start_position - 1].reverse
+    
+        start_num_stops = start_num_stops * -1 
+    end
+        puts "You must travel through the following stops on the #{start_line.upcase} line: #{start_journey.join(', ')}."
+        puts "change at #{interchange}"
+    
+    end_journey = []
+    
+    end_num_stops = end_position - el_interchange_index
+    
+    if end_num_stops > 0 
+        end_journey = subway_station[end_line][el_interchange_index + 1 .. end_position]
+    else 
+        end_journey = subway_station[end_line][end_position .. el_interchange_index - 1].reverse
+    
+        end_num_stops = end_num_stops * -1
+    end
+        puts "Your journey continues on the #{end_line} Line and through the following stops: #{end_journey.join(', ')}."
+    
+        total_stops = start_num_stops + end_num_stops
+        
+        puts "#{total_stops} stops in total."
+end
 

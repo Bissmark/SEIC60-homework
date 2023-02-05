@@ -1,6 +1,26 @@
 .container {
-    width: 960px;
+    width: 50%;
     margin: 0 auto;
-}
-.make things fanceier later
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(91, 154, 68);
 
+}
+body {
+    background-image: url("https://www.koreatravelpost.com/wp-content/uploads/2020/03/Screenshot-2020-03-31-at-12.44.55-PM.png"); size:contain;
+    background-color: rgb(82, 60, 20);
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(150, 138, 138);
+
+}
+h1 {
+    font-size: 72px;
+    font-style: italic;
+}
+
+label {
+    font-size: 24px;
+}
