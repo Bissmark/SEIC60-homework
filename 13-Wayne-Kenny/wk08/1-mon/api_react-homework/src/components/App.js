@@ -1,5 +1,6 @@
 import Library from "./Library";
 import RandomFact from "./RandomFact";
+// updated import to reflect scss
 import "./App.scss"
 
 function App() {
