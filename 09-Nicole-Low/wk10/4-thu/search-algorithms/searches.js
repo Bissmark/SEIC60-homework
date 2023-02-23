@@ -12,6 +12,8 @@ function binarySearch(arr, element){
 }
 
 function recursiveBinarySearch(arr, element) {
+    // sort the array first
+    arr.sort()
     return recursiveBinarySearch2(arr, 0, arr.length - 1, element)
 }
 
@@ -21,16 +23,13 @@ function recursiveBinarySearch2(arr, left, right, element){
     //  if the element is not found, return -1
     //  if the element is found, return the index at which it was found
 
-    // sort the array first
-    arr.sort()
-
     // base case
     if (left > right) {
         return -1
     }
 
     // find the middle
-    const mid = left + ((right - left) / 2)
+    const mid = left + Math.floor(((right - left) / 2))
 
     if (arr[mid] === element) {
         return mid
