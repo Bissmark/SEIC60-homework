@@ -5,6 +5,7 @@ const yahooStockPrices = require('yahoo-stock-prices')
 
 const server = express()
 server.set('view-engine', ejs)
+server.use(express.static('public')) 
 const PORT = 1337
 
 //----------------------------------------
