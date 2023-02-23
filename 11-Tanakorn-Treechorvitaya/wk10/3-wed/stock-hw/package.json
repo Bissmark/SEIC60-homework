@@ -1,0 +1,21 @@
+{
+  "name": "stock-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon stock.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "stocksocket": "^2.1.2"
+  }
+}
