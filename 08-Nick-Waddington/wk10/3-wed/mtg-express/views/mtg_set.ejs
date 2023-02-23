@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <title><%= set.name %> - Magic: The Gathering Set</title>
+</head>
+<body>
+  <h1><%= set.name %> - Magic: The Gathering Set</h1>
+  <img src="<%= set.icon_svg_uri %>" style="width: 25%; height: auto;"/>
+  <p>Release date: <%= set.released_at %></p>
+  <p>Cards count: <%= set.card_count %></p>
+  <a href="/">Back to home page</a>
+</body>
+</html>

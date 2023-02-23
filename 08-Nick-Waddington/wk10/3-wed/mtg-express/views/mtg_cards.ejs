@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Cards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>MTG Cards</h1>
+    <% cards.forEach(function(card) { %>
+        <div>
+            <h2><%= card.name %></h2>
+            <img src="<%= card.image_uris.normal %>" alt="<%= card.name %>">
+            <p>Rarity: <%= card.rarity %></p>
+            <p>Set: <%= card.set_name %></p>
+        </div>
+    <% }); %>
+    <a href="/">Back to home page</a>
+</body>
+</html>
